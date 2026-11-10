@@ -58,6 +58,17 @@ journalctl --user -u crow-pyxelbasic-monitor.service -n 20 --no-pager
 これはLinux側の長時間調査であり、Windows実機で元現象を再現したという意味ではない。
 Windows側の証拠が後から得られたら、計測を続けたまま同条件を追加する。
 
+## 初回coverageレビュー後の計測（2026-11-10）
+
+初回8ケース各20分完走。結果と限界は
+`diagnostics/loop-11/coverage-20261110/REVIEW.ja.md` と保存証拠を参照。
+計測器自身のフレーム時間保持がRSSに含まれるため、診断JSON schema2では
+各系列を4096件に制限する。全期間count/maxは維持するが、分位点は末尾保持分のみ。
+`retained_count` / `quantile_scope` を必ず確認し、旧方式の全期間分位点と混同しない。
+比較専用に `--timing-capacity 0` で全保持も可能。毎秒サンプルにcgroup-v2の
+`cpu.max` / `cpu.stat` を追加し、制限による待ちを差分で調べる。
+監視親と稼働中の子は再起動せず、新しい子起動から診断変更が適用される。
+
 ## 検証
 
 `python -m unittest discover -s tests -p test_stall_monitor.py -v`:

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """既存Appを変更せず、フレーム時間・CPU・RSSをJSONへ記録する診断用起動器。"""
 import argparse
+from collections import deque
 from datetime import datetime, timezone
 import faulthandler
 import json
@@ -52,10 +53,48 @@ def distribution(values):
             "max_ms": ordered[-1] * 1000}
 
 
+class TimingSeries:
+    """Bound memory while preserving whole-run count/max (quantiles are tail-only)."""
+    def __init__(self, capacity=4096):
+        self.values = deque(maxlen=capacity)
+        self.count = 0
+        self.maximum = 0.0
+
+    def append(self, value):
+        self.values.append(value)
+        self.count += 1
+        self.maximum = max(self.maximum, value)
+
+    def summary(self):
+        result = distribution(self.values)
+        if result is not None:
+            result.update(count=self.count, retained_count=len(self.values),
+                          max_ms=self.maximum * 1000,
+                          quantile_scope='whole-run' if self.count == len(self.values) else 'last-retained-values')
+        return result
+
+
+def cgroup_cpu():
+    """Cumulative cgroup-v2 counters; deltas, not totals, indicate throttling."""
+    if sys.platform != 'linux':
+        return None
+    try:
+        entry = next(line[3:] for line in Path('/proc/self/cgroup').read_text().splitlines()
+                     if line.startswith('0::'))
+        root = Path('/sys/fs/cgroup') / entry.lstrip('/')
+        return {'path': entry, 'cpu_max': (root / 'cpu.max').read_text().strip(),
+                'cpu_stat': {k: int(v) for k, v in
+                             (line.split() for line in (root / 'cpu.stat').read_text().splitlines())}}
+    except (OSError, ValueError, StopIteration):
+        return None
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--seconds', type=float, default=30)
     parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--timing-capacity', type=int, default=4096,
+                        help='フレーム時間保持上限。0は旧方式同等の全件保持（比較専用）')
     parser.add_argument('--capture-sec', type=int, default=None,
                         help='診断限定でPyxel録画秒数を上書き（比較用、既定は変更なし）')
     parser.add_argument('app_args', nargs=argparse.REMAINDER)
@@ -64,6 +103,8 @@ def main():
         parser.error('--seconds は 0 より大きく 3600 以下にしてください')
     if args.capture_sec is not None and not 0 <= args.capture_sec <= 30:
         parser.error('--capture-sec は 0 から 30 にしてください')
+    if not 0 <= args.timing_capacity <= 1000000:
+        parser.error('--timing-capacity は 0 から 1000000 にしてください')
     from main import build_parser
     app_args = args.app_args[1:] if args.app_args[:1] == ['--'] else args.app_args
     options = build_parser().parse_args(app_args)
@@ -93,7 +134,8 @@ def main():
                   steps_per_frame=options.steps_per_frame)
         if options.run and not app.session.interp.code:
             parser.error('プログラムを読み込めませんでした。結果は有効な負荷計測ではありません')
-        update_times, draw_times, intervals, samples = [], [], [], []
+        update_times, draw_times, intervals = [TimingSeries(args.timing_capacity or None) for _ in range(3)]
+        samples = []
         original_update, original_draw = app.update, app.draw
         started, cpu_started = time.perf_counter(), time.process_time()
         started_at = datetime.now(timezone.utc).isoformat()
@@ -104,6 +146,9 @@ def main():
             return {"at_utc": datetime.now(timezone.utc).isoformat(),
                     "elapsed_s": now - started, "cpu_s": time.process_time() - cpu_started,
                     "rss_bytes": rss_bytes(), "mode": app.session.mode,
+                    "cgroup_cpu": cgroup_cpu(),
+                    "timing_retained": {k: len(v.values) for k, v in
+                                        [('update', update_times), ('draw', draw_times), ('frame_interval', intervals)]},
                     "vm_state": app.session.interp.state, "line": app.session.interp.cur_line,
                     # 単一VM producer。ロックを待って計測を止めない概数。
                     "gfx_queue": len(getattr(app.gfx_queue, '_dq', ())),
@@ -139,8 +184,9 @@ def main():
             nonlocal peak_draw
             now = time.perf_counter()
             original_draw()
-            draw_times.append(time.perf_counter() - now)
-            peak_draw = max(peak_draw, draw_times[-1])
+            elapsed = time.perf_counter() - now
+            draw_times.append(elapsed)
+            peak_draw = max(peak_draw, elapsed)
 
         finished = False
 
@@ -157,14 +203,15 @@ def main():
                 app.session_thread.join(timeout=1)
             ended = time.perf_counter()
             samples.append(sample(ended))
-            result = {"schema_version": 1, "python": platform.python_version(),
+            result = {"schema_version": 2, "python": platform.python_version(),
+                      "timing_capacity": args.timing_capacity,
                       "started_at_utc": started_at,
                       "platform": platform.platform(), "pyxel": pyxel.VERSION,
                       "app_args": app_args, "requested_seconds": args.seconds,
                       "capture_sec_override": args.capture_sec,
                       "elapsed_s": ended - started, "cpu_s": time.process_time() - cpu_started,
-                      "update": distribution(update_times), "draw": distribution(draw_times),
-                      "frame_interval": distribution(intervals), "samples": samples,
+                      "update": update_times.summary(), "draw": draw_times.summary(),
+                      "frame_interval": intervals.summary(), "samples": samples,
                       "session_thread_alive": bool(app.session_thread and app.session_thread.is_alive()),
                       "screen": [''.join(row) for row in app.session.screen.chars]}
             json.dump(result, out, ensure_ascii=False, indent=2)

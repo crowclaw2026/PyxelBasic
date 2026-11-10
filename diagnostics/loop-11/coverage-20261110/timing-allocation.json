@@ -1,0 +1,55 @@
+{
+  "note": "72000 frames simulates timing allocations only; no real-time wait or App",
+  "results": [
+    {
+      "capacity": 0,
+      "cpu_s": 0.117663393,
+      "checkpoints": [
+        {
+          "frames": 3600,
+          "rss_bytes": 15159296,
+          "retained": [
+            3600,
+            3600,
+            3600
+          ]
+        },
+        {
+          "frames": 72000,
+          "rss_bytes": 23494656,
+          "retained": [
+            72000,
+            72000,
+            72000
+          ]
+        }
+      ],
+      "rss_growth_bytes": 8335360
+    },
+    {
+      "capacity": 4096,
+      "cpu_s": 0.111860455,
+      "checkpoints": [
+        {
+          "frames": 3600,
+          "rss_bytes": 15175680,
+          "retained": [
+            3600,
+            3600,
+            3600
+          ]
+        },
+        {
+          "frames": 72000,
+          "rss_bytes": 15237120,
+          "retained": [
+            4096,
+            4096,
+            4096
+          ]
+        }
+      ],
+      "rss_growth_bytes": 61440
+    }
+  ]
+}
