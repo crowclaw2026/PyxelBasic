@@ -1,5 +1,12 @@
 # PC全体が一時的に重くなる現象の調査
 
+## 現在の運用（2026-11-10）
+
+Takeの指示により、Windows証拠待ちで全調査を止める方式を廃止。
+常時スクリプト計測と証拠トリガーのLLM判断へ移行した。
+[継続調査の運用](CONTINUOUS-STALL-INVESTIGATION.ja.md)を参照。
+以下の11/9実測・Windows採取手順は過去成果として維持する。
+
 ## 状態と作業範囲（2026-11-09）
 
 - 管理Issue: https://github.com/SPSoft-Takeshi/crow-loop-v2/issues/11

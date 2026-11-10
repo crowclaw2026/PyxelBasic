@@ -1,0 +1,10 @@
+[Unit]
+Description=PyxelBasic evidence-triggered LLM investigation
+
+[Service]
+Type=oneshot
+WorkingDirectory=/home/take/projects/spsoft/PyxelBasic
+Environment=PATH=/home/take/.npm-global/bin:/home/take/.local/bin:/usr/local/bin:/usr/bin:/bin
+ExecStart=/usr/bin/python3 /home/take/projects/spsoft/PyxelBasic/tools/judge_stall.py --state-dir /home/take/.local/state/crow-pyxelbasic
+TimeoutStartSec=12min
+UMask=0077

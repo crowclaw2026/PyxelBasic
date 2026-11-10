@@ -1,0 +1,22 @@
+[Unit]
+Description=PyxelBasic continuous no-LLM soak investigation (Issue 11)
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+WorkingDirectory=/home/take/projects/spsoft/PyxelBasic
+ExecStart=/usr/bin/python3 /home/take/projects/spsoft/PyxelBasic/tools/monitor_stall.py --state-dir /home/take/.local/state/crow-pyxelbasic --seconds 1200
+Restart=always
+RestartSec=15
+Nice=10
+CPUWeight=10
+CPUQuota=75%
+MemoryHigh=512M
+MemoryMax=640M
+TasksMax=64
+KillMode=control-group
+TimeoutStopSec=10
+UMask=0077
+
+[Install]
+WantedBy=default.target

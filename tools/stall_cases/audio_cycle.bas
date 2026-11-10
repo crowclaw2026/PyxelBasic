@@ -1,0 +1,8 @@
+10 REM Diagnostic: repeatedly interrupt, resume, stop and restart BGM
+20 PLAY LOOP "T120 O2 L8 C E G E C E G E"
+30 FOR N=1 TO 120
+40 IF N=30 THEN PLAY CH 0,"T160 O4 L16 C E G > C"
+50 IF N=90 THEN PLAY STOP
+60 VSYNC
+70 NEXT N
+80 GOTO 20

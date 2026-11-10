@@ -60,8 +60,8 @@ def main():
                         help='診断限定でPyxel録画秒数を上書き（比較用、既定は変更なし）')
     parser.add_argument('app_args', nargs=argparse.REMAINDER)
     args = parser.parse_args()
-    if not 0 < args.seconds <= 300:
-        parser.error('--seconds は 0 より大きく 300 以下にしてください')
+    if not 0 < args.seconds <= 3600:
+        parser.error('--seconds は 0 より大きく 3600 以下にしてください')
     if args.capture_sec is not None and not 0 <= args.capture_sec <= 30:
         parser.error('--capture-sec は 0 から 30 にしてください')
     from main import build_parser
@@ -98,6 +98,7 @@ def main():
         started, cpu_started = time.perf_counter(), time.process_time()
         started_at = datetime.now(timezone.utc).isoformat()
         last_frame, next_sample = started, started
+        peak_update = peak_draw = peak_frame = 0.0
 
         def sample(now):
             return {"at_utc": datetime.now(timezone.utc).isoformat(),
@@ -108,17 +109,22 @@ def main():
                     "gfx_queue": len(getattr(app.gfx_queue, '_dq', ())),
                     "audio_queue": len(getattr(app.audio_queue, '_dq', ())),
                     "gosub_depth": len(app.session.interp.gosub_stack),
-                    "for_depth": len(app.session.interp.for_stack)}
+                    "for_depth": len(app.session.interp.for_stack),
+                    "max_update_ms": peak_update * 1000,
+                    "max_draw_ms": peak_draw * 1000,
+                    "max_frame_ms": peak_frame * 1000}
 
         def update():
-            nonlocal last_frame, next_sample
+            nonlocal last_frame, next_sample, peak_update, peak_frame
             faulthandler.dump_traceback_later(2, repeat=True)
             now = time.perf_counter()
             intervals.append(now - last_frame)
+            peak_frame = max(peak_frame, now - last_frame)
             last_frame = now
             original_update()
             ended = time.perf_counter()
             update_times.append(ended - now)
+            peak_update = max(peak_update, ended - now)
             if ended >= next_sample:
                 item = sample(ended)
                 samples.append(item)
@@ -130,9 +136,11 @@ def main():
                 pyxel.quit()
 
         def draw():
+            nonlocal peak_draw
             now = time.perf_counter()
             original_draw()
             draw_times.append(time.perf_counter() - now)
+            peak_draw = max(peak_draw, draw_times[-1])
 
         finished = False
 

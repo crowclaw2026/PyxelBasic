@@ -1,0 +1,10 @@
+[Unit]
+Description=Check local PyxelBasic event queue (idle does not call LLM)
+
+[Timer]
+OnBootSec=2min
+OnUnitInactiveSec=1min
+Unit=crow-pyxelbasic-judge.service
+
+[Install]
+WantedBy=timers.target
