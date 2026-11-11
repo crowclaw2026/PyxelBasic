@@ -1,0 +1,66 @@
+[
+  {
+    "case": "audio-cycle-main",
+    "run": "run-20261110T233406.638273Z-audio-cycle-main",
+    "median_60_120_rss_bytes": 138293248,
+    "median_1080_1140_rss_bytes": 140918784,
+    "median_rss_delta_mib": 2.50390625,
+    "result_sha256": "970bb6e1c9216617442e022b41385c62db0b2bd5a4ddbd86116a7af1adc19548"
+  },
+  {
+    "case": "audio-cycle-thread",
+    "run": "run-20261110T235410.479432Z-audio-cycle-thread",
+    "median_60_120_rss_bytes": 138379264,
+    "median_1080_1140_rss_bytes": 141056000.0,
+    "median_rss_delta_mib": 2.552734375,
+    "result_sha256": "a37cf7678c3abb8a44b7689c915a19ba6555066044caf366bb2c46b0210e1d37"
+  },
+  {
+    "case": "cube-main",
+    "run": "run-20261111T003418.431443Z-cube-main",
+    "median_60_120_rss_bytes": 138117120,
+    "median_1080_1140_rss_bytes": 140746752,
+    "median_rss_delta_mib": 2.5078125,
+    "result_sha256": "49865cfab0e9e15cb712490abf3fc3db33d17e74215e9a0e7f5dc0cc3a71db53"
+  },
+  {
+    "case": "idle",
+    "run": "run-20261111T011426.118044Z-idle",
+    "median_60_120_rss_bytes": 137854976,
+    "median_1080_1140_rss_bytes": 140517376,
+    "median_rss_delta_mib": 2.5390625,
+    "result_sha256": "85236da27702d36db9625e57690df7ce1e98319598e4d020bd3a76daf5bb6448"
+  },
+  {
+    "case": "idle-no-capture",
+    "run": "run-20261111T005422.377960Z-idle-no-capture",
+    "median_60_120_rss_bytes": 100474880,
+    "median_1080_1140_rss_bytes": 103129088,
+    "median_rss_delta_mib": 2.53125,
+    "result_sha256": "a05fcd80142bf27219aacd9ff4fb75bc279ef23ce7aeec129e9caae48cc4795a"
+  },
+  {
+    "case": "particle-main",
+    "run": "run-20261111T013430.008955Z-particle-main",
+    "median_60_120_rss_bytes": 137820160.0,
+    "median_1080_1140_rss_bytes": 126181376,
+    "median_rss_delta_mib": -11.099609375,
+    "result_sha256": "fba410afa4fbea3aa35e17b491c5bd8fcb7f31da558e20fe09e45563d3a100c3"
+  },
+  {
+    "case": "particle-thread",
+    "run": "run-20261110T231402.591083Z-particle-thread",
+    "median_60_120_rss_bytes": 138182656,
+    "median_1080_1140_rss_bytes": 140881920,
+    "median_rss_delta_mib": 2.57421875,
+    "result_sha256": "fc2dbd37ae7f5863af74c719d101941affebed664f3134d1bccbbf84b7875fb3"
+  },
+  {
+    "case": "puzzle-main",
+    "run": "run-20261111T001414.226534Z-puzzle-main",
+    "median_60_120_rss_bytes": 136806400,
+    "median_1080_1140_rss_bytes": 140777472.0,
+    "median_rss_delta_mib": 3.787109375,
+    "result_sha256": "b654df8c0811659028a0a7e1ab14a55c0445cd8ba66863a41a1665b5bd10468d"
+  }
+]

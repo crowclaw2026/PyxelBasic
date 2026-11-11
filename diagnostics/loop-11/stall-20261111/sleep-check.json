@@ -1,0 +1,266 @@
+{
+  "schema_version": 3,
+  "python": "3.12.3",
+  "timing_capacity": 4096,
+  "slow_update_ms": 500,
+  "slow_update_count": 1,
+  "slow_updates_tail": [
+    {
+      "ended_at_utc": "2026-11-11T01:57:07.567104+00:00",
+      "start_elapsed_s": 0.0002229220699518919,
+      "end_elapsed_s": 0.6005922050680965,
+      "wall_ms": 600.3692829981446,
+      "thread_cpu_ms": 0.3049330000000072,
+      "process_cpu_ms": 1.8998349999999886,
+      "non_cpu_wall_ms": 600.0643499981446,
+      "line": 0,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-slow-clock-check.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 176526,
+          "user_usec": 144430,
+          "system_usec": 32095,
+          "nice_usec": 0,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 6,
+          "nr_throttled": 1,
+          "throttled_usec": 16781,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    }
+  ],
+  "started_at_utc": "2026-11-11T01:57:06.966507+00:00",
+  "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+  "pyxel": "2.9.5",
+  "app_args": [],
+  "requested_seconds": 3.0,
+  "capture_sec_override": null,
+  "elapsed_s": 3.0024477280676365,
+  "cpu_s": 0.29181670400000004,
+  "update": {
+    "count": 145,
+    "p50_ms": 0.2517811954021454,
+    "p95_ms": 0.31781592406332493,
+    "p99_ms": 0.3496508579701185,
+    "max_ms": 600.3692829981446,
+    "retained_count": 145,
+    "quantile_scope": "whole-run"
+  },
+  "draw": {
+    "count": 144,
+    "p50_ms": 0.5102069117128849,
+    "p95_ms": 0.6054630503058434,
+    "p99_ms": 0.6267058197408915,
+    "max_ms": 0.6315219216048717,
+    "retained_count": 144,
+    "quantile_scope": "whole-run"
+  },
+  "frame_interval": {
+    "count": 145,
+    "p50_ms": 16.78232289850712,
+    "p95_ms": 17.671667970716953,
+    "p99_ms": 18.249449087306857,
+    "max_ms": 615.9873818978667,
+    "retained_count": 145,
+    "quantile_scope": "whole-run"
+  },
+  "samples": [
+    {
+      "at_utc": "2026-11-11T01:57:07.567589+00:00",
+      "elapsed_s": 0.6005922050680965,
+      "cpu_s": 0.0027036430000000056,
+      "rss_bytes": 99024896,
+      "mode": "EDIT",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-slow-clock-check.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 177032,
+          "user_usec": 144844,
+          "system_usec": 32187,
+          "nice_usec": 0,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 6,
+          "nr_throttled": 1,
+          "throttled_usec": 16781,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "timing_retained": {
+        "update": 1,
+        "draw": 0,
+        "frame_interval": 1
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 600.3692829981446,
+      "max_draw_ms": 0.0,
+      "max_frame_ms": 0.2229220699518919
+    },
+    {
+      "at_utc": "2026-11-11T01:57:08.583223+00:00",
+      "elapsed_s": 1.6167087750509381,
+      "cpu_s": 0.10964772199999998,
+      "rss_bytes": 101445632,
+      "mode": "EDIT",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-slow-clock-check.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 284986,
+          "user_usec": 207355,
+          "system_usec": 77630,
+          "nice_usec": 0,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 16,
+          "nr_throttled": 1,
+          "throttled_usec": 16781,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "timing_retained": {
+        "update": 62,
+        "draw": 61,
+        "frame_interval": 62
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 600.3692829981446,
+      "max_draw_ms": 0.619497848674655,
+      "max_frame_ms": 615.9873818978667
+    },
+    {
+      "at_utc": "2026-11-11T01:57:09.583281+00:00",
+      "elapsed_s": 2.6167538119480014,
+      "cpu_s": 0.22834206399999998,
+      "rss_bytes": 105385984,
+      "mode": "EDIT",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-slow-clock-check.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 405143,
+          "user_usec": 291362,
+          "system_usec": 113780,
+          "nice_usec": 0,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 26,
+          "nr_throttled": 1,
+          "throttled_usec": 16781,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "timing_retained": {
+        "update": 122,
+        "draw": 121,
+        "frame_interval": 122
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 600.3692829981446,
+      "max_draw_ms": 0.6315219216048717,
+      "max_frame_ms": 615.9873818978667
+    },
+    {
+      "at_utc": "2026-11-11T01:57:09.968947+00:00",
+      "elapsed_s": 3.0024477280676365,
+      "cpu_s": 0.278233202,
+      "rss_bytes": 106967040,
+      "mode": "EDIT",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-slow-clock-check.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 455790,
+          "user_usec": 323739,
+          "system_usec": 132051,
+          "nice_usec": 0,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 30,
+          "nr_throttled": 1,
+          "throttled_usec": 16781,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "timing_retained": {
+        "update": 145,
+        "draw": 144,
+        "frame_interval": 145
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 600.3692829981446,
+      "max_draw_ms": 0.6315219216048717,
+      "max_frame_ms": 615.9873818978667
+    }
+  ],
+  "session_thread_alive": false,
+  "screen": [
+    "PyxelBasic v0.2.1                                               ",
+    "(c) 2025-2026 Takeshi Maeda (SPSoft)                            ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                "
+  ]
+}

@@ -69,6 +69,15 @@ Windows側の証拠が後から得られたら、計測を続けたまま同条�
 `cpu.max` / `cpu.stat` を追加し、制限による待ちを差分で調べる。
 監視親と稼働中の子は再起動せず、新しい子起動から診断変更が適用される。
 
+## 2秒超イベント後の計測（2026-11-11）
+
+`diagnostics/loop-11/stall-20261111/REPORT.ja.md`にparticle-mainの実測を保存。
+ピーク窓はwall約2.265秒にprocess CPU約0.155秒、当該cgroupのthrottling増分0。
+ホスト競合/待機の切分け用にschema3では500ms以上のupdateを`.slow.jsonl`へ保存する。
+wall/thread CPU/process CPU、終了時cgroup/schedstatを含む。結果JSON内は末尾64件。
+`non_cpu_wall_ms`は原因の断定ではない。定期サンプルのschedstat差分も窓幅に注意する。
+監視サービス・設定・ケースは維持し、次回子起動から新診断器を使用する。
+
 ## 検証
 
 `python -m unittest discover -s tests -p test_stall_monitor.py -v`:

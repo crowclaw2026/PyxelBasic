@@ -89,12 +89,23 @@ def cgroup_cpu():
         return None
 
 
+def thread_schedstat():
+    """Linux cumulative runtime/runqueue wait for the calling thread, if exposed."""
+    try:
+        values = Path('/proc/thread-self/schedstat').read_text().split()
+        return dict(zip(('runtime_ns', 'runqueue_wait_ns', 'timeslices'), map(int, values)))
+    except (OSError, ValueError):
+        return None
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--seconds', type=float, default=30)
     parser.add_argument('--output', type=Path, required=True)
     parser.add_argument('--timing-capacity', type=int, default=4096,
                         help='フレーム時間保持上限。0は旧方式同等の全件保持（比較専用）')
+    parser.add_argument('--slow-update-ms', type=float, default=500,
+                        help='壁時計/スレッドCPU時間を詳細記録するupdate閾値（既定500ms）')
     parser.add_argument('--capture-sec', type=int, default=None,
                         help='診断限定でPyxel録画秒数を上書き（比較用、既定は変更なし）')
     parser.add_argument('app_args', nargs=argparse.REMAINDER)
@@ -105,6 +116,8 @@ def main():
         parser.error('--capture-sec は 0 から 30 にしてください')
     if not 0 <= args.timing_capacity <= 1000000:
         parser.error('--timing-capacity は 0 から 1000000 にしてください')
+    if not 0 <= args.slow_update_ms <= 10000:
+        parser.error('--slow-update-ms は 0 から 10000 にしてください')
     from main import build_parser
     app_args = args.app_args[1:] if args.app_args[:1] == ['--'] else args.app_args
     options = build_parser().parse_args(app_args)
@@ -114,7 +127,7 @@ def main():
     if options.workdir:
         options.workdir = str(Path(options.workdir).resolve())
     # 結果の上書きを避け、出力不能はウィンドウ起動前に検出する。
-    with args.output.open('x', encoding='utf-8') as out, args.output.with_suffix('.samples.jsonl').open('x', encoding='utf-8') as sample_out:
+    with args.output.open('x', encoding='utf-8') as out, args.output.with_suffix('.samples.jsonl').open('x', encoding='utf-8') as sample_out, args.output.with_suffix('.slow.jsonl').open('x', encoding='utf-8') as slow_out:
         import pyxel
         from pyxelbasic.app import App
         if args.capture_sec is not None:
@@ -136,6 +149,8 @@ def main():
             parser.error('プログラムを読み込めませんでした。結果は有効な負荷計測ではありません')
         update_times, draw_times, intervals = [TimingSeries(args.timing_capacity or None) for _ in range(3)]
         samples = []
+        slow_updates = deque(maxlen=64)
+        slow_update_count = 0
         original_update, original_draw = app.update, app.draw
         started, cpu_started = time.perf_counter(), time.process_time()
         started_at = datetime.now(timezone.utc).isoformat()
@@ -147,6 +162,7 @@ def main():
                     "elapsed_s": now - started, "cpu_s": time.process_time() - cpu_started,
                     "rss_bytes": rss_bytes(), "mode": app.session.mode,
                     "cgroup_cpu": cgroup_cpu(),
+                    "thread_schedstat": thread_schedstat(),
                     "timing_retained": {k: len(v.values) for k, v in
                                         [('update', update_times), ('draw', draw_times), ('frame_interval', intervals)]},
                     "vm_state": app.session.interp.state, "line": app.session.interp.cur_line,
@@ -160,16 +176,31 @@ def main():
                     "max_frame_ms": peak_frame * 1000}
 
         def update():
-            nonlocal last_frame, next_sample, peak_update, peak_frame
+            nonlocal last_frame, next_sample, peak_update, peak_frame, slow_update_count
             faulthandler.dump_traceback_later(2, repeat=True)
+            thread_started, process_started = time.thread_time(), time.process_time()
             now = time.perf_counter()
             intervals.append(now - last_frame)
             peak_frame = max(peak_frame, now - last_frame)
             last_frame = now
             original_update()
             ended = time.perf_counter()
+            thread_s, process_s = time.thread_time() - thread_started, time.process_time() - process_started
             update_times.append(ended - now)
             peak_update = max(peak_update, ended - now)
+            if (ended - now) * 1000 >= args.slow_update_ms:
+                slow_update_count += 1
+                detail = {'ended_at_utc': datetime.now(timezone.utc).isoformat(),
+                          'start_elapsed_s': now - started, 'end_elapsed_s': ended - started,
+                          'wall_ms': (ended - now) * 1000, 'thread_cpu_ms': thread_s * 1000,
+                          'process_cpu_ms': process_s * 1000,
+                          'non_cpu_wall_ms': max(0, ended - now - thread_s) * 1000,
+                          'line': app.session.interp.cur_line, 'cgroup_cpu_end': cgroup_cpu(),
+                          'thread_schedstat_end': thread_schedstat(),
+                          'note': 'Non-CPU wall time includes blocking/preemption; not a cause attribution.'}
+                slow_updates.append(detail)
+                slow_out.write(json.dumps(detail, ensure_ascii=False) + '\n')
+                slow_out.flush()
             if ended >= next_sample:
                 item = sample(ended)
                 samples.append(item)
@@ -203,8 +234,10 @@ def main():
                 app.session_thread.join(timeout=1)
             ended = time.perf_counter()
             samples.append(sample(ended))
-            result = {"schema_version": 2, "python": platform.python_version(),
+            result = {"schema_version": 3, "python": platform.python_version(),
                       "timing_capacity": args.timing_capacity,
+                      "slow_update_ms": args.slow_update_ms, "slow_update_count": slow_update_count,
+                      "slow_updates_tail": list(slow_updates),
                       "started_at_utc": started_at,
                       "platform": platform.platform(), "pyxel": pyxel.VERSION,
                       "app_args": app_args, "requested_seconds": args.seconds,
