@@ -1,0 +1,409 @@
+test_tokenize
+  OK   tokenize IF
+  OK   tokenize LEFT$
+test_print_expr
+  OK   print arithmetic
+test_for_next
+  OK   for/next sum
+  OK   for var final
+test_for_step
+  OK   for step down
+test_if_goto
+  OK   if then goto
+test_if_implicit_goto
+  OK   if implicit goto
+test_if_else
+  OK   if-else true branch
+  OK   if-else false branch
+test_if_else_implicit_goto
+  OK   if-else implicit goto
+test_multi_statement_seq
+  OK   colon sequence
+  OK   colon vars set
+test_multi_statement_for_next
+  OK   one-line for/next
+test_multi_statement_gosub_continue
+  OK   gosub mid-line continue
+test_if_then_multi_and_false_skips_rest
+  OK   if-then multi true
+  OK   if-then false skips clause
+test_if_then_gosub_clause_resumes
+  OK   then gosub:goto
+  OK   then stmt:gosub:stmt tail
+  OK   else gosub:goto
+test_if_then_for_clause_loops
+  OK   for loops inside then clause
+test_if_compiled_edges
+  OK   nested if in then clause
+  OK   implicit goto via else
+  OK   untaken empty then is silent
+  OK   taken empty then errors
+  OK   goto targets an if line
+test_multi_statement_data_unaffected
+  OK   data with colon read
+test_direct_multi_statement
+  OK   direct colon sequence
+  OK   direct colon vars set
+test_direct_if_then_multi
+  OK   direct if-then multi
+test_nested_if_else_binds_inner
+  OK   nested else->inner, outer false (direct)
+  OK   nested else->inner, inner false (direct)
+  OK   nested double else, outer false (direct)
+  OK   nested else->inner, inner false (compiled)
+  OK   nested double else, outer false (compiled)
+test_direct_for_next_no_loop
+  OK   direct for/next runs once
+test_string_funcs
+  OK   LEFT$
+  OK   RIGHT$
+  OK   MID$
+  OK   LEN
+  OK   CHR$/ASC
+test_string_funcs_edge
+  OK   LEFT$ negative
+  OK   LEFT$ zero
+  OK   MID$ start 0 -> 1
+  OK   MID$ start 0 with len
+  OK   MID$ negative len
+  OK   RIGHT$ negative
+test_round_half_away_from_zero
+  OK   round positive ties up
+  OK   round negative ties down
+test_numeric_array_rejects_string
+  OK   numeric array string assign
+  OK   string array number assign
+test_hex
+  OK   &H literal
+  OK   &H literal case
+  OK   HEX$
+  OK   HEX$ negative
+  OK   VAL &H
+  OK   VAL bad hex / decimal
+test_hex_literal_error
+  OK   &H without digits raises 122
+test_hex_renum_roundtrip
+  OK   RENUM keeps &H on THEN line
+  OK   RENUM keeps &H on plain line
+test_arg_count_error
+  OK   HEX$() no arg
+  OK   VAL() no arg
+  OK   LEN() no arg
+  OK   MID$ too few
+  OK   MID$ too many
+  OK   POINT too few
+  OK   SIN() math no arg
+  OK   HEX$ too many
+  OK   valid arg counts still work
+test_array
+  OK   array 1d
+test_array_2d
+  OK   array 2d
+test_gosub
+  OK   gosub/return
+test_data_read
+  OK   data/read
+test_data_signed_values
+  OK   data signed values
+test_data_unquoted_is_error
+  OK   unquoted DATA raises 403
+test_read_into_array
+  OK   read into array
+test_restore_line
+  OK   restore to line
+test_restore_line_not_data
+  OK   restore non-data line errors
+test_input
+  OK   input
+test_logical
+  OK   logical and/or/not
+test_graphics
+  OK   pset cmd
+  OK   line cmd
+test_cls_args
+  OK   cls masks
+test_cls_mask_range
+  OK   cls 1 ok
+  OK   cls 3 ok
+  OK   cls 0 errors
+  OK   cls 4 errors
+  OK   cls -1 errors
+test_list_range
+  OK   list all
+  OK   list single
+  OK   list both
+  OK   list from-top
+  OK   list to-end
+test_lineb
+  OK   lineb cmd
+  OK   linebf cmd
+test_tri
+  OK   tri cmd
+  OK   trif cmd
+test_circle_full
+  OK   circle outline = ellib
+  OK   circlef fill = elli
+test_circle_ratio
+  OK   ratio>1 tall
+  OK   ratio<1 wide
+test_circle_arc
+  OK   arc uses line segments
+  OK   arc emits no full ellipse
+test_point
+  OK   point reads set pixel
+  OK   point reads empty pixel
+test_palette
+  OK   palette 2-arg form
+  OK   palette 4-arg form
+  OK   palette reset
+test_palette_range
+  OK   palette n=16
+  OK   palette n=-1
+  OK   palette component 256
+  OK   palette component -1
+  OK   palette rgb overflow
+  OK   palette 3 args
+  OK   palette max values ok
+test_palette_new_resets
+  OK   NEW issues palette_reset
+test_palette_framebreak
+  OK   PALETTE yields frame
+test_set_sprite
+  OK   set_sprite no/len
+  OK   set_sprite decode
+  OK   set_sprite short padded
+  OK   set_sprite two patterns
+  OK   set_sprite lowercase
+test_set_sprite_errors
+  OK   set invalid char
+  OK   set no out of range
+  OK   set overflow
+test_put_sprite
+  OK   put default colkey -1
+  OK   put with colkey
+  OK   put no 255 ok for 16x16
+test_put_sprite_off
+  OK   put off records id
+  OK   put off extra args error
+test_put_sprite_errors
+  OK   put id oob
+  OK   put size oob
+  OK   put no oob 8x8
+  OK   put no oob 16x16
+  OK   put colkey oob
+test_sprite_framebreak
+  OK   PUT SPRITE yields frame
+  OK   SET SPRITE does not yield
+test_sprite_table
+  OK   table empty snapshot
+  OK   table snapshot ascending by id
+  OK   table entry fields
+  OK   table off disables
+  OK   table clear empties
+test_sprite_geometry
+  OK   8x8 #0..4
+  OK   8x8 #1023
+  OK   16x16 #0/1/16/255
+  OK   16x16 aligns 8x8*4
+test_play_channels
+  OK   play positional
+  OK   play empty-string slot
+  OK   play omitted slot
+  OK   play loop flag
+test_play_ch
+  OK   play ch
+  OK   play loop ch
+test_play_stop
+  OK   play stop all
+  OK   play stop one
+  OK   play stop many
+test_play_function
+  OK   play() reports playing
+  OK   play() reports stopped
+test_play_invalid_mml
+  OK   invalid mml raises 409
+test_play_errors
+  OK   play ch oob
+  OK   play stop ch oob
+  OK   play() ch oob
+  OK   play ch no mml
+  OK   play too many slots
+test_audio_resume_gating
+  OK   audio resume gating
+test_exception_safety_net
+  OK   safety net reports: SET SPRITE "ffffffff"
+  OK   safety net drops to edit: SET SPRITE "ffffffff"
+  OK   safety net reports: PUT SPRITE "x", (0,0), 0, 0
+  OK   safety net drops to edit: PUT SPRITE "x", (0,0), 0, 0
+  OK   safety net reports: PLAY CH "x", "m"
+  OK   safety net drops to edit: PLAY CH "x", "m"
+  OK   safety net reports: PLAY STOP "x"
+  OK   safety net drops to edit: PLAY STOP "x"
+  OK   safety net reports: LOCATE "a", 1
+  OK   safety net drops to edit: LOCATE "a", 1
+test_command_queue_pget
+  OK   queue pget round-trip
+  OK   queue pget after stop
+test_vsync_noop
+  OK   vsync no-op runs clean
+  OK   vsync no-op raises nothing
+  OK   vsync list still prints
+test_vsync_threaded_no_framebreak
+  OK   threaded frame_break empty
+  OK   threaded never yields
+test_vsync_main_mode_control
+  OK   main frame_break has PRINT
+  OK   vsync list shows words
+  OK   vsync list not none
+  OK   vsync clear empties
+  OK   vsync word on
+  OK   vsync word off
+  OK   vsync reset restores
+test_vsync_main_mode_yield_on_eval
+  OK   main mode yields on frame-break
+test_vsync_if_on_fires_on_compiled_if
+  OK   VSYNC IF ON fires on compiled IF
+test_session_run_frame_yields
+  OK   run_frame yields after frame-break
+  OK   session still running
+  OK   next frame advances
+  OK   session ends
+test_files_command
+  OK   files one row fits
+  OK   files sorted, extension shown, case kept
+  OK   files pattern filters
+  OK   files pattern by extension
+test_save_load_extensions
+  OK   save appends default ext
+  OK   save keeps a given extension
+  OK   save does not double-append
+  OK   load keeps a given extension
+  OK   load falls back to .pxbas
+  OK   first priority wins
+  OK   literal name wins over appended ext
+  OK   dotted name appends extension
+  OK   custom order picks .pxbas first
+  OK   not found shows typed name
+test_filestore_name_resolution
+  OK   save appends first ext
+  OK   save keeps a given ext
+  OK   save keeps a dotted name
+  OK   load literal name wins
+  OK   load appends by priority
+  OK   load missing returns typed name
+  OK   load first priority wins
+test_session_filestore_injection
+  OK   injected store receives save
+  OK   save message uses stored name
+  OK   load message uses stored name
+  OK   loaded program restored
+  OK   files lists injected store
+  OK   not found shows typed name
+test_web_filestore
+  OK   web save appends ext
+  OK   web stored text
+  OK   web load resolves ext
+  OK   web load missing
+  OK   web list names
+  OK   web write failure raises
+test_break_stops_sound
+  OK   running before break
+  OK   break returns to edit
+  OK   break issued play_stop
+test_inkey_flush_on_run
+  OK   inkey flushed at run start
+test_break_during_input_wait
+  OK   waiting at INPUT
+  OK   break aborts INPUT wait
+  OK   break drops interp to edit
+  OK   break in INPUT stops sound
+  OK   break in INPUT shows message
+test_direct_error_resets_state
+  OK   direct error resets state
+  OK   direct error printed
+test_direct_graphics_immediate
+  OK   direct gfx immediate
+  OK   direct gfx noop methods
+test_mod_fraction
+  OK   mod by fraction -> error
+  OK   mod integerizes operands
+test_renum
+  OK   renum numbers
+  OK   renum goto ref
+test_renum_keeps_rem
+  OK   renum keeps REM text
+  OK   renum keeps plain line
+  OK   renum remaps goto
+test_renum_else_restore
+  OK   renum remaps THEN and ELSE
+  OK   renum remaps RESTORE
+test_store_uppercases_code
+  OK   upper code, keep string
+  OK   upper REM, keep comment
+  OK   upper plain
+test_runtime_input_state
+  OK   input default
+  OK   input updated
+  OK   input button on/off
+  OK   input button oob
+test_runtime_command_queue_order
+  OK   queue applies in order
+  OK   queue empty after drain
+test_runtime_command_queue_backpressure
+  OK   backpressure delivers all in order
+test_input_ring
+  OK   ring push ok
+  OK   ring full drops newest
+  OK   ring drains in order
+  OK   ring empty after drain
+test_key_state_stick_button
+  OK   stick up+left bits
+  OK   button0 down
+  OK   button1 up
+  OK   stick after release
+  OK   repeat no level change
+test_key_state_inkey_typeahead
+  OK   inkey pop 1
+  OK   inkey pop 2
+  OK   inkey empty
+test_key_state_typeahead_bound
+  OK   typeahead holds at most the cap
+  OK   typeahead keeps the oldest chars
+  OK   typeahead drops the newest overflow
+  OK   typeahead accepts after drain
+test_textscreen_print_wrap
+  OK   ts print line
+  OK   ts wrap row0
+  OK   ts wrap row1
+  OK   ts wrap continuation
+test_textscreen_scroll_length_invariant
+  OK   ts scroll length invariant
+  OK   ts scroll keeps recent
+test_textscreen_logical_text
+  OK   ts logical text joins wrap
+  OK   ts logical span
+test_textscreen_snapshot
+  OK   snap content
+  OK   snap cursor
+  OK   snap is immutable
+  OK   snap version bumps on change
+test_editor_type_delete
+  OK   editor typed
+  OK   editor insert mid
+  OK   editor backspace
+  OK   editor delete_at
+test_editor_overtype
+  OK   editor overtype
+test_editor_reflow_wrap
+  OK   editor wrapped text
+  OK   editor wrapped continuation
+  OK   editor reflow on insert
+test_dispatch_registration
+  OK   dispatch statements set
+  OK   dispatch functions set
+test_alltest_sample
+  OK   alltest reaches END
+  OK   alltest no failures (F=0)
+  OK   alltest no NG/ERROR lines
+
+Result: 300 passed, 0 failed

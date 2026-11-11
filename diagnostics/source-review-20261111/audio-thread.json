@@ -1,0 +1,243 @@
+{
+  "schema_version": 2,
+  "python": "3.12.3",
+  "timing_capacity": 4096,
+  "started_at_utc": "2026-11-11T01:46:03.907794+00:00",
+  "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+  "pyxel": "2.9.5",
+  "app_args": [
+    "--workdir",
+    "tools/stall_cases",
+    "--load",
+    "audio_cycle",
+    "--run",
+    "--exec-mode",
+    "thread"
+  ],
+  "requested_seconds": 3.0,
+  "capture_sec_override": null,
+  "elapsed_s": 3.0655968729406595,
+  "cpu_s": 0.32224029400000004,
+  "update": {
+    "count": 181,
+    "p50_ms": 0.052176881581544876,
+    "p95_ms": 0.20862300880253315,
+    "p99_ms": 0.34143985249102116,
+    "max_ms": 0.36777788773179054,
+    "retained_count": 181,
+    "quantile_scope": "whole-run"
+  },
+  "draw": {
+    "count": 180,
+    "p50_ms": 0.19693700596690178,
+    "p95_ms": 0.5511699710041285,
+    "p99_ms": 0.5961810238659382,
+    "max_ms": 0.6645019166171551,
+    "retained_count": 180,
+    "quantile_scope": "whole-run"
+  },
+  "frame_interval": {
+    "count": 181,
+    "p50_ms": 16.849449137225747,
+    "p95_ms": 19.724966026842594,
+    "p99_ms": 22.450671065598726,
+    "max_ms": 22.60274696163833,
+    "retained_count": 181,
+    "quantile_scope": "whole-run"
+  },
+  "samples": [
+    {
+      "at_utc": "2026-11-11T01:46:03.908327+00:00",
+      "elapsed_s": 0.0005433261394500732,
+      "cpu_s": 0.0006820899999999963,
+      "rss_bytes": 99381248,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/openclaw-gateway.service",
+        "cpu_max": "max 100000",
+        "cpu_stat": {
+          "usage_usec": 211761266954,
+          "user_usec": 181236954222,
+          "system_usec": 30524312731,
+          "nice_usec": 3000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 0,
+          "nr_throttled": 0,
+          "throttled_usec": 0,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "timing_retained": {
+        "update": 1,
+        "draw": 0,
+        "frame_interval": 1
+      },
+      "vm_state": "RUN",
+      "line": 40,
+      "gfx_queue": 0,
+      "audio_queue": 1,
+      "gosub_depth": 0,
+      "for_depth": 1,
+      "max_update_ms": 0.32858201302587986,
+      "max_draw_ms": 0.0,
+      "max_frame_ms": 0.21474412642419338
+    },
+    {
+      "at_utc": "2026-11-11T01:46:04.910110+00:00",
+      "elapsed_s": 1.0023262051399797,
+      "cpu_s": 0.10478921499999999,
+      "rss_bytes": 102117376,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/openclaw-gateway.service",
+        "cpu_max": "max 100000",
+        "cpu_stat": {
+          "usage_usec": 211761394406,
+          "user_usec": 181237049956,
+          "system_usec": 30524344449,
+          "nice_usec": 3000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 0,
+          "nr_throttled": 0,
+          "throttled_usec": 0,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "timing_retained": {
+        "update": 61,
+        "draw": 60,
+        "frame_interval": 61
+      },
+      "vm_state": "RUN",
+      "line": 40,
+      "gfx_queue": 0,
+      "audio_queue": 1,
+      "gosub_depth": 0,
+      "for_depth": 1,
+      "max_update_ms": 0.32858201302587986,
+      "max_draw_ms": 0.6645019166171551,
+      "max_frame_ms": 20.553048932924867
+    },
+    {
+      "at_utc": "2026-11-11T01:46:05.925967+00:00",
+      "elapsed_s": 2.0181841091252863,
+      "cpu_s": 0.20906622999999996,
+      "rss_bytes": 106119168,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/openclaw-gateway.service",
+        "cpu_max": "max 100000",
+        "cpu_stat": {
+          "usage_usec": 211761616700,
+          "user_usec": 181237241388,
+          "system_usec": 30524375312,
+          "nice_usec": 3000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 0,
+          "nr_throttled": 0,
+          "throttled_usec": 0,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "timing_retained": {
+        "update": 122,
+        "draw": 121,
+        "frame_interval": 122
+      },
+      "vm_state": "RUN",
+      "line": 70,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 1,
+      "max_update_ms": 0.36777788773179054,
+      "max_draw_ms": 0.6645019166171551,
+      "max_frame_ms": 20.67887200973928
+    },
+    {
+      "at_utc": "2026-11-11T01:46:06.973380+00:00",
+      "elapsed_s": 3.0655968729406595,
+      "cpu_s": 0.316161748,
+      "rss_bytes": 110055424,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/openclaw-gateway.service",
+        "cpu_max": "max 100000",
+        "cpu_stat": {
+          "usage_usec": 211761749983,
+          "user_usec": 181237340333,
+          "system_usec": 30524409650,
+          "nice_usec": 3000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 0,
+          "nr_throttled": 0,
+          "throttled_usec": 0,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "timing_retained": {
+        "update": 181,
+        "draw": 180,
+        "frame_interval": 181
+      },
+      "vm_state": "RUN",
+      "line": 50,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 1,
+      "max_update_ms": 0.36777788773179054,
+      "max_draw_ms": 0.6645019166171551,
+      "max_frame_ms": 22.60274696163833
+    }
+  ],
+  "session_thread_alive": false,
+  "screen": [
+    "PyxelBasic v0.2.1                                               ",
+    "(c) 2025-2026 Takeshi Maeda (SPSoft)                            ",
+    "                                                                ",
+    "LOADED \"audio_cycle.bas\"                                        ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                "
+  ]
+}

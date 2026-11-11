@@ -1,0 +1,83 @@
+{
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "evidence": {
+    "array_rank_corruption": {
+      "array": [
+        [
+          2,
+          2
+        ],
+        [
+          7,
+          [
+            0,
+            0
+          ]
+        ]
+      ],
+      "output": [
+        "?ERROR in line 30: 'int' object is not subscriptable"
+      ]
+    },
+    "resources": {
+      "gosub_after_2000_steps": 2000,
+      "run_cleared_arrays": true,
+      "for_after_2000_steps": 1000,
+      "string_after_20_doublings": 1048576
+    },
+    "queue_exception": {
+      "error": "injected backend failure",
+      "queue_empty": true,
+      "waiter_still_alive": true
+    },
+    "lost_key_release": {
+      "release_dropped": true,
+      "up_still_down": true
+    },
+    "single_statement_cancellation": {
+      "break_pending_while_step_blocked": true,
+      "mode": "RUN"
+    },
+    "one_print_statement": {
+      "characters": 262144,
+      "elapsed_ms": 114.27610390819609,
+      "note": "wall time includes host scheduling; not an OS stall reproduction"
+    },
+    "renum_zero_loses_line": [
+      [
+        10,
+        "PRINT 2"
+      ]
+    ],
+    "uncaught_line_number": "Exceeds the limit (4300 digits) for integer string conversion: value has 5000 digits; use sys.set_int_max_str_digits() to increase the limit",
+    "partial_load_loses_original": {
+      "remaining_program": [
+        [
+          10,
+          "PRINT 1"
+        ]
+      ],
+      "error_reported": true
+    },
+    "cli_nonfinite": {
+      "nan": "nan",
+      "inf": "inf"
+    },
+    "monitor_handoff_race": {
+      "inflight": [
+        "old"
+      ],
+      "pending": [
+        "old",
+        "new"
+      ]
+    },
+    "monitor_error_history": {
+      "final_screen": [
+        "OK"
+      ],
+      "detected": [],
+      "note": "synthetic final state, not live UI reproduction"
+    }
+  }
+}
