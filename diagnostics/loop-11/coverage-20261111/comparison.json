@@ -1,0 +1,54 @@
+[
+  {
+    "mode": "main",
+    "elapsed_s": 30.1429633339867,
+    "cpu_pct": 74.97464224931926,
+    "update": {
+      "count": 227,
+      "p50_ms": 113.82001312449574,
+      "p95_ms": 181.94162100553513,
+      "p99_ms": 242.19883792102337,
+      "max_ms": 244.698871858418,
+      "retained_count": 227,
+      "quantile_scope": "whole-run"
+    },
+    "frame_interval": {
+      "count": 227,
+      "p50_ms": 118.60683700069785,
+      "p95_ms": 185.11742702685297,
+      "p99_ms": 216.8592130765319,
+      "max_ms": 250.78022689558566,
+      "retained_count": 227,
+      "quantile_scope": "whole-run"
+    },
+    "slow_count": 0,
+    "capture_sec_override": 0,
+    "gfx_queue_max_sampled": 0
+  },
+  {
+    "mode": "thread",
+    "elapsed_s": 30.001291192835197,
+    "cpu_pct": 26.923946156454253,
+    "update": {
+      "count": 1791,
+      "p50_ms": 0.10174792259931564,
+      "p95_ms": 0.1925639808177948,
+      "p99_ms": 0.24222908541560173,
+      "max_ms": 5.353686865419149,
+      "retained_count": 1791,
+      "quantile_scope": "whole-run"
+    },
+    "frame_interval": {
+      "count": 1791,
+      "p50_ms": 16.40605996362865,
+      "p95_ms": 22.331658052280545,
+      "p99_ms": 25.200275937095284,
+      "max_ms": 88.0115800537169,
+      "retained_count": 1791,
+      "quantile_scope": "whole-run"
+    },
+    "slow_count": 0,
+    "capture_sec_override": 0,
+    "gfx_queue_max_sampled": 12
+  }
+]

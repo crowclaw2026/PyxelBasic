@@ -1,0 +1,1506 @@
+[
+  {
+    "case": "puzzle-main",
+    "run": "run-20261111T025445.953371Z-puzzle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-11T03:00:41.275750+00:00",
+      "start_elapsed_s": 354.49075680808164,
+      "end_elapsed_s": 355.1189240620006,
+      "wall_ms": 628.1672539189458,
+      "thread_cpu_ms": 154.23530200001778,
+      "process_cpu_ms": 154.72610800003395,
+      "non_cpu_wall_ms": 473.931951918928,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 37886720518,
+          "user_usec": 35053017263,
+          "system_usec": 2833703254,
+          "nice_usec": 33763925000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 928169,
+          "nr_throttled": 215056,
+          "throttled_usec": 3789960755,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 256456124462,
+        "runqueue_wait_ns": 78567965000,
+        "timeslices": 24918
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "previous_sample_elapsed_s": 354.4758060181048,
+    "window_ms": 643.1180438958108,
+    "prelude_ms": 14.950789976865053,
+    "sched_window_ms": {
+      "runtime_ms": 155.605085,
+      "runqueue_wait_ms": 473.918451
+    },
+    "cgroup_window_delta": {
+      "nr_throttled": 1,
+      "throttled_usec": 12175
+    }
+  },
+  {
+    "case": "puzzle-main",
+    "run": "run-20261111T025445.953371Z-puzzle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-11T03:00:50.536995+00:00",
+      "start_elapsed_s": 363.62130545498803,
+      "end_elapsed_s": 364.38016609312035,
+      "wall_ms": 758.8606381323189,
+      "thread_cpu_ms": 145.11902600003168,
+      "process_cpu_ms": 145.7051610000235,
+      "non_cpu_wall_ms": 613.7416121322872,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 37892917726,
+          "user_usec": 35059199572,
+          "system_usec": 2833718153,
+          "nice_usec": 33770095000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 928262,
+          "nr_throttled": 215135,
+          "throttled_usec": 3791652167,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 262617949998,
+        "runqueue_wait_ns": 81320858352,
+        "timeslices": 25410
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "previous_sample_elapsed_s": 362.8128516259603,
+    "window_ms": 1567.3144671600312,
+    "prelude_ms": 808.4538290277123,
+    "sched_window_ms": {
+      "runtime_ms": 752.36751,
+      "runqueue_wait_ms": 783.310096
+    },
+    "cgroup_window_delta": {
+      "nr_throttled": 10,
+      "throttled_usec": 222801
+    }
+  },
+  {
+    "case": "puzzle-main",
+    "run": "run-20261111T025445.953371Z-puzzle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-11T03:01:08.325488+00:00",
+      "start_elapsed_s": 381.4713902589865,
+      "end_elapsed_s": 382.16866271500476,
+      "wall_ms": 697.2724560182542,
+      "thread_cpu_ms": 161.1585300000229,
+      "process_cpu_ms": 161.73516800000698,
+      "non_cpu_wall_ms": 536.1139260182313,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 37905567881,
+          "user_usec": 35071829844,
+          "system_usec": 2833738037,
+          "nice_usec": 33782712000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 928440,
+          "nr_throttled": 215298,
+          "throttled_usec": 3795122214,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 275197131591,
+        "runqueue_wait_ns": 85886661254,
+        "timeslices": 26290
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "previous_sample_elapsed_s": 381.35008299699984,
+    "window_ms": 818.5797180049121,
+    "prelude_ms": 121.30726198665798,
+    "sched_window_ms": {
+      "runtime_ms": 258.110253,
+      "runqueue_wait_ms": 560.637435
+    },
+    "cgroup_window_delta": {
+      "nr_throttled": 2,
+      "throttled_usec": 49372
+    }
+  },
+  {
+    "case": "puzzle-main",
+    "run": "run-20261111T025445.953371Z-puzzle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-11T03:01:16.223953+00:00",
+      "start_elapsed_s": 388.91720299003646,
+      "end_elapsed_s": 390.04571471898817,
+      "wall_ms": 1128.5117289517075,
+      "thread_cpu_ms": 176.35284599998613,
+      "process_cpu_ms": 177.2543669999891,
+      "non_cpu_wall_ms": 952.1588829517214,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 37910448044,
+          "user_usec": 35076705546,
+          "system_usec": 2833742498,
+          "nice_usec": 33787586000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 928519,
+          "nr_throttled": 215357,
+          "throttled_usec": 3796359297,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 280049060437,
+        "runqueue_wait_ns": 88638260464,
+        "timeslices": 26705
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "previous_sample_elapsed_s": 387.978341873968,
+    "window_ms": 2067.372845020145,
+    "prelude_ms": 938.8611160684377,
+    "sched_window_ms": {
+      "runtime_ms": 885.780961,
+      "runqueue_wait_ms": 1173.65684
+    },
+    "cgroup_window_delta": {
+      "nr_throttled": 10,
+      "throttled_usec": 225015
+    }
+  },
+  {
+    "case": "puzzle-main",
+    "run": "run-20261111T025445.953371Z-puzzle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-11T03:01:27.483803+00:00",
+      "start_elapsed_s": 400.74419603007846,
+      "end_elapsed_s": 401.3269786320161,
+      "wall_ms": 582.7826019376516,
+      "thread_cpu_ms": 178.4162330000072,
+      "process_cpu_ms": 178.85412100002895,
+      "non_cpu_wall_ms": 404.36636893764444,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 37918287317,
+          "user_usec": 35084514880,
+          "system_usec": 2833772436,
+          "nice_usec": 33795387000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 928631,
+          "nr_throttled": 215457,
+          "throttled_usec": 3798414705,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 287842862711,
+        "runqueue_wait_ns": 91655029108,
+        "timeslices": 27345
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "previous_sample_elapsed_s": 400.7366586700082,
+    "window_ms": 590.3199620079249,
+    "prelude_ms": 7.53736007027328,
+    "sched_window_ms": {
+      "runtime_ms": 179.130134,
+      "runqueue_wait_ms": 421.288351
+    },
+    "cgroup_window_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "case": "puzzle-main",
+    "run": "run-20261111T025445.953371Z-puzzle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-11T03:01:36.528055+00:00",
+      "start_elapsed_s": 409.2923972969875,
+      "end_elapsed_s": 410.371231330093,
+      "wall_ms": 1078.8340331055224,
+      "thread_cpu_ms": 175.3734270000109,
+      "process_cpu_ms": 176.22309299997596,
+      "non_cpu_wall_ms": 903.4606061055115,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 37924033319,
+          "user_usec": 35090237635,
+          "system_usec": 2833795683,
+          "nice_usec": 33801108000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 928722,
+          "nr_throttled": 215528,
+          "throttled_usec": 3799911137,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 293555925811,
+        "runqueue_wait_ns": 94646315103,
+        "timeslices": 27798
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "previous_sample_elapsed_s": 409.0016807669308,
+    "window_ms": 1369.5505631621927,
+    "prelude_ms": 290.7165300566703,
+    "sched_window_ms": {
+      "runtime_ms": 299.465399,
+      "runqueue_wait_ms": 1069.180833
+    },
+    "cgroup_window_delta": {
+      "nr_throttled": 2,
+      "throttled_usec": 50381
+    }
+  },
+  {
+    "case": "puzzle-main",
+    "run": "run-20261111T025445.953371Z-puzzle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-11T03:01:42.214651+00:00",
+      "start_elapsed_s": 415.31486923689954,
+      "end_elapsed_s": 416.05782485892996,
+      "wall_ms": 742.9556220304221,
+      "thread_cpu_ms": 148.83255300003384,
+      "process_cpu_ms": 149.43368399997325,
+      "non_cpu_wall_ms": 594.1230690303883,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 37927805113,
+          "user_usec": 35093997258,
+          "system_usec": 2833807854,
+          "nice_usec": 33804871000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 928779,
+          "nr_throttled": 215576,
+          "throttled_usec": 3800941324,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 297305803766,
+        "runqueue_wait_ns": 96402991898,
+        "timeslices": 28132
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "previous_sample_elapsed_s": 414.59098122501746,
+    "window_ms": 1466.8436339125037,
+    "prelude_ms": 723.8880118820816,
+    "sched_window_ms": {
+      "runtime_ms": 693.64749,
+      "runqueue_wait_ms": 743.143801
+    },
+    "cgroup_window_delta": {
+      "nr_throttled": 9,
+      "throttled_usec": 199271
+    }
+  },
+  {
+    "case": "puzzle-main",
+    "run": "run-20261111T025445.953371Z-puzzle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-11T03:01:42.833842+00:00",
+      "start_elapsed_s": 416.0869146559853,
+      "end_elapsed_s": 416.6770139129367,
+      "wall_ms": 590.0992569513619,
+      "thread_cpu_ms": 177.4942740000256,
+      "process_cpu_ms": 178.07066699998586,
+      "non_cpu_wall_ms": 412.6049829513363,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 37927985854,
+          "user_usec": 35094177472,
+          "system_usec": 2833808382,
+          "nice_usec": 33805051000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 928785,
+          "nr_throttled": 215577,
+          "throttled_usec": 3800962509,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 297485795637,
+        "runqueue_wait_ns": 96825594126,
+        "timeslices": 28184
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "previous_sample_elapsed_s": 416.05782485892996,
+    "window_ms": 619.1890540067106,
+    "prelude_ms": 29.089797055348754,
+    "sched_window_ms": {
+      "runtime_ms": 178.991627,
+      "runqueue_wait_ms": 422.602228
+    },
+    "cgroup_window_delta": {
+      "nr_throttled": 1,
+      "throttled_usec": 21185
+    }
+  },
+  {
+    "case": "puzzle-main",
+    "run": "run-20261111T025445.953371Z-puzzle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-11T03:01:53.413079+00:00",
+      "start_elapsed_s": 426.612705812091,
+      "end_elapsed_s": 427.25625312794,
+      "wall_ms": 643.5473158489913,
+      "thread_cpu_ms": 150.39569399999664,
+      "process_cpu_ms": 150.97741599998926,
+      "non_cpu_wall_ms": 493.15162184899464,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 37935492055,
+          "user_usec": 35101658385,
+          "system_usec": 2833833670,
+          "nice_usec": 33812524000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 928891,
+          "nr_throttled": 215675,
+          "throttled_usec": 3803039095,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 304948119151,
+        "runqueue_wait_ns": 99525980540,
+        "timeslices": 28758
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "previous_sample_elapsed_s": 425.69539888296276,
+    "window_ms": 1560.8542449772358,
+    "prelude_ms": 917.3069291282445,
+    "sched_window_ms": {
+      "runtime_ms": 834.986324,
+      "runqueue_wait_ms": 676.741351
+    },
+    "cgroup_window_delta": {
+      "nr_throttled": 11,
+      "throttled_usec": 230788
+    }
+  },
+  {
+    "case": "puzzle-main",
+    "run": "run-20261111T025445.953371Z-puzzle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-11T03:01:54.148180+00:00",
+      "start_elapsed_s": 427.258229508996,
+      "end_elapsed_s": 427.9913555190433,
+      "wall_ms": 733.1260100472718,
+      "thread_cpu_ms": 157.43889600003058,
+      "process_cpu_ms": 157.9043609999644,
+      "non_cpu_wall_ms": 575.6871140472413,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 37935653026,
+          "user_usec": 35101818679,
+          "system_usec": 2833834346,
+          "nice_usec": 33812683000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 928898,
+          "nr_throttled": 215675,
+          "throttled_usec": 3803039095,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 305107054094,
+        "runqueue_wait_ns": 100101670229,
+        "timeslices": 28786
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "previous_sample_elapsed_s": 427.25625312794,
+    "window_ms": 735.1023911032826,
+    "prelude_ms": 1.9763810560107231,
+    "sched_window_ms": {
+      "runtime_ms": 158.103384,
+      "runqueue_wait_ms": 575.689689
+    },
+    "cgroup_window_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "case": "puzzle-main",
+    "run": "run-20261111T025445.953371Z-puzzle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-11T03:01:59.642351+00:00",
+      "start_elapsed_s": 432.94972808798775,
+      "end_elapsed_s": 433.48552853707224,
+      "wall_ms": 535.8004490844905,
+      "thread_cpu_ms": 155.7836590000079,
+      "process_cpu_ms": 156.1984040000084,
+      "non_cpu_wall_ms": 380.01679008448264,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 37939375912,
+          "user_usec": 35105534629,
+          "system_usec": 2833841282,
+          "nice_usec": 33816397000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 928953,
+          "nr_throttled": 215722,
+          "throttled_usec": 3803994850,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 308810216582,
+        "runqueue_wait_ns": 101659467786,
+        "timeslices": 29110
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "previous_sample_elapsed_s": 432.56750934012234,
+    "window_ms": 918.0191969498992,
+    "prelude_ms": 382.21874786540866,
+    "sched_window_ms": {
+      "runtime_ms": 435.411711,
+      "runqueue_wait_ms": 469.051494
+    },
+    "cgroup_window_delta": {
+      "nr_throttled": 4,
+      "throttled_usec": 88902
+    }
+  },
+  {
+    "case": "puzzle-main",
+    "run": "run-20261111T025445.953371Z-puzzle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-11T03:02:06.666360+00:00",
+      "start_elapsed_s": 439.9929330870509,
+      "end_elapsed_s": 440.50953596411273,
+      "wall_ms": 516.6028770618141,
+      "thread_cpu_ms": 144.01972299998533,
+      "process_cpu_ms": 144.4342830000096,
+      "non_cpu_wall_ms": 372.58315406182874,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 37944028048,
+          "user_usec": 35110169929,
+          "system_usec": 2833858118,
+          "nice_usec": 33821041000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 929023,
+          "nr_throttled": 215779,
+          "throttled_usec": 3805214585,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 313437646371,
+        "runqueue_wait_ns": 103807947346,
+        "timeslices": 29511
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "previous_sample_elapsed_s": 439.1604450929444,
+    "window_ms": 1349.0908711683005,
+    "prelude_ms": 832.4879941064864,
+    "sched_window_ms": {
+      "runtime_ms": 774.659853,
+      "runqueue_wait_ms": 551.061718
+    },
+    "cgroup_window_delta": {
+      "nr_throttled": 9,
+      "throttled_usec": 228445
+    }
+  },
+  {
+    "case": "puzzle-main",
+    "run": "run-20261111T025445.953371Z-puzzle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-11T03:02:07.362610+00:00",
+      "start_elapsed_s": 440.6012296481058,
+      "end_elapsed_s": 441.2057871490251,
+      "wall_ms": 604.5575009193271,
+      "thread_cpu_ms": 159.20666299996356,
+      "process_cpu_ms": 159.696570000051,
+      "non_cpu_wall_ms": 445.3508379193636,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 37944191068,
+          "user_usec": 35110332949,
+          "system_usec": 2833858118,
+          "nice_usec": 33821205000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 929030,
+          "nr_throttled": 215779,
+          "throttled_usec": 3805214585,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 313598008370,
+        "runqueue_wait_ns": 104253280026,
+        "timeslices": 29573
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "previous_sample_elapsed_s": 440.50953596411273,
+    "window_ms": 696.2511849123985,
+    "prelude_ms": 91.69368399307132,
+    "sched_window_ms": {
+      "runtime_ms": 160.198069,
+      "runqueue_wait_ms": 445.33268
+    },
+    "cgroup_window_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "case": "puzzle-main",
+    "run": "run-20261111T025445.953371Z-puzzle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-11T03:02:18.600392+00:00",
+      "start_elapsed_s": 451.3969118609093,
+      "end_elapsed_s": 452.4435681439936,
+      "wall_ms": 1046.6562830843031,
+      "thread_cpu_ms": 168.38931699999193,
+      "process_cpu_ms": 169.1291930000034,
+      "non_cpu_wall_ms": 878.2669660843112,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 37951915336,
+          "user_usec": 35118029030,
+          "system_usec": 2833886305,
+          "nice_usec": 33828897000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 929142,
+          "nr_throttled": 215879,
+          "throttled_usec": 3807253333,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 321281450425,
+        "runqueue_wait_ns": 107324041971,
+        "timeslices": 30190
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "previous_sample_elapsed_s": 451.0562640889548,
+    "window_ms": 1387.3040550388396,
+    "prelude_ms": 340.64777195453644,
+    "sched_window_ms": {
+      "runtime_ms": 432.198469,
+      "runqueue_wait_ms": 953.959022
+    },
+    "cgroup_window_delta": {
+      "nr_throttled": 4,
+      "throttled_usec": 99915
+    }
+  },
+  {
+    "case": "puzzle-main",
+    "run": "run-20261111T025445.953371Z-puzzle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-11T03:02:26.107057+00:00",
+      "start_elapsed_s": 459.40870059398003,
+      "end_elapsed_s": 459.9502326599322,
+      "wall_ms": 541.5320659521967,
+      "thread_cpu_ms": 182.62926599999219,
+      "process_cpu_ms": 183.1002769999941,
+      "non_cpu_wall_ms": 358.90279995220453,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 37956811415,
+          "user_usec": 35122909717,
+          "system_usec": 2833901698,
+          "nice_usec": 33833771000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 929218,
+          "nr_throttled": 215940,
+          "throttled_usec": 3808539749,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 326147066833,
+        "runqueue_wait_ns": 109694403920,
+        "timeslices": 30675
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "previous_sample_elapsed_s": 458.7933870900888,
+    "window_ms": 1156.8455698434263,
+    "prelude_ms": 615.3135038912296,
+    "sched_window_ms": {
+      "runtime_ms": 416.671798,
+      "runqueue_wait_ms": 699.981982
+    },
+    "cgroup_window_delta": {
+      "nr_throttled": 4,
+      "throttled_usec": 63758
+    }
+  },
+  {
+    "case": "puzzle-main",
+    "run": "run-20261111T025445.953371Z-puzzle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-11T03:02:44.695088+00:00",
+      "start_elapsed_s": 477.9818661289755,
+      "end_elapsed_s": 478.53826458612457,
+      "wall_ms": 556.3984571490437,
+      "thread_cpu_ms": 142.46832899999617,
+      "process_cpu_ms": 142.96344900003533,
+      "non_cpu_wall_ms": 413.9301281490475,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 37970168353,
+          "user_usec": 35136220527,
+          "system_usec": 2833947826,
+          "nice_usec": 33847073000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 929403,
+          "nr_throttled": 216115,
+          "throttled_usec": 3812132848,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 339424748818,
+        "runqueue_wait_ns": 114171557839,
+        "timeslices": 31668
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "previous_sample_elapsed_s": 477.85291873593815,
+    "window_ms": 685.3458501864225,
+    "prelude_ms": 128.9473930373788,
+    "sched_window_ms": {
+      "runtime_ms": 230.786155,
+      "runqueue_wait_ms": 430.20098
+    },
+    "cgroup_window_delta": {
+      "nr_throttled": 2,
+      "throttled_usec": 26411
+    }
+  },
+  {
+    "case": "puzzle-main",
+    "run": "run-20261111T025445.953371Z-puzzle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-11T03:02:45.505655+00:00",
+      "start_elapsed_s": 478.629833746003,
+      "end_elapsed_s": 479.3488345160149,
+      "wall_ms": 719.0007700119168,
+      "thread_cpu_ms": 173.0803099999889,
+      "process_cpu_ms": 173.8279500000317,
+      "non_cpu_wall_ms": 545.9204600119278,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 37970346015,
+          "user_usec": 35136398044,
+          "system_usec": 2833947971,
+          "nice_usec": 33847255000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 929412,
+          "nr_throttled": 216115,
+          "throttled_usec": 3812132848,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 339599928895,
+        "runqueue_wait_ns": 114793766112,
+        "timeslices": 31734
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "previous_sample_elapsed_s": 477.85291873593815,
+    "window_ms": 1495.915780076757,
+    "prelude_ms": 776.9150100648403,
+    "sched_window_ms": {
+      "runtime_ms": 405.966232,
+      "runqueue_wait_ms": 1052.409253
+    },
+    "cgroup_window_delta": {
+      "nr_throttled": 2,
+      "throttled_usec": 26411
+    }
+  },
+  {
+    "case": "puzzle-main",
+    "run": "run-20261111T025445.953371Z-puzzle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-11T03:02:53.041718+00:00",
+      "start_elapsed_s": 485.82523130602203,
+      "end_elapsed_s": 486.8848934690468,
+      "wall_ms": 1059.6621630247682,
+      "thread_cpu_ms": 180.57941699998992,
+      "process_cpu_ms": 181.33854799998517,
+      "non_cpu_wall_ms": 879.0827460247783,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 37975262768,
+          "user_usec": 35141302046,
+          "system_usec": 2833960721,
+          "nice_usec": 33852155000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 929487,
+          "nr_throttled": 216177,
+          "throttled_usec": 3813449044,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 344489674556,
+        "runqueue_wait_ns": 117181992550,
+        "timeslices": 32150
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "previous_sample_elapsed_s": 485.67852277192287,
+    "window_ms": 1206.3706971239299,
+    "prelude_ms": 146.70853409916162,
+    "sched_window_ms": {
+      "runtime_ms": 297.541097,
+      "runqueue_wait_ms": 900.110216
+    },
+    "cgroup_window_delta": {
+      "nr_throttled": 2,
+      "throttled_usec": 34374
+    }
+  },
+  {
+    "case": "puzzle-main",
+    "run": "run-20261111T025445.953371Z-puzzle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-11T03:03:12.124711+00:00",
+      "start_elapsed_s": 505.2919006079901,
+      "end_elapsed_s": 505.9678878739942,
+      "wall_ms": 675.9872660040855,
+      "thread_cpu_ms": 153.16724799998838,
+      "process_cpu_ms": 153.6697000000231,
+      "non_cpu_wall_ms": 522.8200180040972,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 37988907367,
+          "user_usec": 35154905875,
+          "system_usec": 2834001491,
+          "nice_usec": 33865761000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 929678,
+          "nr_throttled": 216355,
+          "throttled_usec": 3817290119,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 358059813132,
+        "runqueue_wait_ns": 121996979566,
+        "timeslices": 33184
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "previous_sample_elapsed_s": 504.5813077229541,
+    "window_ms": 1386.580151040107,
+    "prelude_ms": 710.5928850360215,
+    "sched_window_ms": {
+      "runtime_ms": 635.283802,
+      "runqueue_wait_ms": 735.2934
+    },
+    "cgroup_window_delta": {
+      "nr_throttled": 6,
+      "throttled_usec": 135273
+    }
+  },
+  {
+    "case": "puzzle-main",
+    "run": "run-20261111T025445.953371Z-puzzle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-11T03:03:18.610316+00:00",
+      "start_elapsed_s": 511.69299826491624,
+      "end_elapsed_s": 512.4534934549592,
+      "wall_ms": 760.4951900430024,
+      "thread_cpu_ms": 163.21035799995798,
+      "process_cpu_ms": 163.75615800001242,
+      "non_cpu_wall_ms": 597.2848320430444,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 37993046942,
+          "user_usec": 35159035781,
+          "system_usec": 2834011160,
+          "nice_usec": 33869889000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 929743,
+          "nr_throttled": 216405,
+          "throttled_usec": 3818316005,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 362174986354,
+        "runqueue_wait_ns": 123997499597,
+        "timeslices": 33601
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "previous_sample_elapsed_s": 511.26176475011744,
+    "window_ms": 1191.7287048418075,
+    "prelude_ms": 431.2335147988051,
+    "sched_window_ms": {
+      "runtime_ms": 379.902508,
+      "runqueue_wait_ms": 784.092427
+    },
+    "cgroup_window_delta": {
+      "nr_throttled": 3,
+      "throttled_usec": 61660
+    }
+  },
+  {
+    "case": "puzzle-main",
+    "run": "run-20261111T025445.953371Z-puzzle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-11T03:03:31.050520+00:00",
+      "start_elapsed_s": 524.2798281221185,
+      "end_elapsed_s": 524.8936956129037,
+      "wall_ms": 613.8674907851964,
+      "thread_cpu_ms": 153.38042299998733,
+      "process_cpu_ms": 153.79797100001724,
+      "non_cpu_wall_ms": 460.4870677852091,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 38001663304,
+          "user_usec": 35167610003,
+          "system_usec": 2834053300,
+          "nice_usec": 33878462000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 929867,
+          "nr_throttled": 216514,
+          "throttled_usec": 3820491406,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 370742728357,
+        "runqueue_wait_ns": 127315097729,
+        "timeslices": 34348
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "previous_sample_elapsed_s": 524.2789111409802,
+    "window_ms": 614.7844719234854,
+    "prelude_ms": 0.9169811382889748,
+    "sched_window_ms": {
+      "runtime_ms": 154.458028,
+      "runqueue_wait_ms": 460.419062
+    },
+    "cgroup_window_delta": {
+      "nr_throttled": 1,
+      "throttled_usec": 21186
+    }
+  },
+  {
+    "case": "puzzle-main",
+    "run": "run-20261111T025445.953371Z-puzzle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-11T03:03:31.575283+00:00",
+      "start_elapsed_s": 524.8947046170942,
+      "end_elapsed_s": 525.4184638899751,
+      "wall_ms": 523.7592728808522,
+      "thread_cpu_ms": 140.85002000001623,
+      "process_cpu_ms": 141.30160500002376,
+      "non_cpu_wall_ms": 382.909252880836,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 38001806641,
+          "user_usec": 35167753340,
+          "system_usec": 2834053300,
+          "nice_usec": 33878606000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 929872,
+          "nr_throttled": 216515,
+          "throttled_usec": 3820509590,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 370884018419,
+        "runqueue_wait_ns": 127698090736,
+        "timeslices": 34381
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "previous_sample_elapsed_s": 524.2789111409802,
+    "window_ms": 1139.5527489949018,
+    "prelude_ms": 615.7934761140496,
+    "sched_window_ms": {
+      "runtime_ms": 295.74809,
+      "runqueue_wait_ms": 843.412069
+    },
+    "cgroup_window_delta": {
+      "nr_throttled": 2,
+      "throttled_usec": 39370
+    }
+  },
+  {
+    "case": "puzzle-main",
+    "run": "run-20261111T025445.953371Z-puzzle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-11T03:03:38.084293+00:00",
+      "start_elapsed_s": 531.0462058109697,
+      "end_elapsed_s": 531.9274698330555,
+      "wall_ms": 881.2640220858157,
+      "thread_cpu_ms": 159.7342709999907,
+      "process_cpu_ms": 160.4571720000081,
+      "non_cpu_wall_ms": 721.529751085825,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 38006087525,
+          "user_usec": 35172018977,
+          "system_usec": 2834068547,
+          "nice_usec": 33882860000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 929937,
+          "nr_throttled": 216569,
+          "throttled_usec": 3821560796,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 375139682899,
+        "runqueue_wait_ns": 129630441628,
+        "timeslices": 34802
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "previous_sample_elapsed_s": 530.7082303059287,
+    "window_ms": 1219.2395271267742,
+    "prelude_ms": 337.9755050409585,
+    "sched_window_ms": {
+      "runtime_ms": 288.080585,
+      "runqueue_wait_ms": 907.888828
+    },
+    "cgroup_window_delta": {
+      "nr_throttled": 2,
+      "throttled_usec": 30375
+    }
+  },
+  {
+    "case": "puzzle-main",
+    "run": "run-20261111T025445.953371Z-puzzle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-11T03:03:44.698808+00:00",
+      "start_elapsed_s": 537.7185100871138,
+      "end_elapsed_s": 538.5419847639278,
+      "wall_ms": 823.4746768139303,
+      "thread_cpu_ms": 148.8939719999962,
+      "process_cpu_ms": 149.4983900000193,
+      "non_cpu_wall_ms": 674.5807048139341,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 38010368143,
+          "user_usec": 35176283287,
+          "system_usec": 2834084856,
+          "nice_usec": 33887120000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 930003,
+          "nr_throttled": 216623,
+          "throttled_usec": 3822543336,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 379392272567,
+        "runqueue_wait_ns": 131595936194,
+        "timeslices": 35201
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "previous_sample_elapsed_s": 537.2048304320779,
+    "window_ms": 1337.154331849888,
+    "prelude_ms": 513.6796550359577,
+    "sched_window_ms": {
+      "runtime_ms": 520.160237,
+      "runqueue_wait_ms": 751.216694
+    },
+    "cgroup_window_delta": {
+      "nr_throttled": 6,
+      "throttled_usec": 87472
+    }
+  },
+  {
+    "case": "puzzle-main",
+    "run": "run-20261111T025445.953371Z-puzzle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-11T03:03:58.842614+00:00",
+      "start_elapsed_s": 551.8381814060267,
+      "end_elapsed_s": 552.685792872915,
+      "wall_ms": 847.6114668883383,
+      "thread_cpu_ms": 124.16612399999849,
+      "process_cpu_ms": 124.804193999978,
+      "non_cpu_wall_ms": 723.4453428883398,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 38019967756,
+          "user_usec": 35185848380,
+          "system_usec": 2834119376,
+          "nice_usec": 33896677000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 930145,
+          "nr_throttled": 216747,
+          "throttled_usec": 3824748281,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 388927809143,
+        "runqueue_wait_ns": 135263945982,
+        "timeslices": 36152
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "previous_sample_elapsed_s": 551.0821748969611,
+    "window_ms": 1603.6179759539664,
+    "prelude_ms": 756.006509065628,
+    "sched_window_ms": {
+      "runtime_ms": 538.540509,
+      "runqueue_wait_ms": 1010.935016
+    },
+    "cgroup_window_delta": {
+      "nr_throttled": 5,
+      "throttled_usec": 85124
+    }
+  },
+  {
+    "case": "puzzle-main",
+    "run": "run-20261111T025445.953371Z-puzzle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-11T03:04:07.286357+00:00",
+      "start_elapsed_s": 560.2651805109344,
+      "end_elapsed_s": 561.1295329439454,
+      "wall_ms": 864.3524330109358,
+      "thread_cpu_ms": 159.02066000001014,
+      "process_cpu_ms": 159.7156799999766,
+      "non_cpu_wall_ms": 705.3317730109256,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 38025533441,
+          "user_usec": 35191396647,
+          "system_usec": 2834136794,
+          "nice_usec": 33902214000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 930229,
+          "nr_throttled": 216818,
+          "throttled_usec": 3825975506,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 394458037421,
+        "runqueue_wait_ns": 137617605391,
+        "timeslices": 36741
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "previous_sample_elapsed_s": 560.2450621051248,
+    "window_ms": 884.4708388205618,
+    "prelude_ms": 20.118405809625983,
+    "sched_window_ms": {
+      "runtime_ms": 161.3043,
+      "runqueue_wait_ms": 713.956318
+    },
+    "cgroup_window_delta": {
+      "nr_throttled": 0,
+      "throttled_usec": 0
+    }
+  },
+  {
+    "case": "puzzle-main",
+    "run": "run-20261111T025445.953371Z-puzzle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-11T03:04:13.931211+00:00",
+      "start_elapsed_s": 566.8045555229764,
+      "end_elapsed_s": 567.7743819479365,
+      "wall_ms": 969.826424960047,
+      "thread_cpu_ms": 179.77072299999008,
+      "process_cpu_ms": 180.5046420000167,
+      "non_cpu_wall_ms": 790.0557019600569,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 38029735483,
+          "user_usec": 35195578569,
+          "system_usec": 2834156914,
+          "nice_usec": 33906398000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 930296,
+          "nr_throttled": 216869,
+          "throttled_usec": 3826873387,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 398631886249,
+        "runqueue_wait_ns": 139658611991,
+        "timeslices": 37216
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "previous_sample_elapsed_s": 565.8148002540693,
+    "window_ms": 1959.5816938672215,
+    "prelude_ms": 989.7552689071745,
+    "sched_window_ms": {
+      "runtime_ms": 799.939899,
+      "runqueue_wait_ms": 1092.697694
+    },
+    "cgroup_window_delta": {
+      "nr_throttled": 8,
+      "throttled_usec": 144671
+    }
+  },
+  {
+    "case": "puzzle-main",
+    "run": "run-20261111T025445.953371Z-puzzle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-11T03:04:24.423823+00:00",
+      "start_elapsed_s": 577.5173481400125,
+      "end_elapsed_s": 578.2669979389757,
+      "wall_ms": 749.6497989632189,
+      "thread_cpu_ms": 158.24096799997278,
+      "process_cpu_ms": 158.83294500002876,
+      "non_cpu_wall_ms": 591.4088309632461,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 38037069249,
+          "user_usec": 35202889262,
+          "system_usec": 2834179986,
+          "nice_usec": 33913687000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 930401,
+          "nr_throttled": 216963,
+          "throttled_usec": 3828500005,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 405919609593,
+        "runqueue_wait_ns": 142105569153,
+        "timeslices": 37970
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "previous_sample_elapsed_s": 577.3869836719241,
+    "window_ms": 880.0142670515925,
+    "prelude_ms": 130.36446808837354,
+    "sched_window_ms": {
+      "runtime_ms": 249.354239,
+      "runqueue_wait_ms": 603.563585
+    },
+    "cgroup_window_delta": {
+      "nr_throttled": 2,
+      "throttled_usec": 26457
+    }
+  },
+  {
+    "case": "puzzle-main",
+    "run": "run-20261111T025445.953371Z-puzzle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-11T03:04:24.965156+00:00",
+      "start_elapsed_s": 578.294196367031,
+      "end_elapsed_s": 578.8083309179638,
+      "wall_ms": 514.1345509327948,
+      "thread_cpu_ms": 176.8872029999784,
+      "process_cpu_ms": 177.29941800001825,
+      "non_cpu_wall_ms": 337.2473479328164,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 38037250178,
+          "user_usec": 35203069801,
+          "system_usec": 2834180376,
+          "nice_usec": 33913869000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 930406,
+          "nr_throttled": 216964,
+          "throttled_usec": 3828509192,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 406098409091,
+        "runqueue_wait_ns": 142464385551,
+        "timeslices": 38003
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "previous_sample_elapsed_s": 577.3869836719241,
+    "window_ms": 1421.3472460396588,
+    "prelude_ms": 907.212695106864,
+    "sched_window_ms": {
+      "runtime_ms": 428.153737,
+      "runqueue_wait_ms": 962.379983
+    },
+    "cgroup_window_delta": {
+      "nr_throttled": 3,
+      "throttled_usec": 35644
+    }
+  },
+  {
+    "case": "puzzle-main",
+    "run": "run-20261111T025445.953371Z-puzzle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-11T03:04:32.515139+00:00",
+      "start_elapsed_s": 585.794104305096,
+      "end_elapsed_s": 586.358313501114,
+      "wall_ms": 564.2091960180551,
+      "thread_cpu_ms": 180.05146400003014,
+      "process_cpu_ms": 180.51634099998637,
+      "non_cpu_wall_ms": 384.15773201802494,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 38042324734,
+          "user_usec": 35208123640,
+          "system_usec": 2834201094,
+          "nice_usec": 33918919000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 930482,
+          "nr_throttled": 217027,
+          "throttled_usec": 3829646265,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 411141820715,
+        "runqueue_wait_ns": 144459100683,
+        "timeslices": 38547
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "previous_sample_elapsed_s": 585.1038742200471,
+    "window_ms": 1254.4392810668796,
+    "prelude_ms": 690.2300850488245,
+    "sched_window_ms": {
+      "runtime_ms": 511.008087,
+      "runqueue_wait_ms": 705.62653
+    },
+    "cgroup_window_delta": {
+      "nr_throttled": 4,
+      "throttled_usec": 74766
+    }
+  },
+  {
+    "case": "puzzle-main",
+    "run": "run-20261111T025445.953371Z-puzzle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-11T03:04:50.844472+00:00",
+      "start_elapsed_s": 604.1356688260566,
+      "end_elapsed_s": 604.6876486400142,
+      "wall_ms": 551.9798139575869,
+      "thread_cpu_ms": 145.118516000025,
+      "process_cpu_ms": 145.58776200004786,
+      "non_cpu_wall_ms": 406.8612979575619,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 38055554246,
+          "user_usec": 35221297617,
+          "system_usec": 2834256629,
+          "nice_usec": 33932080000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 930665,
+          "nr_throttled": 217199,
+          "throttled_usec": 3832683307,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 424282701617,
+        "runqueue_wait_ns": 148312576369,
+        "timeslices": 39756
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "previous_sample_elapsed_s": 604.1185151729733,
+    "window_ms": 569.133467040956,
+    "prelude_ms": 17.153653083369136,
+    "sched_window_ms": {
+      "runtime_ms": 147.053897,
+      "runqueue_wait_ms": 406.795775
+    },
+    "cgroup_window_delta": {
+      "nr_throttled": 2,
+      "throttled_usec": 34361
+    }
+  },
+  {
+    "case": "puzzle-main",
+    "run": "run-20261111T025445.953371Z-puzzle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-11T03:04:51.451701+00:00",
+      "start_elapsed_s": 604.7188427001238,
+      "end_elapsed_s": 605.2948823668994,
+      "wall_ms": 576.039666775614,
+      "thread_cpu_ms": 156.50190500002736,
+      "process_cpu_ms": 156.92573500001572,
+      "non_cpu_wall_ms": 419.53776177558666,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 38055713368,
+          "user_usec": 35221456739,
+          "system_usec": 2834256629,
+          "nice_usec": 33932240000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 930671,
+          "nr_throttled": 217199,
+          "throttled_usec": 3832683307,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 424440694521,
+        "runqueue_wait_ns": 148752238961,
+        "timeslices": 39804
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "previous_sample_elapsed_s": 604.1185151729733,
+    "window_ms": 1176.3671939261258,
+    "prelude_ms": 600.3275271505117,
+    "sched_window_ms": {
+      "runtime_ms": 305.046801,
+      "runqueue_wait_ms": 846.458367
+    },
+    "cgroup_window_delta": {
+      "nr_throttled": 2,
+      "throttled_usec": 34361
+    }
+  }
+]

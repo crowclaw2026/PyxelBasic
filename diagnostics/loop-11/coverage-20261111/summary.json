@@ -1,0 +1,218 @@
+[
+  {
+    "case": "audio-cycle-main",
+    "run": "run-20261111T021438.348494Z-audio-cycle-main",
+    "schema_version": 3,
+    "elapsed_s": 1200.0115100948606,
+    "cpu_pct": 13.849330801240603,
+    "update": {
+      "count": 71993,
+      "p50_ms": 0.3894829424098134,
+      "p95_ms": 0.4993618931621313,
+      "p99_ms": 0.6218960043042898,
+      "max_ms": 5.064486060291529,
+      "retained_count": 4096,
+      "quantile_scope": "last-retained-values"
+    },
+    "frame_interval": {
+      "count": 71993,
+      "p50_ms": 16.41741651110351,
+      "p95_ms": 17.443402903154492,
+      "p99_ms": 17.750144004821777,
+      "max_ms": 33.413954079151154,
+      "retained_count": 4096,
+      "quantile_scope": "last-retained-values"
+    },
+    "slow_update_count": 0,
+    "median_rss_delta_mib": 2.86328125
+  },
+  {
+    "case": "audio-cycle-thread",
+    "run": "run-20261111T023442.210397Z-audio-cycle-thread",
+    "schema_version": 3,
+    "elapsed_s": 1200.0250659470912,
+    "cpu_pct": 21.703426780127195,
+    "update": {
+      "count": 71990,
+      "p50_ms": 0.13537704944610596,
+      "p95_ms": 0.3122929483652115,
+      "p99_ms": 0.35839714109897614,
+      "max_ms": 5.433595040813088,
+      "retained_count": 4096,
+      "quantile_scope": "last-retained-values"
+    },
+    "frame_interval": {
+      "count": 71990,
+      "p50_ms": 16.786209540441632,
+      "p95_ms": 21.24744514003396,
+      "p99_ms": 22.32880098745227,
+      "max_ms": 58.57061594724655,
+      "retained_count": 4096,
+      "quantile_scope": "last-retained-values"
+    },
+    "slow_update_count": 0,
+    "median_rss_delta_mib": 2.8359375
+  },
+  {
+    "case": "cube-main",
+    "run": "run-20261111T031449.930740Z-cube-main",
+    "schema_version": 3,
+    "elapsed_s": 1200.00371296308,
+    "cpu_pct": 69.7498211333244,
+    "update": {
+      "count": 71911,
+      "p50_ms": 10.213494999334216,
+      "p95_ms": 10.724707040935755,
+      "p99_ms": 12.202938087284565,
+      "max_ms": 27.90002105757594,
+      "retained_count": 4096,
+      "quantile_scope": "last-retained-values"
+    },
+    "frame_interval": {
+      "count": 71911,
+      "p50_ms": 16.778803430497646,
+      "p95_ms": 17.749388003721833,
+      "p99_ms": 18.05440802127123,
+      "max_ms": 39.44575507193804,
+      "retained_count": 4096,
+      "quantile_scope": "last-retained-values"
+    },
+    "slow_update_count": 0,
+    "median_rss_delta_mib": 2.8359375
+  },
+  {
+    "case": "idle",
+    "run": "run-20261111T011426.118044Z-idle",
+    "schema_version": 2,
+    "elapsed_s": 1200.0116981700994,
+    "cpu_pct": 12.666732540256783,
+    "update": {
+      "count": 71993,
+      "p50_ms": 0.24221406783908606,
+      "p95_ms": 0.3277040086686611,
+      "p99_ms": 0.3745669964700937,
+      "max_ms": 4.72478405572474,
+      "retained_count": 4096,
+      "quantile_scope": "last-retained-values"
+    },
+    "frame_interval": {
+      "count": 71993,
+      "p50_ms": 16.961625078693032,
+      "p95_ms": 17.333947122097015,
+      "p99_ms": 18.128829076886177,
+      "max_ms": 32.219503074884415,
+      "retained_count": 4096,
+      "quantile_scope": "last-retained-values"
+    },
+    "slow_update_count": null,
+    "median_rss_delta_mib": 2.5390625
+  },
+  {
+    "case": "idle-no-capture",
+    "run": "run-20261111T033453.897568Z-idle-no-capture",
+    "schema_version": 3,
+    "elapsed_s": 1200.0102102349047,
+    "cpu_pct": 12.645701301515981,
+    "update": {
+      "count": 71993,
+      "p50_ms": 0.250463024713099,
+      "p95_ms": 0.33878302201628685,
+      "p99_ms": 0.39265514351427555,
+      "max_ms": 4.743639146909118,
+      "retained_count": 4096,
+      "quantile_scope": "last-retained-values"
+    },
+    "frame_interval": {
+      "count": 71993,
+      "p50_ms": 16.972244367934763,
+      "p95_ms": 17.414920032024384,
+      "p99_ms": 18.121082102879882,
+      "max_ms": 32.61575591750443,
+      "retained_count": 4096,
+      "quantile_scope": "last-retained-values"
+    },
+    "slow_update_count": 0,
+    "median_rss_delta_mib": 2.8046875
+  },
+  {
+    "case": "particle-main",
+    "run": "run-20261111T013430.008955Z-particle-main",
+    "schema_version": 2,
+    "elapsed_s": 1200.0367363200057,
+    "cpu_pct": 71.4045407874498,
+    "update": {
+      "count": 19819,
+      "p50_ms": 48.40970959048718,
+      "p95_ms": 94.98242218978703,
+      "p99_ms": 114.52677380293608,
+      "max_ms": 2146.503681084141,
+      "retained_count": 4096,
+      "quantile_scope": "last-retained-values"
+    },
+    "frame_interval": {
+      "count": 19819,
+      "p50_ms": 52.65371350105852,
+      "p95_ms": 100.60073900967836,
+      "p99_ms": 128.9136689156294,
+      "max_ms": 2166.949714999646,
+      "retained_count": 4096,
+      "quantile_scope": "last-retained-values"
+    },
+    "slow_update_count": null,
+    "median_rss_delta_mib": -11.099609375
+  },
+  {
+    "case": "particle-thread",
+    "run": "run-20261111T015434.008572Z-particle-thread",
+    "schema_version": 2,
+    "elapsed_s": 1200.010425209999,
+    "cpu_pct": 47.389966340957535,
+    "update": {
+      "count": 70747,
+      "p50_ms": 0.1163664273917675,
+      "p95_ms": 0.17399992793798447,
+      "p99_ms": 0.21051219664514065,
+      "max_ms": 32.01480791904032,
+      "retained_count": 4096,
+      "quantile_scope": "last-retained-values"
+    },
+    "frame_interval": {
+      "count": 70747,
+      "p50_ms": 16.704728943295777,
+      "p95_ms": 22.12101104669273,
+      "p99_ms": 28.05230300873518,
+      "max_ms": 427.92716389521956,
+      "retained_count": 4096,
+      "quantile_scope": "last-retained-values"
+    },
+    "slow_update_count": null,
+    "median_rss_delta_mib": 2.53515625
+  },
+  {
+    "case": "puzzle-main",
+    "run": "run-20261111T025445.953371Z-puzzle-main",
+    "schema_version": 3,
+    "elapsed_s": 1200.0798480890226,
+    "cpu_pct": 72.59159244788661,
+    "update": {
+      "count": 9761,
+      "p50_ms": 105.56089400779456,
+      "p95_ms": 133.26431903988123,
+      "p99_ms": 140.5543910805136,
+      "max_ms": 1128.5117289517075,
+      "retained_count": 4096,
+      "quantile_scope": "last-retained-values"
+    },
+    "frame_interval": {
+      "count": 9761,
+      "p50_ms": 116.43033009022474,
+      "p95_ms": 136.64665701799095,
+      "p99_ms": 150.51788301207125,
+      "max_ms": 1158.021060982719,
+      "retained_count": 4096,
+      "quantile_scope": "last-retained-values"
+    },
+    "slow_update_count": 32,
+    "median_rss_delta_mib": 3.091796875
+  }
+]
