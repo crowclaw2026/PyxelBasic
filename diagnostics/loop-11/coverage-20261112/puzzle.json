@@ -1,0 +1,3173 @@
+{
+  "schema_version": 3,
+  "python": "3.12.3",
+  "timing_capacity": 4096,
+  "slow_update_ms": 500,
+  "slow_update_count": 3,
+  "slow_updates_tail": [
+    {
+      "ended_at_utc": "2026-11-12T04:04:11.159403+00:00",
+      "start_elapsed_s": 21.934471308952197,
+      "end_elapsed_s": 22.455794819863513,
+      "wall_ms": 521.3235109113157,
+      "thread_cpu_ms": 339.7867900000016,
+      "process_cpu_ms": 340.17301999999813,
+      "non_cpu_wall_ms": 181.53672091131412,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 17006366,
+          "user_usec": 16909255,
+          "system_usec": 97111,
+          "nice_usec": 17059000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 228,
+          "nr_throttled": 221,
+          "throttled_usec": 4606484,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 16963412625,
+        "runqueue_wait_ns": 5167904065,
+        "timeslices": 1230
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    {
+      "ended_at_utc": "2026-11-12T04:04:12.210889+00:00",
+      "start_elapsed_s": 22.95114066102542,
+      "end_elapsed_s": 23.507292088819668,
+      "wall_ms": 556.1514277942479,
+      "thread_cpu_ms": 286.102348,
+      "process_cpu_ms": 286.60159800000076,
+      "non_cpu_wall_ms": 270.04907979424786,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 17646636,
+          "user_usec": 17546545,
+          "system_usec": 100090,
+          "nice_usec": 17700000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 239,
+          "nr_throttled": 228,
+          "throttled_usec": 4741161,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 17602371493,
+        "runqueue_wait_ns": 5563968128,
+        "timeslices": 1333
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    {
+      "ended_at_utc": "2026-11-12T04:04:50.028193+00:00",
+      "start_elapsed_s": 60.786030620802194,
+      "end_elapsed_s": 61.324597637867555,
+      "wall_ms": 538.5670170653611,
+      "thread_cpu_ms": 303.2812220000025,
+      "process_cpu_ms": 303.6455680000003,
+      "non_cpu_wall_ms": 235.28579506535863,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 45904168,
+          "user_usec": 45711936,
+          "system_usec": 192231,
+          "nice_usec": 46112000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 617,
+          "nr_throttled": 601,
+          "throttled_usec": 12379213,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 45782623787,
+        "runqueue_wait_ns": 13906762269,
+        "timeslices": 3206
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    }
+  ],
+  "started_at_utc": "2026-11-12T04:03:48.703585+00:00",
+  "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+  "pyxel": "2.9.5",
+  "app_args": [
+    "--load",
+    "puzzle",
+    "--run"
+  ],
+  "requested_seconds": 80.0,
+  "capture_sec_override": 0,
+  "elapsed_s": 80.0386982508935,
+  "cpu_s": 59.525212473,
+  "update": {
+    "count": 311,
+    "p50_ms": 222.01043600216508,
+    "p95_ms": 372.03936907462776,
+    "p99_ms": 477.7382758911699,
+    "max_ms": 556.1514277942479,
+    "retained_count": 311,
+    "quantile_scope": "whole-run"
+  },
+  "draw": {
+    "count": 307,
+    "p50_ms": 0.7870111148804426,
+    "p95_ms": 1.6431619878858328,
+    "p99_ms": 7.855104980990291,
+    "max_ms": 26.68915782123804,
+    "retained_count": 307,
+    "quantile_scope": "whole-run"
+  },
+  "frame_interval": {
+    "count": 311,
+    "p50_ms": 233.49417210556567,
+    "p95_ms": 383.95073008723557,
+    "p99_ms": 497.251289896667,
+    "max_ms": 565.9733607899398,
+    "retained_count": 311,
+    "quantile_scope": "whole-run"
+  },
+  "samples": [
+    {
+      "at_utc": "2026-11-12T04:03:48.954560+00:00",
+      "elapsed_s": 0.25096661294810474,
+      "cpu_s": 0.20078068600000004,
+      "rss_bytes": 101277696,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 481714,
+          "user_usec": 440084,
+          "system_usec": 41629,
+          "nice_usec": 444000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 6,
+          "nr_throttled": 5,
+          "throttled_usec": 114733,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 484623956,
+        "runqueue_wait_ns": 115649211,
+        "timeslices": 22
+      },
+      "timing_retained": {
+        "update": 1,
+        "draw": 0,
+        "frame_interval": 1
+      },
+      "vm_state": "RUN",
+      "line": 500,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 2,
+      "max_update_ms": 250.60949008911848,
+      "max_draw_ms": 0.0,
+      "max_frame_ms": 0.3571228589862585
+    },
+    {
+      "at_utc": "2026-11-12T04:03:50.132768+00:00",
+      "elapsed_s": 1.429181911982596,
+      "cpu_s": 1.0793087030000001,
+      "rss_bytes": 101556224,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 1360182,
+          "user_usec": 1312700,
+          "system_usec": 47482,
+          "nice_usec": 1327000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 18,
+          "nr_throttled": 17,
+          "throttled_usec": 400693,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 1360356995,
+        "runqueue_wait_ns": 402161424,
+        "timeslices": 58
+      },
+      "timing_retained": {
+        "update": 7,
+        "draw": 3,
+        "frame_interval": 7
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 250.60949008911848,
+      "max_draw_ms": 0.8247869554907084,
+      "max_frame_ms": 267.28546316735446
+    },
+    {
+      "at_utc": "2026-11-12T04:03:51.218041+00:00",
+      "elapsed_s": 2.5144528509117663,
+      "cpu_s": 1.8897300190000001,
+      "rss_bytes": 101556224,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 2170576,
+          "user_usec": 2119108,
+          "system_usec": 51468,
+          "nice_usec": 2141000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 29,
+          "nr_throttled": 28,
+          "throttled_usec": 638664,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 2168931356,
+        "runqueue_wait_ns": 640518976,
+        "timeslices": 104
+      },
+      "timing_retained": {
+        "update": 12,
+        "draw": 8,
+        "frame_interval": 12
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 250.60949008911848,
+      "max_draw_ms": 1.0317990090698004,
+      "max_frame_ms": 267.28546316735446
+    },
+    {
+      "at_utc": "2026-11-12T04:03:52.358201+00:00",
+      "elapsed_s": 3.654608911834657,
+      "cpu_s": 2.754243533,
+      "rss_bytes": 101560320,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 3035824,
+          "user_usec": 2976453,
+          "system_usec": 59370,
+          "nice_usec": 3008000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 40,
+          "nr_throttled": 39,
+          "throttled_usec": 894827,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 3031144591,
+        "runqueue_wait_ns": 897212895,
+        "timeslices": 143
+      },
+      "timing_retained": {
+        "update": 17,
+        "draw": 13,
+        "frame_interval": 17
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 250.60949008911848,
+      "max_draw_ms": 1.1589140631258488,
+      "max_frame_ms": 267.28546316735446
+    },
+    {
+      "at_utc": "2026-11-12T04:03:53.540463+00:00",
+      "elapsed_s": 4.836875624023378,
+      "cpu_s": 3.637281492,
+      "rss_bytes": 101568512,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 3918666,
+          "user_usec": 3856355,
+          "system_usec": 62310,
+          "nice_usec": 3898000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 52,
+          "nr_throttled": 51,
+          "throttled_usec": 1154629,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 3911430014,
+        "runqueue_wait_ns": 1158298840,
+        "timeslices": 196
+      },
+      "timing_retained": {
+        "update": 22,
+        "draw": 18,
+        "frame_interval": 22
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 265.0188549887389,
+      "max_draw_ms": 25.65896208398044,
+      "max_frame_ms": 268.4903929475695
+    },
+    {
+      "at_utc": "2026-11-12T04:03:54.755958+00:00",
+      "elapsed_s": 6.052369787823409,
+      "cpu_s": 4.552994245,
+      "rss_bytes": 101568512,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 4834042,
+          "user_usec": 4770710,
+          "system_usec": 63332,
+          "nice_usec": 4820000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 64,
+          "nr_throttled": 63,
+          "throttled_usec": 1400504,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 4824021717,
+        "runqueue_wait_ns": 1404639875,
+        "timeslices": 250
+      },
+      "timing_retained": {
+        "update": 27,
+        "draw": 23,
+        "frame_interval": 27
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 270.0520909857005,
+      "max_draw_ms": 25.65896208398044,
+      "max_frame_ms": 282.9359769821167
+    },
+    {
+      "at_utc": "2026-11-12T04:03:55.857577+00:00",
+      "elapsed_s": 7.153990120859817,
+      "cpu_s": 5.378218928,
+      "rss_bytes": 101568512,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 5659621,
+          "user_usec": 5594306,
+          "system_usec": 65314,
+          "nice_usec": 5652000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 75,
+          "nr_throttled": 74,
+          "throttled_usec": 1615084,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 5647059700,
+        "runqueue_wait_ns": 1619533778,
+        "timeslices": 299
+      },
+      "timing_retained": {
+        "update": 32,
+        "draw": 28,
+        "frame_interval": 32
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 270.0520909857005,
+      "max_draw_ms": 25.65896208398044,
+      "max_frame_ms": 282.9359769821167
+    },
+    {
+      "at_utc": "2026-11-12T04:03:56.952642+00:00",
+      "elapsed_s": 8.249056164873764,
+      "cpu_s": 6.1987884179999995,
+      "rss_bytes": 101580800,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 6480199,
+          "user_usec": 6412913,
+          "system_usec": 67285,
+          "nice_usec": 6479000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 86,
+          "nr_throttled": 85,
+          "throttled_usec": 1845404,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 6465162840,
+        "runqueue_wait_ns": 1850188803,
+        "timeslices": 347
+      },
+      "timing_retained": {
+        "update": 37,
+        "draw": 33,
+        "frame_interval": 37
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 270.0520909857005,
+      "max_draw_ms": 25.65896208398044,
+      "max_frame_ms": 282.9359769821167
+    },
+    {
+      "at_utc": "2026-11-12T04:03:58.133770+00:00",
+      "elapsed_s": 9.430181453935802,
+      "cpu_s": 7.079773421,
+      "rss_bytes": 101584896,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 7361144,
+          "user_usec": 7290859,
+          "system_usec": 70285,
+          "nice_usec": 7362000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 98,
+          "nr_throttled": 97,
+          "throttled_usec": 2105242,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 7343583114,
+        "runqueue_wait_ns": 2110753474,
+        "timeslices": 389
+      },
+      "timing_retained": {
+        "update": 42,
+        "draw": 38,
+        "frame_interval": 42
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 270.0520909857005,
+      "max_draw_ms": 25.65896208398044,
+      "max_frame_ms": 282.9359769821167
+    },
+    {
+      "at_utc": "2026-11-12T04:03:59.218525+00:00",
+      "elapsed_s": 10.514938478823751,
+      "cpu_s": 7.889944943000001,
+      "rss_bytes": 101584896,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 8171621,
+          "user_usec": 8097360,
+          "system_usec": 74260,
+          "nice_usec": 8175000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 109,
+          "nr_throttled": 108,
+          "throttled_usec": 2348490,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 8152187145,
+        "runqueue_wait_ns": 2359089743,
+        "timeslices": 481
+      },
+      "timing_retained": {
+        "update": 46,
+        "draw": 42,
+        "frame_interval": 46
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 323.3606561552733,
+      "max_draw_ms": 25.65896208398044,
+      "max_frame_ms": 333.2637140993029
+    },
+    {
+      "at_utc": "2026-11-12T04:04:00.332301+00:00",
+      "elapsed_s": 11.628712632926181,
+      "cpu_s": 8.728451209000001,
+      "rss_bytes": 101584896,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 9010412,
+          "user_usec": 8934161,
+          "system_usec": 76250,
+          "nice_usec": 9019000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 120,
+          "nr_throttled": 119,
+          "throttled_usec": 2584158,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 8988477198,
+        "runqueue_wait_ns": 2595227855,
+        "timeslices": 523
+      },
+      "timing_retained": {
+        "update": 51,
+        "draw": 47,
+        "frame_interval": 51
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 323.3606561552733,
+      "max_draw_ms": 25.65896208398044,
+      "max_frame_ms": 333.2637140993029
+    },
+    {
+      "at_utc": "2026-11-12T04:04:01.417577+00:00",
+      "elapsed_s": 12.71398910600692,
+      "cpu_s": 9.537234965000001,
+      "rss_bytes": 101588992,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 9818980,
+          "user_usec": 9742718,
+          "system_usec": 76262,
+          "nice_usec": 9834000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 131,
+          "nr_throttled": 130,
+          "throttled_usec": 2831074,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 9794578210,
+        "runqueue_wait_ns": 2842467181,
+        "timeslices": 570
+      },
+      "timing_retained": {
+        "update": 56,
+        "draw": 52,
+        "frame_interval": 56
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 323.3606561552733,
+      "max_draw_ms": 25.65896208398044,
+      "max_frame_ms": 333.2637140993029
+    },
+    {
+      "at_utc": "2026-11-12T04:04:02.597964+00:00",
+      "elapsed_s": 13.873930468922481,
+      "cpu_s": 10.418322233000001,
+      "rss_bytes": 101597184,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 10700751,
+          "user_usec": 10622506,
+          "system_usec": 78245,
+          "nice_usec": 10722000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 143,
+          "nr_throttled": 142,
+          "throttled_usec": 3075462,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 10673781331,
+        "runqueue_wait_ns": 3105084018,
+        "timeslices": 639
+      },
+      "timing_retained": {
+        "update": 61,
+        "draw": 57,
+        "frame_interval": 61
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 323.3606561552733,
+      "max_draw_ms": 25.65896208398044,
+      "max_frame_ms": 333.2637140993029
+    },
+    {
+      "at_utc": "2026-11-12T04:04:03.840980+00:00",
+      "elapsed_s": 15.13526244298555,
+      "cpu_s": 11.318992040000001,
+      "rss_bytes": 101601280,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 11601463,
+          "user_usec": 11521207,
+          "system_usec": 80256,
+          "nice_usec": 11625000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 155,
+          "nr_throttled": 152,
+          "throttled_usec": 3252685,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 11572995483,
+        "runqueue_wait_ns": 3442283716,
+        "timeslices": 754
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 60,
+        "frame_interval": 64
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 468.6140159610659,
+      "max_draw_ms": 25.65896208398044,
+      "max_frame_ms": 398.577423999086
+    },
+    {
+      "at_utc": "2026-11-12T04:04:05.120839+00:00",
+      "elapsed_s": 16.417247331002727,
+      "cpu_s": 12.271587509000002,
+      "rss_bytes": 101605376,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 12553257,
+          "user_usec": 12472978,
+          "system_usec": 80279,
+          "nice_usec": 12581000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 168,
+          "nr_throttled": 164,
+          "throttled_usec": 3460758,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 12522841813,
+        "runqueue_wait_ns": 3741549422,
+        "timeslices": 871
+      },
+      "timing_retained": {
+        "update": 68,
+        "draw": 64,
+        "frame_interval": 68
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 468.6140159610659,
+      "max_draw_ms": 25.65896208398044,
+      "max_frame_ms": 485.1372328121215
+    },
+    {
+      "at_utc": "2026-11-12T04:04:06.209099+00:00",
+      "elapsed_s": 17.505512043833733,
+      "cpu_s": 13.085520712000001,
+      "rss_bytes": 101605376,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 13367222,
+          "user_usec": 13283008,
+          "system_usec": 84213,
+          "nice_usec": 13403000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 179,
+          "nr_throttled": 175,
+          "throttled_usec": 3697884,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 13335628592,
+        "runqueue_wait_ns": 3985408694,
+        "timeslices": 928
+      },
+      "timing_retained": {
+        "update": 72,
+        "draw": 68,
+        "frame_interval": 72
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 468.6140159610659,
+      "max_draw_ms": 25.65896208398044,
+      "max_frame_ms": 485.1372328121215
+    },
+    {
+      "at_utc": "2026-11-12T04:04:07.321654+00:00",
+      "elapsed_s": 18.618068179814145,
+      "cpu_s": 13.922994065000001,
+      "rss_bytes": 101609472,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 14205009,
+          "user_usec": 14119788,
+          "system_usec": 85220,
+          "nice_usec": 14245000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 190,
+          "nr_throttled": 186,
+          "throttled_usec": 3905462,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 14169941576,
+        "runqueue_wait_ns": 4202676417,
+        "timeslices": 985
+      },
+      "timing_retained": {
+        "update": 77,
+        "draw": 73,
+        "frame_interval": 77
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 468.6140159610659,
+      "max_draw_ms": 25.65896208398044,
+      "max_frame_ms": 485.1372328121215
+    },
+    {
+      "at_utc": "2026-11-12T04:04:08.415189+00:00",
+      "elapsed_s": 19.711602094816044,
+      "cpu_s": 14.740156998000002,
+      "rss_bytes": 101613568,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 15022041,
+          "user_usec": 14932872,
+          "system_usec": 89169,
+          "nice_usec": 15067000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 201,
+          "nr_throttled": 197,
+          "throttled_usec": 4147227,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 14984770141,
+        "runqueue_wait_ns": 4444703448,
+        "timeslices": 1026
+      },
+      "timing_retained": {
+        "update": 82,
+        "draw": 78,
+        "frame_interval": 82
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 468.6140159610659,
+      "max_draw_ms": 25.65896208398044,
+      "max_frame_ms": 485.1372328121215
+    },
+    {
+      "at_utc": "2026-11-12T04:04:09.545167+00:00",
+      "elapsed_s": 20.841558137908578,
+      "cpu_s": 15.59582449,
+      "rss_bytes": 105308160,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 15877803,
+          "user_usec": 15783670,
+          "system_usec": 94133,
+          "nice_usec": 15924000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 212,
+          "nr_throttled": 208,
+          "throttled_usec": 4382933,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 15837777276,
+        "runqueue_wait_ns": 4699853705,
+        "timeslices": 1077
+      },
+      "timing_retained": {
+        "update": 87,
+        "draw": 83,
+        "frame_interval": 87
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 468.6140159610659,
+      "max_draw_ms": 25.65896208398044,
+      "max_frame_ms": 485.1372328121215
+    },
+    {
+      "at_utc": "2026-11-12T04:04:10.632632+00:00",
+      "elapsed_s": 21.929027878912166,
+      "cpu_s": 16.379382039,
+      "rss_bytes": 105312256,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 16661640,
+          "user_usec": 16564545,
+          "system_usec": 97094,
+          "nice_usec": 16714000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 223,
+          "nr_throttled": 218,
+          "throttled_usec": 4549321,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 16620296448,
+        "runqueue_wait_ns": 4986220224,
+        "timeslices": 1159
+      },
+      "timing_retained": {
+        "update": 90,
+        "draw": 86,
+        "frame_interval": 90
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 477.7382758911699,
+      "max_draw_ms": 25.65896208398044,
+      "max_frame_ms": 485.1372328121215
+    },
+    {
+      "at_utc": "2026-11-12T04:04:11.643603+00:00",
+      "elapsed_s": 22.93999774591066,
+      "cpu_s": 17.073974756000002,
+      "rss_bytes": 105312256,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 17356294,
+          "user_usec": 17257189,
+          "system_usec": 99105,
+          "nice_usec": 17408000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 233,
+          "nr_throttled": 224,
+          "throttled_usec": 4660197,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 17313752780,
+        "runqueue_wait_ns": 5293917125,
+        "timeslices": 1307
+      },
+      "timing_retained": {
+        "update": 92,
+        "draw": 88,
+        "frame_interval": 92
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 521.3235109113157,
+      "max_draw_ms": 25.65896208398044,
+      "max_frame_ms": 534.0038000140339
+    },
+    {
+      "at_utc": "2026-11-12T04:04:12.805332+00:00",
+      "elapsed_s": 24.101725079817697,
+      "cpu_s": 17.80837979,
+      "rss_bytes": 105328640,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 18091009,
+          "user_usec": 17990916,
+          "system_usec": 100092,
+          "nice_usec": 18148000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 245,
+          "nr_throttled": 234,
+          "throttled_usec": 4871604,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 18046766414,
+        "runqueue_wait_ns": 5698002571,
+        "timeslices": 1357
+      },
+      "timing_retained": {
+        "update": 95,
+        "draw": 91,
+        "frame_interval": 95
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 25.65896208398044,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:04:13.959239+00:00",
+      "elapsed_s": 25.255649908911437,
+      "cpu_s": 18.687436363,
+      "rss_bytes": 105332736,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 18970224,
+          "user_usec": 18866161,
+          "system_usec": 104063,
+          "nice_usec": 19029000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 256,
+          "nr_throttled": 245,
+          "throttled_usec": 5098991,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 18922758147,
+        "runqueue_wait_ns": 5929491212,
+        "timeslices": 1413
+      },
+      "timing_retained": {
+        "update": 99,
+        "draw": 95,
+        "frame_interval": 99
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 25.65896208398044,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:04:15.102002+00:00",
+      "elapsed_s": 26.398413510993123,
+      "cpu_s": 19.529580911,
+      "rss_bytes": 105336832,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 19811812,
+          "user_usec": 19700838,
+          "system_usec": 110973,
+          "nice_usec": 19876000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 268,
+          "nr_throttled": 257,
+          "throttled_usec": 5340514,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 19761706175,
+        "runqueue_wait_ns": 6171398871,
+        "timeslices": 1467
+      },
+      "timing_retained": {
+        "update": 104,
+        "draw": 100,
+        "frame_interval": 104
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 25.65896208398044,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:04:16.207161+00:00",
+      "elapsed_s": 27.50357203488238,
+      "cpu_s": 20.361092192,
+      "rss_bytes": 105336832,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 20643418,
+          "user_usec": 20531447,
+          "system_usec": 111971,
+          "nice_usec": 20713000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 279,
+          "nr_throttled": 268,
+          "throttled_usec": 5572522,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 20591543061,
+        "runqueue_wait_ns": 6403678898,
+        "timeslices": 1511
+      },
+      "timing_retained": {
+        "update": 109,
+        "draw": 105,
+        "frame_interval": 109
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 25.65896208398044,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:04:17.331144+00:00",
+      "elapsed_s": 28.627556895837188,
+      "cpu_s": 21.208276864000002,
+      "rss_bytes": 105336832,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 21490698,
+          "user_usec": 21375748,
+          "system_usec": 114950,
+          "nice_usec": 21564000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 290,
+          "nr_throttled": 279,
+          "throttled_usec": 5788240,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 21436117851,
+        "runqueue_wait_ns": 6619659874,
+        "timeslices": 1561
+      },
+      "timing_retained": {
+        "update": 114,
+        "draw": 110,
+        "frame_interval": 114
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 25.65896208398044,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:04:18.435336+00:00",
+      "elapsed_s": 29.73174048285,
+      "cpu_s": 22.037842944,
+      "rss_bytes": 105336832,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 22320853,
+          "user_usec": 22204904,
+          "system_usec": 115949,
+          "nice_usec": 22399000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 301,
+          "nr_throttled": 290,
+          "throttled_usec": 6024496,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 22263662491,
+        "runqueue_wait_ns": 6860765165,
+        "timeslices": 1609
+      },
+      "timing_retained": {
+        "update": 118,
+        "draw": 114,
+        "frame_interval": 118
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 25.65896208398044,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:04:19.624013+00:00",
+      "elapsed_s": 30.92041913489811,
+      "cpu_s": 22.920823378,
+      "rss_bytes": 105340928,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 23203368,
+          "user_usec": 23086434,
+          "system_usec": 116933,
+          "nice_usec": 23290000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 313,
+          "nr_throttled": 302,
+          "throttled_usec": 6260326,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 23144807538,
+        "runqueue_wait_ns": 7132445091,
+        "timeslices": 1671
+      },
+      "timing_retained": {
+        "update": 122,
+        "draw": 118,
+        "frame_interval": 122
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 25.65896208398044,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:04:20.818508+00:00",
+      "elapsed_s": 32.11491885781288,
+      "cpu_s": 23.8154104,
+      "rss_bytes": 105340928,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 24098374,
+          "user_usec": 23977486,
+          "system_usec": 120888,
+          "nice_usec": 24191000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 325,
+          "nr_throttled": 314,
+          "throttled_usec": 6462889,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 24036668673,
+        "runqueue_wait_ns": 7383677882,
+        "timeslices": 1732
+      },
+      "timing_retained": {
+        "update": 127,
+        "draw": 123,
+        "frame_interval": 127
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 25.65896208398044,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:04:21.821457+00:00",
+      "elapsed_s": 33.11786868982017,
+      "cpu_s": 24.574212277,
+      "rss_bytes": 105345024,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 24857284,
+          "user_usec": 24734420,
+          "system_usec": 122864,
+          "nice_usec": 24956000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 335,
+          "nr_throttled": 324,
+          "throttled_usec": 6617302,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 24793408901,
+        "runqueue_wait_ns": 7588387620,
+        "timeslices": 1794
+      },
+      "timing_retained": {
+        "update": 131,
+        "draw": 127,
+        "frame_interval": 131
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 25.65896208398044,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:04:22.937262+00:00",
+      "elapsed_s": 34.23367388290353,
+      "cpu_s": 25.408943785,
+      "rss_bytes": 105349120,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 25692268,
+          "user_usec": 25568409,
+          "system_usec": 123858,
+          "nice_usec": 25797000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 346,
+          "nr_throttled": 335,
+          "throttled_usec": 6843507,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 25626131264,
+        "runqueue_wait_ns": 7826869611,
+        "timeslices": 1845
+      },
+      "timing_retained": {
+        "update": 136,
+        "draw": 132,
+        "frame_interval": 136
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 25.65896208398044,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:04:24.048000+00:00",
+      "elapsed_s": 35.34441207186319,
+      "cpu_s": 26.251432697000002,
+      "rss_bytes": 105357312,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 26534207,
+          "user_usec": 26403404,
+          "system_usec": 130803,
+          "nice_usec": 26637000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 357,
+          "nr_throttled": 346,
+          "throttled_usec": 7033667,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 26465185327,
+        "runqueue_wait_ns": 8058184238,
+        "timeslices": 1898
+      },
+      "timing_retained": {
+        "update": 141,
+        "draw": 137,
+        "frame_interval": 141
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 26.68915782123804,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:04:25.242952+00:00",
+      "elapsed_s": 36.53935527987778,
+      "cpu_s": 27.144096693,
+      "rss_bytes": 105361408,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 27426958,
+          "user_usec": 27288233,
+          "system_usec": 138725,
+          "nice_usec": 27530000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 369,
+          "nr_throttled": 358,
+          "throttled_usec": 7265394,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 27356328123,
+        "runqueue_wait_ns": 8345827956,
+        "timeslices": 1953
+      },
+      "timing_retained": {
+        "update": 145,
+        "draw": 141,
+        "frame_interval": 145
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 26.68915782123804,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:04:26.468207+00:00",
+      "elapsed_s": 37.76461652084254,
+      "cpu_s": 28.071061999,
+      "rss_bytes": 105365504,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 28354657,
+          "user_usec": 28209010,
+          "system_usec": 145647,
+          "nice_usec": 28460000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 381,
+          "nr_throttled": 370,
+          "throttled_usec": 7510193,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 28280775511,
+        "runqueue_wait_ns": 8621239931,
+        "timeslices": 2015
+      },
+      "timing_retained": {
+        "update": 149,
+        "draw": 145,
+        "frame_interval": 149
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 26.68915782123804,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:04:27.639211+00:00",
+      "elapsed_s": 38.93562309187837,
+      "cpu_s": 28.936324608,
+      "rss_bytes": 105377792,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 29219316,
+          "user_usec": 29070703,
+          "system_usec": 148613,
+          "nice_usec": 29330000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 393,
+          "nr_throttled": 382,
+          "throttled_usec": 7723064,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 29143610296,
+        "runqueue_wait_ns": 8876849579,
+        "timeslices": 2071
+      },
+      "timing_retained": {
+        "update": 154,
+        "draw": 150,
+        "frame_interval": 154
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 26.68915782123804,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:04:28.739775+00:00",
+      "elapsed_s": 40.036188622005284,
+      "cpu_s": 29.767938697,
+      "rss_bytes": 105377792,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 30051074,
+          "user_usec": 29900482,
+          "system_usec": 150592,
+          "nice_usec": 30168000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 404,
+          "nr_throttled": 393,
+          "throttled_usec": 7940195,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 29972399704,
+        "runqueue_wait_ns": 9100406973,
+        "timeslices": 2117
+      },
+      "timing_retained": {
+        "update": 159,
+        "draw": 155,
+        "frame_interval": 159
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 26.68915782123804,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:04:29.855108+00:00",
+      "elapsed_s": 41.15152016188949,
+      "cpu_s": 30.606969842,
+      "rss_bytes": 105385984,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 30890058,
+          "user_usec": 30736499,
+          "system_usec": 153558,
+          "nice_usec": 31013000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 415,
+          "nr_throttled": 404,
+          "throttled_usec": 8150329,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 30809831485,
+        "runqueue_wait_ns": 9310990237,
+        "timeslices": 2168
+      },
+      "timing_retained": {
+        "update": 164,
+        "draw": 160,
+        "frame_interval": 164
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 26.68915782123804,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:04:30.970862+00:00",
+      "elapsed_s": 42.26727517787367,
+      "cpu_s": 31.447670006,
+      "rss_bytes": 105385984,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 31730824,
+          "user_usec": 31576266,
+          "system_usec": 154557,
+          "nice_usec": 31859000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 426,
+          "nr_throttled": 415,
+          "throttled_usec": 8386830,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 31647155485,
+        "runqueue_wait_ns": 9547875064,
+        "timeslices": 2210
+      },
+      "timing_retained": {
+        "update": 169,
+        "draw": 165,
+        "frame_interval": 169
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 26.68915782123804,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:04:32.142877+00:00",
+      "elapsed_s": 43.439280058955774,
+      "cpu_s": 32.320885283,
+      "rss_bytes": 105385984,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 32604110,
+          "user_usec": 32447578,
+          "system_usec": 156531,
+          "nice_usec": 32739000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 438,
+          "nr_throttled": 427,
+          "throttled_usec": 8653633,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 32519308491,
+        "runqueue_wait_ns": 9815444013,
+        "timeslices": 2257
+      },
+      "timing_retained": {
+        "update": 173,
+        "draw": 169,
+        "frame_interval": 173
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 26.68915782123804,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:04:33.305784+00:00",
+      "elapsed_s": 44.60219623381272,
+      "cpu_s": 33.182450378,
+      "rss_bytes": 105385984,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 33465826,
+          "user_usec": 33307314,
+          "system_usec": 158511,
+          "nice_usec": 33607000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 450,
+          "nr_throttled": 439,
+          "throttled_usec": 8920245,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 33377798590,
+        "runqueue_wait_ns": 10085577695,
+        "timeslices": 2308
+      },
+      "timing_retained": {
+        "update": 177,
+        "draw": 173,
+        "frame_interval": 177
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 26.68915782123804,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:04:34.512555+00:00",
+      "elapsed_s": 45.80896837101318,
+      "cpu_s": 34.090802345,
+      "rss_bytes": 105394176,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 34374480,
+          "user_usec": 34208041,
+          "system_usec": 166438,
+          "nice_usec": 34516000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 462,
+          "nr_throttled": 451,
+          "throttled_usec": 9176159,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 34283938912,
+        "runqueue_wait_ns": 10341838928,
+        "timeslices": 2354
+      },
+      "timing_retained": {
+        "update": 182,
+        "draw": 178,
+        "frame_interval": 182
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 26.68915782123804,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:04:35.627885+00:00",
+      "elapsed_s": 46.92428532987833,
+      "cpu_s": 34.931175207,
+      "rss_bytes": 105410560,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 35214626,
+          "user_usec": 35046197,
+          "system_usec": 168429,
+          "nice_usec": 35360000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 473,
+          "nr_throttled": 462,
+          "throttled_usec": 9426358,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 35121619645,
+        "runqueue_wait_ns": 10592396267,
+        "timeslices": 2396
+      },
+      "timing_retained": {
+        "update": 187,
+        "draw": 183,
+        "frame_interval": 187
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 26.68915782123804,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:04:36.702245+00:00",
+      "elapsed_s": 47.99865130498074,
+      "cpu_s": 35.728734957,
+      "rss_bytes": 105414656,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 36012846,
+          "user_usec": 35841460,
+          "system_usec": 171385,
+          "nice_usec": 36164000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 484,
+          "nr_throttled": 473,
+          "throttled_usec": 9689469,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 35918137459,
+        "runqueue_wait_ns": 10857089879,
+        "timeslices": 2435
+      },
+      "timing_retained": {
+        "update": 190,
+        "draw": 186,
+        "frame_interval": 190
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 26.68915782123804,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:04:37.925085+00:00",
+      "elapsed_s": 49.221480120904744,
+      "cpu_s": 36.653070821,
+      "rss_bytes": 105418752,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 36937399,
+          "user_usec": 36764035,
+          "system_usec": 173363,
+          "nice_usec": 37096000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 496,
+          "nr_throttled": 485,
+          "throttled_usec": 9951271,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 36840555030,
+        "runqueue_wait_ns": 11125627382,
+        "timeslices": 2500
+      },
+      "timing_retained": {
+        "update": 194,
+        "draw": 190,
+        "frame_interval": 194
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 26.68915782123804,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:04:38.927791+00:00",
+      "elapsed_s": 50.22419577091932,
+      "cpu_s": 37.403614058,
+      "rss_bytes": 105422848,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 37687295,
+          "user_usec": 37512932,
+          "system_usec": 174363,
+          "nice_usec": 37850000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 506,
+          "nr_throttled": 495,
+          "throttled_usec": 10158713,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 37588267500,
+        "runqueue_wait_ns": 11334392346,
+        "timeslices": 2549
+      },
+      "timing_retained": {
+        "update": 198,
+        "draw": 194,
+        "frame_interval": 198
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 26.68915782123804,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:04:39.939739+00:00",
+      "elapsed_s": 51.236140553839505,
+      "cpu_s": 38.166459767,
+      "rss_bytes": 105422848,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 38450240,
+          "user_usec": 38275876,
+          "system_usec": 174364,
+          "nice_usec": 38619000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 516,
+          "nr_throttled": 505,
+          "throttled_usec": 10378381,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 38349979840,
+        "runqueue_wait_ns": 11554410860,
+        "timeslices": 2587
+      },
+      "timing_retained": {
+        "update": 202,
+        "draw": 198,
+        "frame_interval": 202
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 26.68915782123804,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:04:41.116293+00:00",
+      "elapsed_s": 52.41270588780753,
+      "cpu_s": 39.042736658,
+      "rss_bytes": 105422848,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 39327089,
+          "user_usec": 39148770,
+          "system_usec": 178318,
+          "nice_usec": 39502000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 528,
+          "nr_throttled": 517,
+          "throttled_usec": 10658665,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 39222622874,
+        "runqueue_wait_ns": 11835132472,
+        "timeslices": 2626
+      },
+      "timing_retained": {
+        "update": 207,
+        "draw": 203,
+        "frame_interval": 207
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 26.68915782123804,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:04:42.249602+00:00",
+      "elapsed_s": 53.5459953378886,
+      "cpu_s": 39.901004905,
+      "rss_bytes": 105426944,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 40185078,
+          "user_usec": 40004778,
+          "system_usec": 180299,
+          "nice_usec": 40365000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 539,
+          "nr_throttled": 528,
+          "throttled_usec": 10892669,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 40079595353,
+        "runqueue_wait_ns": 12081415603,
+        "timeslices": 2686
+      },
+      "timing_retained": {
+        "update": 211,
+        "draw": 207,
+        "frame_interval": 211
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 26.68915782123804,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:04:43.429346+00:00",
+      "elapsed_s": 54.72575641190633,
+      "cpu_s": 40.780904245,
+      "rss_bytes": 105426944,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 41065311,
+          "user_usec": 40883041,
+          "system_usec": 182270,
+          "nice_usec": 41253000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 551,
+          "nr_throttled": 540,
+          "throttled_usec": 11152742,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 40956720830,
+        "runqueue_wait_ns": 12346358195,
+        "timeslices": 2785
+      },
+      "timing_retained": {
+        "update": 215,
+        "draw": 211,
+        "frame_interval": 215
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 26.68915782123804,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:04:44.550571+00:00",
+      "elapsed_s": 55.846982958959416,
+      "cpu_s": 41.626502615,
+      "rss_bytes": 105431040,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 41910764,
+          "user_usec": 41724529,
+          "system_usec": 186234,
+          "nice_usec": 42101000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 562,
+          "nr_throttled": 551,
+          "throttled_usec": 11432050,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 41799306005,
+        "runqueue_wait_ns": 12601283529,
+        "timeslices": 2825
+      },
+      "timing_retained": {
+        "update": 220,
+        "draw": 216,
+        "frame_interval": 220
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 26.68915782123804,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:04:45.571324+00:00",
+      "elapsed_s": 56.867736806860194,
+      "cpu_s": 42.397671548,
+      "rss_bytes": 105435136,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 42682275,
+          "user_usec": 42495037,
+          "system_usec": 187237,
+          "nice_usec": 42876000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 572,
+          "nr_throttled": 561,
+          "throttled_usec": 11641988,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 42568002261,
+        "runqueue_wait_ns": 12811523053,
+        "timeslices": 2864
+      },
+      "timing_retained": {
+        "update": 224,
+        "draw": 220,
+        "frame_interval": 224
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 26.68915782123804,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:04:46.705942+00:00",
+      "elapsed_s": 58.00235084001906,
+      "cpu_s": 43.232928591000004,
+      "rss_bytes": 105435136,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 43517069,
+          "user_usec": 43327847,
+          "system_usec": 189221,
+          "nice_usec": 43715000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 584,
+          "nr_throttled": 573,
+          "throttled_usec": 11902514,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 43399923483,
+        "runqueue_wait_ns": 13072394869,
+        "timeslices": 2911
+      },
+      "timing_retained": {
+        "update": 229,
+        "draw": 225,
+        "frame_interval": 229
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 26.68915782123804,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:04:47.740218+00:00",
+      "elapsed_s": 59.03663118183613,
+      "cpu_s": 44.01671068,
+      "rss_bytes": 105443328,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 44301566,
+          "user_usec": 44110359,
+          "system_usec": 191206,
+          "nice_usec": 44504000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 594,
+          "nr_throttled": 583,
+          "throttled_usec": 12109677,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 44181928570,
+        "runqueue_wait_ns": 13279776310,
+        "timeslices": 2949
+      },
+      "timing_retained": {
+        "update": 233,
+        "draw": 229,
+        "frame_interval": 233
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 26.68915782123804,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:04:49.069457+00:00",
+      "elapsed_s": 60.36584912287071,
+      "cpu_s": 45.002734627,
+      "rss_bytes": 105447424,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 45287395,
+          "user_usec": 45095163,
+          "system_usec": 192231,
+          "nice_usec": 45490000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 607,
+          "nr_throttled": 594,
+          "throttled_usec": 12273583,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 45167191510,
+        "runqueue_wait_ns": 13592235597,
+        "timeslices": 3068
+      },
+      "timing_retained": {
+        "update": 236,
+        "draw": 232,
+        "frame_interval": 236
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 26.68915782123804,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:04:50.333600+00:00",
+      "elapsed_s": 61.62998962588608,
+      "cpu_s": 45.851209666,
+      "rss_bytes": 105455616,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 46136752,
+          "user_usec": 45944520,
+          "system_usec": 192231,
+          "nice_usec": 46347000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 620,
+          "nr_throttled": 604,
+          "throttled_usec": 12444416,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 46014030733,
+        "runqueue_wait_ns": 13972041806,
+        "timeslices": 3218
+      },
+      "timing_retained": {
+        "update": 239,
+        "draw": 235,
+        "frame_interval": 239
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 26.68915782123804,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:04:51.608324+00:00",
+      "elapsed_s": 62.90473389602266,
+      "cpu_s": 46.800680783000004,
+      "rss_bytes": 105463808,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 47085573,
+          "user_usec": 46890374,
+          "system_usec": 195199,
+          "nice_usec": 47302000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 633,
+          "nr_throttled": 617,
+          "throttled_usec": 12742918,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 46960596748,
+        "runqueue_wait_ns": 14271435270,
+        "timeslices": 3278
+      },
+      "timing_retained": {
+        "update": 243,
+        "draw": 239,
+        "frame_interval": 243
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 26.68915782123804,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:04:52.643301+00:00",
+      "elapsed_s": 63.939712184946984,
+      "cpu_s": 47.584924379,
+      "rss_bytes": 105463808,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 47869891,
+          "user_usec": 47669740,
+          "system_usec": 200151,
+          "nice_usec": 48089000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 643,
+          "nr_throttled": 627,
+          "throttled_usec": 12936445,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 47742664474,
+        "runqueue_wait_ns": 14502163268,
+        "timeslices": 3322
+      },
+      "timing_retained": {
+        "update": 247,
+        "draw": 243,
+        "frame_interval": 247
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 26.68915782123804,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:04:53.764283+00:00",
+      "elapsed_s": 65.0606945718173,
+      "cpu_s": 48.425752467,
+      "rss_bytes": 105472000,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 48710794,
+          "user_usec": 48509649,
+          "system_usec": 201145,
+          "nice_usec": 48936000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 654,
+          "nr_throttled": 638,
+          "throttled_usec": 13111458,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 48580790222,
+        "runqueue_wait_ns": 14725841575,
+        "timeslices": 3382
+      },
+      "timing_retained": {
+        "update": 252,
+        "draw": 248,
+        "frame_interval": 252
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 26.68915782123804,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:04:55.118407+00:00",
+      "elapsed_s": 66.41480736993253,
+      "cpu_s": 49.42923426,
+      "rss_bytes": 105472000,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 49714207,
+          "user_usec": 49512068,
+          "system_usec": 202138,
+          "nice_usec": 49947000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 668,
+          "nr_throttled": 652,
+          "throttled_usec": 13383767,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 49581447694,
+        "runqueue_wait_ns": 15046283630,
+        "timeslices": 3453
+      },
+      "timing_retained": {
+        "update": 257,
+        "draw": 253,
+        "frame_interval": 257
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 26.68915782123804,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:04:56.321664+00:00",
+      "elapsed_s": 67.6180692249909,
+      "cpu_s": 50.328970930000004,
+      "rss_bytes": 105472000,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 50613742,
+          "user_usec": 50411603,
+          "system_usec": 202138,
+          "nice_usec": 50856000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 680,
+          "nr_throttled": 663,
+          "throttled_usec": 13510655,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 50478840357,
+        "runqueue_wait_ns": 15321867582,
+        "timeslices": 3557
+      },
+      "timing_retained": {
+        "update": 261,
+        "draw": 257,
+        "frame_interval": 261
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 26.68915782123804,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:04:57.511497+00:00",
+      "elapsed_s": 68.80790906888433,
+      "cpu_s": 51.216799493,
+      "rss_bytes": 105476096,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 51501798,
+          "user_usec": 51294712,
+          "system_usec": 207085,
+          "nice_usec": 51748000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 692,
+          "nr_throttled": 672,
+          "throttled_usec": 13632953,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 51364459206,
+        "runqueue_wait_ns": 15574753737,
+        "timeslices": 3631
+      },
+      "timing_retained": {
+        "update": 266,
+        "draw": 262,
+        "frame_interval": 266
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 26.68915782123804,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:04:58.544484+00:00",
+      "elapsed_s": 69.84089484880678,
+      "cpu_s": 52.000435474,
+      "rss_bytes": 105484288,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 52285491,
+          "user_usec": 52078394,
+          "system_usec": 207096,
+          "nice_usec": 52536000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 702,
+          "nr_throttled": 682,
+          "throttled_usec": 13779996,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 52145863618,
+        "runqueue_wait_ns": 15782585491,
+        "timeslices": 3688
+      },
+      "timing_retained": {
+        "update": 270,
+        "draw": 266,
+        "frame_interval": 270
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 26.68915782123804,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:04:59.720356+00:00",
+      "elapsed_s": 71.01676354696974,
+      "cpu_s": 52.875561611,
+      "rss_bytes": 105488384,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 53160804,
+          "user_usec": 52953702,
+          "system_usec": 207102,
+          "nice_usec": 53418000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 714,
+          "nr_throttled": 693,
+          "throttled_usec": 13946763,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 53018639718,
+        "runqueue_wait_ns": 16040105520,
+        "timeslices": 3752
+      },
+      "timing_retained": {
+        "update": 275,
+        "draw": 271,
+        "frame_interval": 275
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 26.68915782123804,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:05:00.852672+00:00",
+      "elapsed_s": 72.14908211585134,
+      "cpu_s": 53.727288876,
+      "rss_bytes": 105488384,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 54012278,
+          "user_usec": 53804180,
+          "system_usec": 208097,
+          "nice_usec": 54275000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 725,
+          "nr_throttled": 704,
+          "throttled_usec": 14083331,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 53867886100,
+        "runqueue_wait_ns": 16271048661,
+        "timeslices": 3818
+      },
+      "timing_retained": {
+        "update": 280,
+        "draw": 276,
+        "frame_interval": 280
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 26.68915782123804,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:05:02.082253+00:00",
+      "elapsed_s": 73.378656641813,
+      "cpu_s": 54.642061835,
+      "rss_bytes": 105492480,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 54927543,
+          "user_usec": 54716470,
+          "system_usec": 211073,
+          "nice_usec": 55195000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 737,
+          "nr_throttled": 714,
+          "throttled_usec": 14225110,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 54780476633,
+        "runqueue_wait_ns": 16535041891,
+        "timeslices": 3892
+      },
+      "timing_retained": {
+        "update": 285,
+        "draw": 281,
+        "frame_interval": 285
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 26.68915782123804,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:05:03.305623+00:00",
+      "elapsed_s": 74.60200622701086,
+      "cpu_s": 55.551364068,
+      "rss_bytes": 105496576,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 55836578,
+          "user_usec": 55623522,
+          "system_usec": 213056,
+          "nice_usec": 56110000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 750,
+          "nr_throttled": 723,
+          "throttled_usec": 14283142,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 55687326468,
+        "runqueue_wait_ns": 16819034796,
+        "timeslices": 4010
+      },
+      "timing_retained": {
+        "update": 289,
+        "draw": 285,
+        "frame_interval": 289
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 26.68915782123804,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:05:04.362617+00:00",
+      "elapsed_s": 75.65902690286748,
+      "cpu_s": 56.345703961,
+      "rss_bytes": 109166592,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 56630918,
+          "user_usec": 56412908,
+          "system_usec": 218009,
+          "nice_usec": 56907000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 760,
+          "nr_throttled": 733,
+          "throttled_usec": 14355633,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 56479955956,
+        "runqueue_wait_ns": 17066411523,
+        "timeslices": 4095
+      },
+      "timing_retained": {
+        "update": 292,
+        "draw": 288,
+        "frame_interval": 292
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 26.68915782123804,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:05:05.479999+00:00",
+      "elapsed_s": 76.7764075549785,
+      "cpu_s": 57.179431204000004,
+      "rss_bytes": 109166592,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 57465310,
+          "user_usec": 57245315,
+          "system_usec": 219995,
+          "nice_usec": 57746000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 771,
+          "nr_throttled": 740,
+          "throttled_usec": 14386069,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 57312230161,
+        "runqueue_wait_ns": 17319687114,
+        "timeslices": 4178
+      },
+      "timing_retained": {
+        "update": 297,
+        "draw": 293,
+        "frame_interval": 297
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 26.68915782123804,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:05:06.623020+00:00",
+      "elapsed_s": 77.91943103889935,
+      "cpu_s": 58.011101567,
+      "rss_bytes": 109166592,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 58296168,
+          "user_usec": 58075173,
+          "system_usec": 220995,
+          "nice_usec": 58581000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 783,
+          "nr_throttled": 747,
+          "throttled_usec": 14426977,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 58140703904,
+        "runqueue_wait_ns": 17585219848,
+        "timeslices": 4269
+      },
+      "timing_retained": {
+        "update": 302,
+        "draw": 298,
+        "frame_interval": 302
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 26.68915782123804,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:05:07.808149+00:00",
+      "elapsed_s": 79.10456183785573,
+      "cpu_s": 58.845780032,
+      "rss_bytes": 109166592,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 59130909,
+          "user_usec": 58909898,
+          "system_usec": 221011,
+          "nice_usec": 59419000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 795,
+          "nr_throttled": 748,
+          "throttled_usec": 14433861,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 58973962670,
+        "runqueue_wait_ns": 17922570663,
+        "timeslices": 4368
+      },
+      "timing_retained": {
+        "update": 307,
+        "draw": 303,
+        "frame_interval": 307
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 26.68915782123804,
+      "max_frame_ms": 565.9733607899398
+    },
+    {
+      "at_utc": "2026-11-12T04:05:08.742272+00:00",
+      "elapsed_s": 80.0386982508935,
+      "cpu_s": 59.51155955,
+      "rss_bytes": 109232128,
+      "mode": "RUN",
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-alloc-puzzle.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 59797339,
+          "user_usec": 59576308,
+          "system_usec": 221031,
+          "nice_usec": 60086000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 804,
+          "nr_throttled": 748,
+          "throttled_usec": 14433861,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        }
+      },
+      "thread_schedstat": {
+        "runtime_ns": 59637458605,
+        "runqueue_wait_ns": 18162661785,
+        "timeslices": 4449
+      },
+      "timing_retained": {
+        "update": 311,
+        "draw": 307,
+        "frame_interval": 311
+      },
+      "vm_state": "RUN",
+      "line": 660,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 556.1514277942479,
+      "max_draw_ms": 26.68915782123804,
+      "max_frame_ms": 565.9733607899398
+    }
+  ],
+  "session_thread_alive": false,
+  "screen": [
+    "KEYS 1,2,4,5:HORIZ  3,6,7,8:VERT                                ",
+    "S:SCRAMBLE  A:SOLVE                                             ",
+    "HIST STACK:0                                                    ",
+    "LA:0 LY:99 LX:99                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                "
+  ]
+}

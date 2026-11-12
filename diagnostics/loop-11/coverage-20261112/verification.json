@@ -1,0 +1,9 @@
+{
+  "archived_files_hash_verified": 56,
+  "archived_runs": 8,
+  "retained_normal_runs_reviewed": 24,
+  "trace_cases_validated": [
+    "idle",
+    "puzzle"
+  ]
+}

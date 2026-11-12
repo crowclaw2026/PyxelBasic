@@ -98,7 +98,10 @@ SDL_VIDEODRIVER=offscreen SDL_AUDIODRIVER=dummy timeout 40 .venv/bin/python tool
 `--capture-sec 0` は起動器側の `--` より前に置く診断専用の比較条件。
 その他は `main.py --help` と同じ引数。thread比較は `--` より後に `--exec-mode thread` を付ける。
 表示されるFPSではなく、JSONのupdate/draw/frame_intervalを比較する。
-メモリ比較は録画リングが埋まる10秒以降の推移を見る。
+idleでは約10秒で録画リングが埋まったが、低FPSの負荷ケースでは壁時計10秒では足りない。
+Pyxel 2.9.5ではfps*capture_sec枚（この条件で600枚）の捕捉が必要なため、
+draw件数やRSSの初期増加が落ち着いた時点を確認してから比較する。draw件数は捕捉回数の代理指標で、
+録画内部の枚数を直接計測したものではない。60秒固定の監視判定もwarm-up完了の保証ではない。
 
 ### Windowsで必要になったときの最小採取手順（実機未検証）
 

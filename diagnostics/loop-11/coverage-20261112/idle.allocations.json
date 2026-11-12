@@ -1,0 +1,335 @@
+{
+  "note": "Tracing changes CPU/memory; Python allocations only, not native memory.",
+  "baseline_elapsed_s": 20.01646501920186,
+  "final_elapsed_s": 75.00002821418457,
+  "rss_bytes_at_final": 110354432,
+  "traced_current_peak_bytes": [
+    3050558,
+    3060933
+  ],
+  "total_size_diff": 433328,
+  "top_positive": [
+    {
+      "file": "/home/take/projects/spsoft/PyxelBasic/tools/diagnose_stall.py",
+      "line": 64,
+      "size_diff": 71280,
+      "count_diff": 135,
+      "size": 101376,
+      "count": 192
+    },
+    {
+      "file": "/home/take/projects/spsoft/PyxelBasic/tools/diagnose_stall.py",
+      "line": 218,
+      "size_diff": 69528,
+      "count_diff": 2897,
+      "size": 98112,
+      "count": 4088
+    },
+    {
+      "file": "/home/take/projects/spsoft/PyxelBasic/tools/diagnose_stall.py",
+      "line": 189,
+      "size_diff": 69504,
+      "count_diff": 2896,
+      "size": 98136,
+      "count": 4089
+    },
+    {
+      "file": "/home/take/projects/spsoft/PyxelBasic/tools/diagnose_stall.py",
+      "line": 183,
+      "size_diff": 69432,
+      "count_diff": 2893,
+      "size": 97944,
+      "count": 4081
+    },
+    {
+      "file": "/home/take/projects/spsoft/PyxelBasic/tools/diagnose_stall.py",
+      "line": 161,
+      "size_diff": 31885,
+      "count_diff": 212,
+      "size": 43625,
+      "count": 292
+    },
+    {
+      "file": "/home/take/projects/spsoft/PyxelBasic/tools/diagnose_stall.py",
+      "line": 87,
+      "size_diff": 29150,
+      "count_diff": 550,
+      "size": 39750,
+      "count": 750
+    },
+    {
+      "file": "/home/take/projects/spsoft/PyxelBasic/tools/diagnose_stall.py",
+      "line": 86,
+      "size_diff": 24060,
+      "count_diff": 435,
+      "size": 32300,
+      "count": 575
+    },
+    {
+      "file": "/usr/lib/python3.12/pathlib.py",
+      "line": 1015,
+      "size_diff": 21991,
+      "count_diff": 259,
+      "size": 45594,
+      "count": 406
+    },
+    {
+      "file": "/home/take/projects/spsoft/PyxelBasic/tools/diagnose_stall.py",
+      "line": 96,
+      "size_diff": 8408,
+      "count_diff": 221,
+      "size": 11404,
+      "count": 300
+    },
+    {
+      "file": "/home/take/projects/spsoft/PyxelBasic/tools/diagnose_stall.py",
+      "line": 166,
+      "size_diff": 8140,
+      "count_diff": 220,
+      "size": 10680,
+      "count": 285
+    },
+    {
+      "file": "/home/take/projects/spsoft/PyxelBasic/tools/diagnose_stall.py",
+      "line": 82,
+      "size_diff": 7205,
+      "count_diff": 55,
+      "size": 9825,
+      "count": 75
+    },
+    {
+      "file": "/home/take/projects/spsoft/PyxelBasic/tools/diagnose_stall.py",
+      "line": 180,
+      "size_diff": 6600,
+      "count_diff": 55,
+      "size": 8244,
+      "count": 70
+    },
+    {
+      "file": "/home/take/projects/spsoft/PyxelBasic/tools/diagnose_stall.py",
+      "line": 85,
+      "size_diff": 6435,
+      "count_diff": 110,
+      "size": 8775,
+      "count": 150
+    },
+    {
+      "file": "/usr/lib/python3.12/tracemalloc.py",
+      "line": 558,
+      "size_diff": 3408,
+      "count_diff": 61,
+      "size": 3464,
+      "count": 62
+    },
+    {
+      "file": "/home/take/projects/spsoft/PyxelBasic/tools/diagnose_stall.py",
+      "line": 162,
+      "size_diff": 2640,
+      "count_diff": 110,
+      "size": 3552,
+      "count": 148
+    },
+    {
+      "file": "/home/take/projects/spsoft/PyxelBasic/tools/diagnose_stall.py",
+      "line": 22,
+      "size_diff": 1760,
+      "count_diff": 55,
+      "size": 2400,
+      "count": 75
+    },
+    {
+      "file": "/home/take/projects/spsoft/PyxelBasic/tools/diagnose_stall.py",
+      "line": 176,
+      "size_diff": 1320,
+      "count_diff": 55,
+      "size": 1776,
+      "count": 74
+    },
+    {
+      "file": "/home/take/projects/spsoft/PyxelBasic/tools/diagnose_stall.py",
+      "line": 175,
+      "size_diff": 1320,
+      "count_diff": 55,
+      "size": 1776,
+      "count": 74
+    },
+    {
+      "file": "/home/take/projects/spsoft/PyxelBasic/tools/diagnose_stall.py",
+      "line": 174,
+      "size_diff": 1320,
+      "count_diff": 55,
+      "size": 1776,
+      "count": 74
+    },
+    {
+      "file": "/home/take/projects/spsoft/PyxelBasic/tools/diagnose_stall.py",
+      "line": 206,
+      "size_diff": 416,
+      "count_diff": 0,
+      "size": 608,
+      "count": 1
+    },
+    {
+      "file": "/usr/lib/python3.12/tracemalloc.py",
+      "line": 560,
+      "size_diff": 312,
+      "count_diff": 2,
+      "size": 312,
+      "count": 2
+    },
+    {
+      "file": "/usr/lib/python3.12/tracemalloc.py",
+      "line": 423,
+      "size_diff": 312,
+      "count_diff": 2,
+      "size": 312,
+      "count": 2
+    },
+    {
+      "file": "/usr/lib/python3.12/pathlib.py",
+      "line": 1164,
+      "size_diff": 48,
+      "count_diff": 1,
+      "size": 104,
+      "count": 2
+    },
+    {
+      "file": "/home/take/projects/spsoft/PyxelBasic/pyxelbasic/console.py",
+      "line": 145,
+      "size_diff": 48,
+      "count_diff": 1,
+      "size": 48,
+      "count": 1
+    },
+    {
+      "file": "/home/take/projects/spsoft/PyxelBasic/tools/diagnose_stall.py",
+      "line": 181,
+      "size_diff": 24,
+      "count_diff": 1,
+      "size": 48,
+      "count": 2
+    },
+    {
+      "file": "/home/take/projects/spsoft/PyxelBasic/tools/diagnose_stall.py",
+      "line": 182,
+      "size_diff": 24,
+      "count_diff": 1,
+      "size": 24,
+      "count": 1
+    },
+    {
+      "file": "/home/take/projects/spsoft/PyxelBasic/diagnostics/loop-11/coverage-20261112/trace_allocations.py",
+      "line": 28,
+      "size_diff": 24,
+      "count_diff": 1,
+      "size": 24,
+      "count": 1
+    },
+    {
+      "file": "<frozen importlib._bootstrap_external>",
+      "line": 753,
+      "size_diff": 0,
+      "count_diff": 0,
+      "size": 772057,
+      "count": 7241
+    },
+    {
+      "file": "/home/take/projects/spsoft/PyxelBasic/pyxelbasic/runtime.py",
+      "line": 317,
+      "size_diff": 0,
+      "count_diff": 0,
+      "size": 115352,
+      "count": 2050
+    },
+    {
+      "file": "/usr/lib/python3.12/linecache.py",
+      "line": 137,
+      "size_diff": 0,
+      "count_diff": 0,
+      "size": 49692,
+      "count": 487
+    }
+  ],
+  "top_negative": [
+    {
+      "file": "/usr/lib/python3.12/re/_parser.py",
+      "line": 548,
+      "size_diff": -952,
+      "count_diff": -17,
+      "size": 0,
+      "count": 0
+    },
+    {
+      "file": "/usr/lib/python3.12/re/_parser.py",
+      "line": 227,
+      "size_diff": -784,
+      "count_diff": -14,
+      "size": 0,
+      "count": 0
+    },
+    {
+      "file": "/usr/lib/python3.12/re/_parser.py",
+      "line": 872,
+      "size_diff": -280,
+      "count_diff": -5,
+      "size": 0,
+      "count": 0
+    },
+    {
+      "file": "/usr/lib/python3.12/re/_parser.py",
+      "line": 704,
+      "size_diff": -280,
+      "count_diff": -5,
+      "size": 0,
+      "count": 0
+    },
+    {
+      "file": "/usr/lib/python3.12/re/_parser.py",
+      "line": 875,
+      "size_diff": -112,
+      "count_diff": -2,
+      "size": 0,
+      "count": 0
+    },
+    {
+      "file": "/usr/lib/python3.12/re/_parser.py",
+      "line": 785,
+      "size_diff": -112,
+      "count_diff": -2,
+      "size": 0,
+      "count": 0
+    },
+    {
+      "file": "/usr/lib/python3.12/re/_compiler.py",
+      "line": 283,
+      "size_diff": -112,
+      "count_diff": -2,
+      "size": 0,
+      "count": 0
+    },
+    {
+      "file": "/usr/lib/python3.12/argparse.py",
+      "line": 1628,
+      "size_diff": -110,
+      "count_diff": -2,
+      "size": 269,
+      "count": 5
+    },
+    {
+      "file": "/usr/lib/python3.12/tokenize.py",
+      "line": 453,
+      "size_diff": -59,
+      "count_diff": -1,
+      "size": 118,
+      "count": 2
+    },
+    {
+      "file": "/usr/lib/python3.12/re/_parser.py",
+      "line": 707,
+      "size_diff": -56,
+      "count_diff": -1,
+      "size": 0,
+      "count": 0
+    }
+  ]
+}

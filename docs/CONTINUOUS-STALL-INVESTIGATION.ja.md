@@ -78,6 +78,15 @@ wall/thread CPU/process CPU、終了時cgroup/schedstatを含む。結果JSON内
 `non_cpu_wall_ms`は原因の断定ではない。定期サンプルのschedstat差分も窓幅に注意する。
 監視サービス・設定・ケースは維持し、次回子起動から新診断器を使用する。
 
+## warm-upと読取り時刻（2026-11-12）
+
+`diagnostics/loop-11/coverage-20261112/REPORT.ja.md`に保持中24件とtracemalloc追加試験を保存。
+低FPSでは録画リング/4096件時間系列の充填が固定60秒を超え得るため、
+60秒以降を一律に定常状態と解釈しない。schema4で毎秒update/draw累積件数を追加。
+cgroup/schedstatはupdate後に順次読み取るため、update終了と境界が一致しない。
+schema4は読取り開始/終了perf時刻と結果基点を保存し、観測遅延を区別する。
+64MiB判定・ケース・監視親は維持。新しい子から反映される。
+
 ## 検証
 
 `python -m unittest discover -s tests -p test_stall_monitor.py -v`:

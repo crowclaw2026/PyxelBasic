@@ -79,12 +79,15 @@ def cgroup_cpu():
     if sys.platform != 'linux':
         return None
     try:
+        read_started = time.perf_counter()
         entry = next(line[3:] for line in Path('/proc/self/cgroup').read_text().splitlines()
                      if line.startswith('0::'))
         root = Path('/sys/fs/cgroup') / entry.lstrip('/')
-        return {'path': entry, 'cpu_max': (root / 'cpu.max').read_text().strip(),
+        result = {'path': entry, 'cpu_max': (root / 'cpu.max').read_text().strip(),
                 'cpu_stat': {k: int(v) for k, v in
                              (line.split() for line in (root / 'cpu.stat').read_text().splitlines())}}
+        result.update(read_started_perf_s=read_started, read_ended_perf_s=time.perf_counter())
+        return result
     except (OSError, ValueError, StopIteration):
         return None
 
@@ -92,8 +95,11 @@ def cgroup_cpu():
 def thread_schedstat():
     """Linux cumulative runtime/runqueue wait for the calling thread, if exposed."""
     try:
+        read_started = time.perf_counter()
         values = Path('/proc/thread-self/schedstat').read_text().split()
-        return dict(zip(('runtime_ns', 'runqueue_wait_ns', 'timeslices'), map(int, values)))
+        result = dict(zip(('runtime_ns', 'runqueue_wait_ns', 'timeslices'), map(int, values)))
+        result.update(read_started_perf_s=read_started, read_ended_perf_s=time.perf_counter())
+        return result
     except (OSError, ValueError):
         return None
 
@@ -161,6 +167,7 @@ def main():
             return {"at_utc": datetime.now(timezone.utc).isoformat(),
                     "elapsed_s": now - started, "cpu_s": time.process_time() - cpu_started,
                     "rss_bytes": rss_bytes(), "mode": app.session.mode,
+                    "update_count": update_times.count, "draw_count": draw_times.count,
                     "cgroup_cpu": cgroup_cpu(),
                     "thread_schedstat": thread_schedstat(),
                     "timing_retained": {k: len(v.values) for k, v in
@@ -234,7 +241,8 @@ def main():
                 app.session_thread.join(timeout=1)
             ended = time.perf_counter()
             samples.append(sample(ended))
-            result = {"schema_version": 3, "python": platform.python_version(),
+            result = {"schema_version": 4, "python": platform.python_version(),
+                      "started_perf_counter_s": started,
                       "timing_capacity": args.timing_capacity,
                       "slow_update_ms": args.slow_update_ms, "slow_update_count": slow_update_count,
                       "slow_updates_tail": list(slow_updates),

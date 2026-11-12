@@ -1,0 +1,234 @@
+[
+  {
+    "case": "idle",
+    "run": "run-20261112T011913.579294Z-idle",
+    "schema_version": 3,
+    "returncode": 0,
+    "kinds": [],
+    "elapsed_s": 1200.0094196980353,
+    "cpu_pct": 11.927377060758111,
+    "update": {
+      "count": 71964,
+      "p50_ms": 0.24632608983665705,
+      "p95_ms": 0.35287998616695404,
+      "p99_ms": 0.4227978643029928,
+      "max_ms": 6.909319199621677,
+      "retained_count": 4096,
+      "quantile_scope": "last-retained-values"
+    },
+    "frame_interval": {
+      "count": 71964,
+      "p50_ms": 16.940337605774403,
+      "p95_ms": 17.453196924179792,
+      "p99_ms": 18.122694920748472,
+      "max_ms": 141.7526330333203,
+      "retained_count": 4096,
+      "quantile_scope": "last-retained-values"
+    },
+    "slow_update_count": 0,
+    "median_rss_delta_mib": 2.8203125
+  },
+  {
+    "case": "particle-main",
+    "run": "run-20261112T013917.235935Z-particle-main",
+    "schema_version": 3,
+    "returncode": 0,
+    "kinds": [],
+    "elapsed_s": 1200.0525044810493,
+    "cpu_pct": 74.2356911346347,
+    "update": {
+      "count": 23034,
+      "p50_ms": 42.14692453388125,
+      "p95_ms": 62.782573979347944,
+      "p99_ms": 66.69577700085938,
+      "max_ms": 230.66428606398404,
+      "retained_count": 4096,
+      "quantile_scope": "last-retained-values"
+    },
+    "frame_interval": {
+      "count": 23034,
+      "p50_ms": 49.50712702702731,
+      "p95_ms": 72.33376987278461,
+      "p99_ms": 79.70097498036921,
+      "max_ms": 250.99417404271662,
+      "retained_count": 4096,
+      "quantile_scope": "last-retained-values"
+    },
+    "slow_update_count": 0,
+    "median_rss_delta_mib": 3.025390625
+  },
+  {
+    "case": "particle-thread",
+    "run": "run-20261112T015921.489392Z-particle-thread",
+    "schema_version": 3,
+    "returncode": 0,
+    "kinds": [],
+    "elapsed_s": 1200.0771521679126,
+    "cpu_pct": 53.05973336778484,
+    "update": {
+      "count": 71532,
+      "p50_ms": 0.1150364987552166,
+      "p95_ms": 0.17535616643726826,
+      "p99_ms": 0.20267697982490063,
+      "max_ms": 5.365764955058694,
+      "retained_count": 4096,
+      "quantile_scope": "last-retained-values"
+    },
+    "frame_interval": {
+      "count": 71532,
+      "p50_ms": 16.43168751616031,
+      "p95_ms": 22.206302033737302,
+      "p99_ms": 32.33622689731419,
+      "max_ms": 309.72343892790377,
+      "retained_count": 4096,
+      "quantile_scope": "last-retained-values"
+    },
+    "slow_update_count": 0,
+    "median_rss_delta_mib": 2.80078125
+  },
+  {
+    "case": "audio-cycle-main",
+    "run": "run-20261112T021925.201295Z-audio-cycle-main",
+    "schema_version": 3,
+    "returncode": 0,
+    "kinds": [],
+    "elapsed_s": 1200.0146089838818,
+    "cpu_pct": 13.77013101223166,
+    "update": {
+      "count": 71989,
+      "p50_ms": 0.37980207707732916,
+      "p95_ms": 0.49802521243691444,
+      "p99_ms": 0.6234948523342609,
+      "max_ms": 17.049201996997,
+      "retained_count": 4096,
+      "quantile_scope": "last-retained-values"
+    },
+    "frame_interval": {
+      "count": 71989,
+      "p50_ms": 16.412370139732957,
+      "p95_ms": 17.442787997424603,
+      "p99_ms": 18.21544603444636,
+      "max_ms": 33.641803078353405,
+      "retained_count": 4096,
+      "quantile_scope": "last-retained-values"
+    },
+    "slow_update_count": 0,
+    "median_rss_delta_mib": 2.80078125
+  },
+  {
+    "case": "audio-cycle-thread",
+    "run": "run-20261112T023929.080627Z-audio-cycle-thread",
+    "schema_version": 3,
+    "returncode": 0,
+    "kinds": [],
+    "elapsed_s": 1200.0189875159413,
+    "cpu_pct": 21.73691989390583,
+    "update": {
+      "count": 71984,
+      "p50_ms": 0.1379614695906639,
+      "p95_ms": 0.31664595007896423,
+      "p99_ms": 0.3762210253626108,
+      "max_ms": 5.438197869807482,
+      "retained_count": 4096,
+      "quantile_scope": "last-retained-values"
+    },
+    "frame_interval": {
+      "count": 71984,
+      "p50_ms": 16.785959480330348,
+      "p95_ms": 21.133003989234567,
+      "p99_ms": 22.25812990218401,
+      "max_ms": 122.90168786421418,
+      "retained_count": 4096,
+      "quantile_scope": "last-retained-values"
+    },
+    "slow_update_count": 0,
+    "median_rss_delta_mib": 2.81640625
+  },
+  {
+    "case": "puzzle-main",
+    "run": "run-20261112T025932.836074Z-puzzle-main",
+    "schema_version": 3,
+    "returncode": 0,
+    "kinds": [],
+    "elapsed_s": 1200.0746505570132,
+    "cpu_pct": 72.8671893659382,
+    "update": {
+      "count": 9744,
+      "p50_ms": 105.46389245428145,
+      "p95_ms": 132.67376506701112,
+      "p99_ms": 137.88310415111482,
+      "max_ms": 1338.290240848437,
+      "retained_count": 4096,
+      "quantile_scope": "last-retained-values"
+    },
+    "frame_interval": {
+      "count": 9744,
+      "p50_ms": 116.46511894650757,
+      "p95_ms": 135.53772494196892,
+      "p99_ms": 150.8983219973743,
+      "max_ms": 1415.7783568371087,
+      "retained_count": 4096,
+      "quantile_scope": "last-retained-values"
+    },
+    "slow_update_count": 30,
+    "median_rss_delta_mib": 5.439453125
+  },
+  {
+    "case": "cube-main",
+    "run": "run-20261112T031936.420677Z-cube-main",
+    "schema_version": 3,
+    "returncode": 0,
+    "kinds": [],
+    "elapsed_s": 1200.0085604060441,
+    "cpu_pct": 69.79426494812708,
+    "update": {
+      "count": 71904,
+      "p50_ms": 10.162970400415361,
+      "p95_ms": 10.807804996147752,
+      "p99_ms": 12.02853606082499,
+      "max_ms": 26.40437101945281,
+      "retained_count": 4096,
+      "quantile_scope": "last-retained-values"
+    },
+    "frame_interval": {
+      "count": 71904,
+      "p50_ms": 16.793912509456277,
+      "p95_ms": 17.765111988410354,
+      "p99_ms": 18.098601838573813,
+      "max_ms": 38.47979009151459,
+      "retained_count": 4096,
+      "quantile_scope": "last-retained-values"
+    },
+    "slow_update_count": 0,
+    "median_rss_delta_mib": 2.84765625
+  },
+  {
+    "case": "idle-no-capture",
+    "run": "run-20261112T033940.349372Z-idle-no-capture",
+    "schema_version": 3,
+    "returncode": 0,
+    "kinds": [],
+    "elapsed_s": 1200.0121003522072,
+    "cpu_pct": 12.684920292997276,
+    "update": {
+      "count": 71991,
+      "p50_ms": 0.265015522018075,
+      "p95_ms": 0.3360118716955185,
+      "p99_ms": 0.38614613004028797,
+      "max_ms": 3.8598221726715565,
+      "retained_count": 4096,
+      "quantile_scope": "last-retained-values"
+    },
+    "frame_interval": {
+      "count": 71991,
+      "p50_ms": 16.954888007603586,
+      "p95_ms": 17.346263164654374,
+      "p99_ms": 18.10907293111086,
+      "max_ms": 33.03544479422271,
+      "retained_count": 4096,
+      "quantile_scope": "last-retained-values"
+    },
+    "slow_update_count": 0,
+    "median_rss_delta_mib": 2.8046875
+  }
+]

@@ -38,5 +38,15 @@ class MonitorTests(unittest.TestCase):
             self.assertEqual(r['kinds'],[])
             self.assertGreaterEqual(r['elapsed_s'],2)
             self.assertEqual(r['returncode'],0)
+            result=json.loads((Path(r['run'])/'result.json').read_text())
+            samples=result['samples']
+            self.assertGreater(samples[-1]['update_count'],samples[0]['update_count'])
+            self.assertGreater(samples[-1]['draw_count'],samples[0]['draw_count'])
+            for sample in samples:
+                for key in ('cgroup_cpu','thread_schedstat'):
+                    counters=sample.get(key)
+                    if counters is not None:
+                        self.assertLessEqual(counters['read_started_perf_s'],counters['read_ended_perf_s'])
+                        self.assertGreaterEqual(counters['read_started_perf_s'],result['started_perf_counter_s'])
 
 if __name__=='__main__':unittest.main()

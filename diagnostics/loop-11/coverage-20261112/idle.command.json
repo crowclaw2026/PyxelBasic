@@ -1,0 +1,23 @@
+[
+  "systemd-run",
+  "--user",
+  "--wait",
+  "--pipe",
+  "--collect",
+  "--unit=crow-pyxelbasic-alloc-idle",
+  "--property=CPUQuota=75%",
+  "--property=Nice=10",
+  "--property=MemoryMax=256M",
+  "--setenv=SDL_VIDEODRIVER=offscreen",
+  "--setenv=SDL_AUDIODRIVER=dummy",
+  "/home/take/projects/spsoft/PyxelBasic/.venv/bin/python",
+  "/home/take/projects/spsoft/PyxelBasic/diagnostics/loop-11/coverage-20261112/trace_allocations.py",
+  "/home/take/projects/spsoft/PyxelBasic/diagnostics/loop-11/coverage-20261112/idle.allocations.json",
+  "--seconds",
+  "80",
+  "--capture-sec",
+  "0",
+  "--output",
+  "/home/take/projects/spsoft/PyxelBasic/diagnostics/loop-11/coverage-20261112/idle.json",
+  "--"
+]

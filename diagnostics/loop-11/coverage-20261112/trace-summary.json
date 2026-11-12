@@ -1,0 +1,20 @@
+[
+  {
+    "case": "idle",
+    "schema_version": 3,
+    "traced_interval_s": 54.98356319498271,
+    "net_traced_bytes": 433328,
+    "diagnose_top30_positive_bytes": 410451,
+    "update_count": 4786,
+    "elapsed_s": 80.00205024308525
+  },
+  {
+    "case": "puzzle",
+    "schema_version": 3,
+    "traced_interval_s": 55.02083125594072,
+    "net_traced_bytes": 160375,
+    "diagnose_top30_positive_bytes": 139425,
+    "update_count": 311,
+    "elapsed_s": 80.0386982508935
+  }
+]
