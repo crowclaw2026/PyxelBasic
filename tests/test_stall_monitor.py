@@ -40,6 +40,10 @@ class MonitorTests(unittest.TestCase):
             self.assertEqual(r['returncode'],0)
             result=json.loads((Path(r['run'])/'result.json').read_text())
             samples=result['samples']
+            self.assertEqual(result['sample_storage'],'stream')
+            self.assertEqual(result['in_run_retained_samples'],0)
+            streamed=[json.loads(line) for line in (Path(r['run'])/'result.samples.jsonl').read_text().splitlines()]
+            self.assertEqual(samples,streamed)
             self.assertGreater(samples[-1]['update_count'],samples[0]['update_count'])
             self.assertGreater(samples[-1]['draw_count'],samples[0]['draw_count'])
             for sample in samples:

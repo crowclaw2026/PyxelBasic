@@ -1,0 +1,9 @@
+{
+  "archived_runs": 24,
+  "archived_files_hash_verified": 104,
+  "storage_cases_validated": [
+    "memory",
+    "stream"
+  ],
+  "sample_jsonl_equals_result_in_both_cases": true
+}

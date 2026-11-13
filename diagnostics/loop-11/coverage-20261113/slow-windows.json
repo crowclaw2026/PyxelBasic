@@ -1,0 +1,1741 @@
+[
+  {
+    "case": "particle-main",
+    "run": "run-20261112T202258.320228Z-particle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-12T20:35:24.542842+00:00",
+      "start_elapsed_s": 745.2231999640353,
+      "end_elapsed_s": 746.0108121149242,
+      "wall_ms": 787.61215088889,
+      "thread_cpu_ms": 78.1146209999406,
+      "process_cpu_ms": 78.58944799988876,
+      "non_cpu_wall_ms": 709.4975298889494,
+      "line": 320,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 99591612182,
+          "user_usec": 92084042736,
+          "system_usec": 7507569445,
+          "nice_usec": 88784940000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 2421174,
+          "nr_throttled": 562362,
+          "throttled_usec": 9890835627,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2025195.938984654,
+        "read_ended_perf_s": 2025195.939490899
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 553383321184,
+        "runqueue_wait_ns": 130904171716,
+        "timeslices": 57069,
+        "read_started_perf_s": 2025195.93949556,
+        "read_ended_perf_s": 2025195.939600464
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "nominal_window_ms": 880.1241319160908,
+    "sched_counter_window_min_ms": 879.9954389687628,
+    "sched_counter_window_max_ms": 880.1904290448874,
+    "sched_read_after_update_ms": 0.674515962600708,
+    "runqueue_wait_delta_ms": 737.48639,
+    "runtime_delta_ms": 142.099071,
+    "throttled_delta_ms": 0.0
+  },
+  {
+    "case": "particle-main",
+    "run": "run-20261112T202258.320228Z-particle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-12T20:35:34.018687+00:00",
+      "start_elapsed_s": 754.835790899815,
+      "end_elapsed_s": 755.4866567938589,
+      "wall_ms": 650.8658940438181,
+      "thread_cpu_ms": 74.93284300005598,
+      "process_cpu_ms": 75.52229300006275,
+      "non_cpu_wall_ms": 575.9330510437621,
+      "line": 320,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 99597378478,
+          "user_usec": 92089778138,
+          "system_usec": 7507600340,
+          "nice_usec": 88790667000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 2421269,
+          "nr_throttled": 562425,
+          "throttled_usec": 9892001093,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2025205.414828572,
+        "read_ended_perf_s": 2025205.415335635
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 559098111115,
+        "runqueue_wait_ns": 134029620876,
+        "timeslices": 57879,
+        "read_started_perf_s": 2025205.41534044,
+        "read_ended_perf_s": 2025205.415443899
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "nominal_window_ms": 738.9403469860554,
+    "sched_counter_window_min_ms": 739.0495031140745,
+    "sched_counter_window_max_ms": 739.2108070198447,
+    "sched_read_after_update_ms": 0.673272181302309,
+    "runqueue_wait_delta_ms": 602.234931,
+    "runtime_delta_ms": 128.198686,
+    "throttled_delta_ms": 64.116
+  },
+  {
+    "case": "particle-main",
+    "run": "run-20261112T202258.320228Z-particle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-12T20:35:34.583422+00:00",
+      "start_elapsed_s": 755.5070038379636,
+      "end_elapsed_s": 756.0513920169324,
+      "wall_ms": 544.3881789688021,
+      "thread_cpu_ms": 76.55296099994757,
+      "process_cpu_ms": 77.3610579999513,
+      "non_cpu_wall_ms": 467.8352179688545,
+      "line": 320,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 99597459128,
+          "user_usec": 92089858428,
+          "system_usec": 7507600699,
+          "nice_usec": 88790746000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 2421274,
+          "nr_throttled": 562425,
+          "throttled_usec": 9892001093,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2025205.979561057,
+        "read_ended_perf_s": 2025205.980116628
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 559177801429,
+        "runqueue_wait_ns": 134498783308,
+        "timeslices": 57905,
+        "read_started_perf_s": 2025205.980120946,
+        "read_ended_perf_s": 2025205.980229412
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "nominal_window_ms": 1303.6755700595677,
+    "sched_counter_window_min_ms": 1303.8300089538097,
+    "sched_counter_window_max_ms": 1303.9963198825717,
+    "sched_read_after_update_ms": 0.7235619705170393,
+    "runqueue_wait_delta_ms": 1071.397363,
+    "runtime_delta_ms": 207.889,
+    "throttled_delta_ms": 64.116
+  },
+  {
+    "case": "particle-main",
+    "run": "run-20261112T202258.320228Z-particle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-12T20:36:01.517858+00:00",
+      "start_elapsed_s": 782.4704640018754,
+      "end_elapsed_s": 782.9858296918683,
+      "wall_ms": 515.3656899929047,
+      "thread_cpu_ms": 71.9880590000912,
+      "process_cpu_ms": 72.35424199996032,
+      "non_cpu_wall_ms": 443.37763099281347,
+      "line": 320,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 99615195027,
+          "user_usec": 92107466798,
+          "system_usec": 7507728229,
+          "nice_usec": 88808319000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 2421544,
+          "nr_throttled": 562639,
+          "throttled_usec": 9895865966,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2025232.913994076,
+        "read_ended_perf_s": 2025232.921543361
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 576765324601,
+        "runqueue_wait_ns": 141980524323,
+        "timeslices": 59984,
+        "read_started_perf_s": 2025232.9215477,
+        "read_ended_perf_s": 2025232.921641843
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "nominal_window_ms": 723.4181358944625,
+    "sched_counter_window_min_ms": 730.3037808742374,
+    "sched_counter_window_max_ms": 730.4868698120117,
+    "sched_read_after_update_ms": 7.698317989706993,
+    "runqueue_wait_delta_ms": 573.572079,
+    "runtime_delta_ms": 141.056577,
+    "throttled_delta_ms": 0.0
+  },
+  {
+    "case": "particle-main",
+    "run": "run-20261112T202258.320228Z-particle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-12T20:36:09.391649+00:00",
+      "start_elapsed_s": 790.0680120070465,
+      "end_elapsed_s": 790.8596176339779,
+      "wall_ms": 791.605626931414,
+      "thread_cpu_ms": 75.6210029999238,
+      "process_cpu_ms": 76.25022599995646,
+      "non_cpu_wall_ms": 715.9846239314902,
+      "line": 320,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 99620094133,
+          "user_usec": 92112346529,
+          "system_usec": 7507747604,
+          "nice_usec": 88813188000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 2421622,
+          "nr_throttled": 562695,
+          "throttled_usec": 9896936007,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2025240.787788455,
+        "read_ended_perf_s": 2025240.788319684
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 581622246816,
+        "runqueue_wait_ns": 144504365632,
+        "timeslices": 60542,
+        "read_started_perf_s": 2025240.78832362,
+        "read_ended_perf_s": 2025240.788436442
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "nominal_window_ms": 1265.9271841403097,
+    "sched_counter_window_min_ms": 1265.735736116767,
+    "sched_counter_window_max_ms": 1265.9572910051793,
+    "sched_read_after_update_ms": 0.7049748674035072,
+    "runqueue_wait_delta_ms": 963.64208,
+    "runtime_delta_ms": 271.997371,
+    "throttled_delta_ms": 31.377
+  },
+  {
+    "case": "particle-main",
+    "run": "run-20261112T202258.320228Z-particle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-12T20:36:20.351951+00:00",
+      "start_elapsed_s": 801.1799893840216,
+      "end_elapsed_s": 801.6842829249799,
+      "wall_ms": 504.29354095831513,
+      "thread_cpu_ms": 78.67171099996995,
+      "process_cpu_ms": 79.30422100002943,
+      "non_cpu_wall_ms": 425.6218299583452,
+      "line": 320,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 99627665239,
+          "user_usec": 92119876307,
+          "system_usec": 7507788932,
+          "nice_usec": 88820705000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 2421732,
+          "nr_throttled": 562788,
+          "throttled_usec": 9898563306,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2025251.748096427,
+        "read_ended_perf_s": 2025251.748653555
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 589129737845,
+        "runqueue_wait_ns": 147159491215,
+        "timeslices": 61416,
+        "read_started_perf_s": 2025251.748657548,
+        "read_ended_perf_s": 2025251.748763031
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "nominal_window_ms": 592.1348831616342,
+    "sched_counter_window_min_ms": 727.7859391178936,
+    "sched_counter_window_max_ms": 727.9745431151241,
+    "sched_read_after_update_ms": 136.3662730436772,
+    "runqueue_wait_delta_ms": 570.855976,
+    "runtime_delta_ms": 126.322739,
+    "throttled_delta_ms": 0.0
+  },
+  {
+    "case": "particle-main",
+    "run": "run-20261112T202258.320228Z-particle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-12T20:36:38.370751+00:00",
+      "start_elapsed_s": 819.2039880410302,
+      "end_elapsed_s": 819.8387237589341,
+      "wall_ms": 634.7357179038227,
+      "thread_cpu_ms": 81.20914100004484,
+      "process_cpu_ms": 81.63668899999266,
+      "non_cpu_wall_ms": 553.5265769037778,
+      "line": 320,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 99639999909,
+          "user_usec": 92132135655,
+          "system_usec": 7507864254,
+          "nice_usec": 88832941000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 2421912,
+          "nr_throttled": 562939,
+          "throttled_usec": 9901006754,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2025269.766889313,
+        "read_ended_perf_s": 2025269.767398065
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 601363117095,
+        "runqueue_wait_ns": 151755772522,
+        "timeslices": 62860,
+        "read_started_perf_s": 2025269.767401923,
+        "read_ended_perf_s": 2025269.767506305
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "nominal_window_ms": 1010.7439260464162,
+    "sched_counter_window_min_ms": 1010.8368310611695,
+    "sched_counter_window_max_ms": 1011.0019689891487,
+    "sched_read_after_update_ms": 0.668712891638279,
+    "runqueue_wait_delta_ms": 844.425622,
+    "runtime_delta_ms": 150.342096,
+    "throttled_delta_ms": 23.184
+  },
+  {
+    "case": "particle-main",
+    "run": "run-20261112T202258.320228Z-particle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-12T20:37:01.049376+00:00",
+      "start_elapsed_s": 841.7459927799646,
+      "end_elapsed_s": 842.5173269270454,
+      "wall_ms": 771.3341470807791,
+      "thread_cpu_ms": 71.42162100001315,
+      "process_cpu_ms": 72.03372599997238,
+      "non_cpu_wall_ms": 699.9125260807659,
+      "line": 320,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 99655179847,
+          "user_usec": 92147225794,
+          "system_usec": 7507954053,
+          "nice_usec": 88848004000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 2422139,
+          "nr_throttled": 563122,
+          "throttled_usec": 9904363844,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2025292.445513151,
+        "read_ended_perf_s": 2025292.445978303
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 616422660177,
+        "runqueue_wait_ns": 157848096111,
+        "timeslices": 64646,
+        "read_started_perf_s": 2025292.445982024,
+        "read_ended_perf_s": 2025292.446090187
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "nominal_window_ms": 1800.554303219542,
+    "sched_counter_window_min_ms": 1800.622234120965,
+    "sched_counter_window_max_ms": 1800.7889029104263,
+    "sched_read_after_update_ms": 0.649426830932498,
+    "runqueue_wait_delta_ms": 1104.51599,
+    "runtime_delta_ms": 627.175616,
+    "throttled_delta_ms": 124.798
+  },
+  {
+    "case": "particle-main",
+    "run": "run-20261112T202258.320228Z-particle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-12T20:38:14.320034+00:00",
+      "start_elapsed_s": 915.2229798899498,
+      "end_elapsed_s": 915.7880070079118,
+      "wall_ms": 565.0271179620177,
+      "thread_cpu_ms": 70.17834200007655,
+      "process_cpu_ms": 70.61133299998801,
+      "non_cpu_wall_ms": 494.8487759619411,
+      "line": 320,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 99704905808,
+          "user_usec": 92196618446,
+          "system_usec": 7508287361,
+          "nice_usec": 88897313000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 2422870,
+          "nr_throttled": 563716,
+          "throttled_usec": 9915180160,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2025365.716170084,
+        "read_ended_perf_s": 2025365.716637087
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 665736622522,
+        "runqueue_wait_ns": 176439791352,
+        "timeslices": 70562,
+        "read_started_perf_s": 2025365.716640662,
+        "read_ended_perf_s": 2025365.71673552
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "nominal_window_ms": 587.1834370773286,
+    "sched_counter_window_min_ms": 586.948785930872,
+    "sched_counter_window_max_ms": 587.1400160249323,
+    "sched_read_after_update_ms": 0.6146789528429508,
+    "runqueue_wait_delta_ms": 512.100492,
+    "runtime_delta_ms": 72.893365,
+    "throttled_delta_ms": 0.0
+  },
+  {
+    "case": "particle-main",
+    "run": "run-20261112T202258.320228Z-particle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-12T20:38:20.200833+00:00",
+      "start_elapsed_s": 920.9950883558486,
+      "end_elapsed_s": 921.6688047279604,
+      "wall_ms": 673.7163721118122,
+      "thread_cpu_ms": 69.70644700004414,
+      "process_cpu_ms": 70.17976599991016,
+      "non_cpu_wall_ms": 604.0099251117681,
+      "line": 320,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 99708374924,
+          "user_usec": 92200069258,
+          "system_usec": 7508305665,
+          "nice_usec": 88900758000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 2422928,
+          "nr_throttled": 563758,
+          "throttled_usec": 9915911396,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2025371.596969038,
+        "read_ended_perf_s": 2025371.597434342
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 669176727647,
+        "runqueue_wait_ns": 178532643617,
+        "timeslices": 70984,
+        "read_started_perf_s": 2025371.597438104,
+        "read_ended_perf_s": 2025371.597531066
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "nominal_window_ms": 1255.9208411257714,
+    "sched_counter_window_min_ms": 1255.9778220020235,
+    "sched_counter_window_max_ms": 1256.1288240831345,
+    "sched_read_after_update_ms": 0.6125050131231546,
+    "runqueue_wait_delta_ms": 797.435833,
+    "runtime_delta_ms": 418.813338,
+    "throttled_delta_ms": 78.019
+  },
+  {
+    "case": "particle-main",
+    "run": "run-20261112T202258.320228Z-particle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-12T20:38:45.271178+00:00",
+      "start_elapsed_s": 945.8080724959727,
+      "end_elapsed_s": 946.739151933929,
+      "wall_ms": 931.079437956214,
+      "thread_cpu_ms": 67.2642800000176,
+      "process_cpu_ms": 67.98511600004531,
+      "non_cpu_wall_ms": 863.8151579561963,
+      "line": 320,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 99725282905,
+          "user_usec": 92216877568,
+          "system_usec": 7508405336,
+          "nice_usec": 88917528000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 2423177,
+          "nr_throttled": 563961,
+          "throttled_usec": 9919620251,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2025396.667312664,
+        "read_ended_perf_s": 2025396.667758242
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 685945249000,
+        "runqueue_wait_ns": 184934444998,
+        "timeslices": 72910,
+        "read_started_perf_s": 2025396.667761391,
+        "read_ended_perf_s": 2025396.667849493
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "nominal_window_ms": 1263.8147328980267,
+    "sched_counter_window_min_ms": 1263.8161310460418,
+    "sched_counter_window_max_ms": 1263.97594390437,
+    "sched_read_after_update_ms": 0.5837259814143181,
+    "runqueue_wait_delta_ms": 937.077534,
+    "runtime_delta_ms": 298.242923,
+    "throttled_delta_ms": 49.692
+  },
+  {
+    "case": "particle-main",
+    "run": "run-20261113T014401.714717Z-particle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-13T01:48:54.095393+00:00",
+      "start_elapsed_s": 291.56567028793506,
+      "end_elapsed_s": 292.16394181898795,
+      "wall_ms": 598.2715310528874,
+      "thread_cpu_ms": 86.78672400000664,
+      "process_cpu_ms": 87.19697099999735,
+      "non_cpu_wall_ms": 511.4848070528808,
+      "line": 320,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 107124539062,
+          "user_usec": 99007452811,
+          "system_usec": 8117086251,
+          "nice_usec": 95461087000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 2608785,
+          "nr_throttled": 602320,
+          "throttled_usec": 10589410605,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2044005.491533975,
+        "read_ended_perf_s": 2044005.492055837
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 213256645869,
+        "runqueue_wait_ns": 56090148288,
+        "timeslices": 25298,
+        "read_started_perf_s": 2044005.492060633,
+        "read_ended_perf_s": 2044005.492175917
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "nominal_window_ms": 1257.5197049882263,
+    "sched_counter_window_min_ms": 1257.5258859433234,
+    "sched_counter_window_max_ms": 1257.7143348753452,
+    "sched_read_after_update_ms": 0.6987799424678087,
+    "runqueue_wait_delta_ms": 810.15657,
+    "runtime_delta_ms": 417.775626,
+    "throttled_delta_ms": 78.779
+  },
+  {
+    "case": "particle-main",
+    "run": "run-20261113T014401.714717Z-particle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-13T01:48:54.656373+00:00",
+      "start_elapsed_s": 292.16862294008024,
+      "end_elapsed_s": 292.72492121509276,
+      "wall_ms": 556.2982750125229,
+      "thread_cpu_ms": 85.51196799999161,
+      "process_cpu_ms": 85.99068199998783,
+      "non_cpu_wall_ms": 470.7863070125313,
+      "line": 320,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 107124628422,
+          "user_usec": 99007542170,
+          "system_usec": 8117086251,
+          "nice_usec": 95461176000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 2608791,
+          "nr_throttled": 602320,
+          "throttled_usec": 10589410605,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2044006.052512116,
+        "read_ended_perf_s": 2044006.05299056
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 213343928831,
+        "runqueue_wait_ns": 56563817311,
+        "timeslices": 25339,
+        "read_started_perf_s": 2044006.052994601,
+        "read_ended_perf_s": 2044006.05311185
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "nominal_window_ms": 560.9793961048126,
+    "sched_counter_window_min_ms": 560.0279059726745,
+    "sched_counter_window_max_ms": 560.2529610041529,
+    "sched_read_after_update_ms": 0.6553169805556536,
+    "runqueue_wait_delta_ms": 473.669023,
+    "runtime_delta_ms": 86.939773,
+    "throttled_delta_ms": 0.0
+  },
+  {
+    "case": "particle-main",
+    "run": "run-20261113T014401.714717Z-particle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-13T01:49:17.665246+00:00",
+      "start_elapsed_s": 315.0555819699075,
+      "end_elapsed_s": 315.7337974589318,
+      "wall_ms": 678.2154890242964,
+      "thread_cpu_ms": 84.57544099999836,
+      "process_cpu_ms": 85.15986399999065,
+      "non_cpu_wall_ms": 593.640048024298,
+      "line": 320,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 107140664307,
+          "user_usec": 99023470613,
+          "system_usec": 8117193694,
+          "nice_usec": 95477110000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 2609021,
+          "nr_throttled": 602519,
+          "throttled_usec": 10593314855,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2044029.061382619,
+        "read_ended_perf_s": 2044029.061885135
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 229265690256,
+        "runqueue_wait_ns": 62457209931,
+        "timeslices": 27041,
+        "read_started_perf_s": 2044029.061888848,
+        "read_ended_perf_s": 2044029.061994438
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "nominal_window_ms": 679.6003608033061,
+    "sched_counter_window_min_ms": 679.3923520017415,
+    "sched_counter_window_max_ms": 679.5952620450407,
+    "sched_read_after_update_ms": 0.6616611499339342,
+    "runqueue_wait_delta_ms": 593.610925,
+    "runtime_delta_ms": 85.324692,
+    "throttled_delta_ms": 0.0
+  },
+  {
+    "case": "particle-main",
+    "run": "run-20261113T014401.714717Z-particle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-13T01:49:35.251500+00:00",
+      "start_elapsed_s": 332.72757991496474,
+      "end_elapsed_s": 333.32005052198656,
+      "wall_ms": 592.4706070218235,
+      "thread_cpu_ms": 76.28744300001244,
+      "process_cpu_ms": 77.01902000002292,
+      "non_cpu_wall_ms": 516.1831640218111,
+      "line": 320,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 107152527760,
+          "user_usec": 99035312988,
+          "system_usec": 8117214772,
+          "nice_usec": 95488983000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 2609197,
+          "nr_throttled": 602666,
+          "throttled_usec": 10596174269,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2044046.647637624,
+        "read_ended_perf_s": 2044046.648160459
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 241058674488,
+        "runqueue_wait_ns": 67599190489,
+        "timeslices": 28422,
+        "read_started_perf_s": 2044046.648164403,
+        "read_ended_perf_s": 2044046.648274895
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "nominal_window_ms": 1330.1583819556981,
+    "sched_counter_window_min_ms": 1329.9140760209411,
+    "sched_counter_window_max_ms": 1330.1381589844823,
+    "sched_read_after_update_ms": 0.6890550721436739,
+    "runqueue_wait_delta_ms": 863.327172,
+    "runtime_delta_ms": 442.937216,
+    "throttled_delta_ms": 54.941
+  },
+  {
+    "case": "particle-main",
+    "run": "run-20261113T014401.714717Z-particle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-13T01:59:27.761264+00:00",
+      "start_elapsed_s": 925.3265679380856,
+      "end_elapsed_s": 925.8298131129704,
+      "wall_ms": 503.24517488479614,
+      "thread_cpu_ms": 81.77802199998041,
+      "process_cpu_ms": 82.15300400001979,
+      "non_cpu_wall_ms": 421.46715288481573,
+      "line": 320,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 107595763917,
+          "user_usec": 99475143474,
+          "system_usec": 8120620443,
+          "nice_usec": 95927545000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 2615122,
+          "nr_throttled": 608285,
+          "throttled_usec": 10693493331,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2044639.157402686,
+        "read_ended_perf_s": 2044639.157938297
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 680261954536,
+        "runqueue_wait_ns": 167040176324,
+        "timeslices": 75372,
+        "read_started_perf_s": 2044639.157942656,
+        "read_ended_perf_s": 2044639.193203355
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "nominal_window_ms": 1079.971092985943,
+    "sched_counter_window_min_ms": 1080.0168870482594,
+    "sched_counter_window_max_ms": 1115.3494948521256,
+    "sched_read_after_update_ms": 35.854924004524946,
+    "runqueue_wait_delta_ms": 767.26309,
+    "runtime_delta_ms": 323.174329,
+    "throttled_delta_ms": 70.583
+  },
+  {
+    "case": "particle-main",
+    "run": "run-20261113T014401.714717Z-particle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-13T01:59:54.659553+00:00",
+      "start_elapsed_s": 951.6595795380417,
+      "end_elapsed_s": 952.7281005349942,
+      "wall_ms": 1068.5209969524294,
+      "thread_cpu_ms": 77.38018400004876,
+      "process_cpu_ms": 78.87668599994413,
+      "non_cpu_wall_ms": 991.1408129523807,
+      "line": 320,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 107613885985,
+          "user_usec": 99493181100,
+          "system_usec": 8120704885,
+          "nice_usec": 95945595000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 2615391,
+          "nr_throttled": 608499,
+          "throttled_usec": 10696893155,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2044666.055693615,
+        "read_ended_perf_s": 2044666.056242319
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 698265349213,
+        "runqueue_wait_ns": 174738463794,
+        "timeslices": 77581,
+        "read_started_perf_s": 2044666.056246524,
+        "read_ended_perf_s": 2044666.056353392
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "nominal_window_ms": 1948.0163850821555,
+    "sched_counter_window_min_ms": 1947.942323051393,
+    "sched_counter_window_max_ms": 1948.1233621481806,
+    "sched_read_after_update_ms": 0.717539107427001,
+    "runqueue_wait_delta_ms": 1316.119335,
+    "runtime_delta_ms": 600.489614,
+    "throttled_delta_ms": 92.361
+  },
+  {
+    "case": "particle-main",
+    "run": "run-20261113T014401.714717Z-particle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-13T02:01:28.482766+00:00",
+      "start_elapsed_s": 1045.5892435009591,
+      "end_elapsed_s": 1046.5513151329942,
+      "wall_ms": 962.0716320350766,
+      "thread_cpu_ms": 76.28345399996306,
+      "process_cpu_ms": 77.06241899995803,
+      "non_cpu_wall_ms": 885.7881780351136,
+      "line": 320,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 107680165350,
+          "user_usec": 99558958767,
+          "system_usec": 8121206582,
+          "nice_usec": 96011291000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 2616329,
+          "nr_throttled": 609319,
+          "throttled_usec": 10710726869,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2044759.878903401,
+        "read_ended_perf_s": 2044759.879410033
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 763968979609,
+        "runqueue_wait_ns": 195572808324,
+        "timeslices": 85171,
+        "read_started_perf_s": 2044759.879413788,
+        "read_ended_perf_s": 2044759.879519468
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "nominal_window_ms": 1124.9945750460029,
+    "sched_counter_window_min_ms": 1125.0154408626258,
+    "sched_counter_window_max_ms": 1125.1861560158432,
+    "sched_read_after_update_ms": 0.6690169684588909,
+    "runqueue_wait_delta_ms": 929.405636,
+    "runtime_delta_ms": 185.004281,
+    "throttled_delta_ms": 26.39
+  },
+  {
+    "case": "particle-main",
+    "run": "run-20261113T014401.714717Z-particle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-13T02:02:27.724361+00:00",
+      "start_elapsed_s": 1105.0176468549762,
+      "end_elapsed_s": 1105.7929094489664,
+      "wall_ms": 775.2625939901918,
+      "thread_cpu_ms": 85.65388400006668,
+      "process_cpu_ms": 86.18850300001668,
+      "non_cpu_wall_ms": 689.6087099901251,
+      "line": 320,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 107721111943,
+          "user_usec": 99599736577,
+          "system_usec": 8121375365,
+          "nice_usec": 96052062000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 2616922,
+          "nr_throttled": 609824,
+          "throttled_usec": 10720358118,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2044819.1205023,
+        "read_ended_perf_s": 2044819.121075667
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 804618026348,
+        "runqueue_wait_ns": 210693719623,
+        "timeslices": 89886,
+        "read_started_perf_s": 2044819.121080351,
+        "read_ended_perf_s": 2044819.121201458
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "nominal_window_ms": 1395.131238969043,
+    "sched_counter_window_min_ms": 1395.028528990224,
+    "sched_counter_window_max_ms": 1395.2592639252543,
+    "sched_read_after_update_ms": 0.7566909771412611,
+    "runqueue_wait_delta_ms": 814.510097,
+    "runtime_delta_ms": 541.709884,
+    "throttled_delta_ms": 120.134
+  },
+  {
+    "case": "particle-main",
+    "run": "run-20261113T014401.714717Z-particle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-13T02:02:28.802057+00:00",
+      "start_elapsed_s": 1105.8467211991083,
+      "end_elapsed_s": 1106.8706088319886,
+      "wall_ms": 1023.8876328803599,
+      "thread_cpu_ms": 83.60189499990156,
+      "process_cpu_ms": 84.26270799998292,
+      "non_cpu_wall_ms": 940.2857378804583,
+      "line": 320,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 107721202798,
+          "user_usec": 99599826648,
+          "system_usec": 8121376149,
+          "nice_usec": 96052152000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 2616930,
+          "nr_throttled": 609824,
+          "throttled_usec": 10720358118,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2044820.198193989,
+        "read_ended_perf_s": 2044820.198679325
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 804704890207,
+        "runqueue_wait_ns": 211679830875,
+        "timeslices": 89930,
+        "read_started_perf_s": 2044820.198682896,
+        "read_ended_perf_s": 2044820.198780776
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "nominal_window_ms": 1077.6993830222636,
+    "sched_counter_window_min_ms": 1049.5246769860387,
+    "sched_counter_window_max_ms": 1076.8544380553067,
+    "sched_read_after_update_ms": 0.6366260349750519,
+    "runqueue_wait_delta_ms": 959.090169,
+    "runtime_delta_ms": 85.855825,
+    "throttled_delta_ms": 0.0
+  },
+  {
+    "case": "particle-main",
+    "run": "run-20261113T014401.714717Z-particle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-13T02:02:29.763161+00:00",
+      "start_elapsed_s": 1107.3261195139494,
+      "end_elapsed_s": 1107.8317153060343,
+      "wall_ms": 505.5957920849323,
+      "thread_cpu_ms": 84.73734999995486,
+      "process_cpu_ms": 85.20619499995519,
+      "non_cpu_wall_ms": 420.85844208497747,
+      "line": 320,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 107721380943,
+          "user_usec": 99600003572,
+          "system_usec": 8121377370,
+          "nice_usec": 96052333000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 2616939,
+          "nr_throttled": 609825,
+          "throttled_usec": 10720358118,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2044821.159295497,
+        "read_ended_perf_s": 2044821.159683751
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 804880385762,
+        "runqueue_wait_ns": 212452571221,
+        "timeslices": 89982,
+        "read_started_perf_s": 2044821.159686651,
+        "read_ended_perf_s": 2044821.159760404
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "nominal_window_ms": 961.1064740456641,
+    "sched_counter_window_min_ms": 941.0028411075473,
+    "sched_counter_window_max_ms": 941.1737269256264,
+    "sched_read_after_update_ms": 0.5097799003124237,
+    "runqueue_wait_delta_ms": 753.719035,
+    "runtime_delta_ms": 174.636615,
+    "throttled_delta_ms": 0.0
+  },
+  {
+    "case": "particle-main",
+    "run": "run-20261113T014401.714717Z-particle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-13T02:02:36.786988+00:00",
+      "start_elapsed_s": 1114.0939516089857,
+      "end_elapsed_s": 1114.8555284799077,
+      "wall_ms": 761.5768709219992,
+      "thread_cpu_ms": 82.7619340000183,
+      "process_cpu_ms": 83.35013700002492,
+      "non_cpu_wall_ms": 678.8149369219809,
+      "line": 320,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 107726152839,
+          "user_usec": 99604758637,
+          "system_usec": 8121394201,
+          "nice_usec": 96057108000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 2617009,
+          "nr_throttled": 609886,
+          "throttled_usec": 10721583220,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2044828.183132311,
+        "read_ended_perf_s": 2044828.183681089
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 809621990009,
+        "runqueue_wait_ns": 214438569826,
+        "timeslices": 90560,
+        "read_started_perf_s": 2044828.183685138,
+        "read_ended_perf_s": 2044828.183793614
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "nominal_window_ms": 779.1518759913743,
+    "sched_counter_window_min_ms": 778.9388247765601,
+    "sched_counter_window_max_ms": 779.1631049476564,
+    "sched_read_after_update_ms": 0.7298160344362259,
+    "runqueue_wait_delta_ms": 678.837573,
+    "runtime_delta_ms": 85.801161,
+    "throttled_delta_ms": 0.0
+  },
+  {
+    "case": "particle-main",
+    "run": "run-20261113T014401.714717Z-particle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-13T02:02:37.388978+00:00",
+      "start_elapsed_s": 1114.8805662719533,
+      "end_elapsed_s": 1115.4575284370221,
+      "wall_ms": 576.962165068835,
+      "thread_cpu_ms": 74.85270799998034,
+      "process_cpu_ms": 75.34551699995973,
+      "non_cpu_wall_ms": 502.1094570688547,
+      "line": 320,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 107726231348,
+          "user_usec": 99604837147,
+          "system_usec": 8121394201,
+          "nice_usec": 96057187000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 2617015,
+          "nr_throttled": 609886,
+          "throttled_usec": 10721583220,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2044828.78511654,
+        "read_ended_perf_s": 2044828.785586071
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 809699758153,
+        "runqueue_wait_ns": 214946832271,
+        "timeslices": 90588,
+        "read_started_perf_s": 2044828.785589725,
+        "read_ended_perf_s": 2044828.785684583
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "nominal_window_ms": 1381.1518331058323,
+    "sched_counter_window_min_ms": 1380.8434118982404,
+    "sched_counter_window_max_ms": 1381.05407403782,
+    "sched_read_after_update_ms": 0.6208280101418495,
+    "runqueue_wait_delta_ms": 1187.100018,
+    "runtime_delta_ms": 163.569305,
+    "throttled_delta_ms": 0.0
+  },
+  {
+    "case": "particle-main",
+    "run": "run-20261113T014401.714717Z-particle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-13T02:03:00.766880+00:00",
+      "start_elapsed_s": 1138.2495986849535,
+      "end_elapsed_s": 1138.8354304521345,
+      "wall_ms": 585.8317671809345,
+      "thread_cpu_ms": 68.77960199994959,
+      "process_cpu_ms": 69.24642199999198,
+      "non_cpu_wall_ms": 517.052165180985,
+      "line": 320,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 107742792073,
+          "user_usec": 99621260606,
+          "system_usec": 8121531466,
+          "nice_usec": 96073605000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 2617249,
+          "nr_throttled": 610094,
+          "throttled_usec": 10725321382,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2044852.163029148,
+        "read_ended_perf_s": 2044852.163516835
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 826120665945,
+        "runqueue_wait_ns": 220328536105,
+        "timeslices": 92403,
+        "read_started_perf_s": 2044852.163520609,
+        "read_ended_perf_s": 2044852.163621543
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "nominal_window_ms": 596.8526410870254,
+    "sched_counter_window_min_ms": 596.7464139685035,
+    "sched_counter_window_max_ms": 596.9336768612266,
+    "sched_read_after_update_ms": 0.6557728629559278,
+    "runqueue_wait_delta_ms": 517.58668,
+    "runtime_delta_ms": 71.260064,
+    "throttled_delta_ms": 0.0
+  },
+  {
+    "case": "particle-main",
+    "run": "run-20261113T014401.714717Z-particle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-13T02:03:14.905350+00:00",
+      "start_elapsed_s": 1152.3747298039962,
+      "end_elapsed_s": 1152.9739012010396,
+      "wall_ms": 599.1713970433921,
+      "thread_cpu_ms": 72.37021100002039,
+      "process_cpu_ms": 72.77019399998608,
+      "non_cpu_wall_ms": 526.8011860433717,
+      "line": 320,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 107751930991,
+          "user_usec": 99630350173,
+          "system_usec": 8121580818,
+          "nice_usec": 96082679000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 2617391,
+          "nr_throttled": 610206,
+          "throttled_usec": 10727412301,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2044866.301487986,
+        "read_ended_perf_s": 2044866.309872105
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 835180421903,
+        "runqueue_wait_ns": 224546036423,
+        "timeslices": 93465,
+        "read_started_perf_s": 2044866.309879347,
+        "read_ended_perf_s": 2044866.310082964
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "nominal_window_ms": 885.8155019115657,
+    "sched_counter_window_min_ms": 893.7520470935851,
+    "sched_counter_window_max_ms": 894.0146879758686,
+    "sched_read_after_update_ms": 8.646444883197546,
+    "runqueue_wait_delta_ms": 606.55808,
+    "runtime_delta_ms": 282.883876,
+    "throttled_delta_ms": 71.061
+  },
+  {
+    "case": "puzzle-main",
+    "run": "run-20261113T030417.190468Z-puzzle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-13T03:04:25.726378+00:00",
+      "start_elapsed_s": 7.685530525865033,
+      "end_elapsed_s": 8.341884197900072,
+      "wall_ms": 656.3536720350385,
+      "thread_cpu_ms": 154.00117899999975,
+      "process_cpu_ms": 154.51905799999997,
+      "non_cpu_wall_ms": 502.3524930350387,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 108793948248,
+          "user_usec": 100521381176,
+          "system_usec": 8272567071,
+          "nice_usec": 96908208000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 2653979,
+          "nr_throttled": 610720,
+          "throttled_usec": 10736414268,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2048537.12251718,
+        "read_ended_perf_s": 2048537.122984593
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 6047539565,
+        "runqueue_wait_ns": 2074159893,
+        "timeslices": 524,
+        "read_started_perf_s": 2048537.122988823,
+        "read_ended_perf_s": 2048537.123094646
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "nominal_window_ms": 808.9019840117544,
+    "sched_counter_window_min_ms": 808.9709042105824,
+    "sched_counter_window_max_ms": 809.1409029439092,
+    "sched_read_after_update_ms": 0.6302320398390293,
+    "runqueue_wait_delta_ms": 514.324938,
+    "runtime_delta_ms": 272.579391,
+    "throttled_delta_ms": 10.189
+  },
+  {
+    "case": "puzzle-main",
+    "run": "run-20261113T030417.190468Z-puzzle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-13T03:04:35.564241+00:00",
+      "start_elapsed_s": 17.502628854010254,
+      "end_elapsed_s": 18.17974533396773,
+      "wall_ms": 677.1164799574763,
+      "thread_cpu_ms": 178.6455420000017,
+      "process_cpu_ms": 179.19233499999976,
+      "non_cpu_wall_ms": 498.4709379574746,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 108800515550,
+          "user_usec": 100527922283,
+          "system_usec": 8272593267,
+          "nice_usec": 96914740000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 2654077,
+          "nr_throttled": 610802,
+          "throttled_usec": 10737955644,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2048546.960381221,
+        "read_ended_perf_s": 2048546.960900295
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 12576159498,
+        "runqueue_wait_ns": 4828137149,
+        "timeslices": 1103,
+        "read_started_perf_s": 2048546.960904937,
+        "read_ended_perf_s": 2048546.961040186
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "nominal_window_ms": 691.2763901054859,
+    "sched_counter_window_min_ms": 691.1734188906848,
+    "sched_counter_window_max_ms": 691.3995100185275,
+    "sched_read_after_update_ms": 0.7146359421312809,
+    "runqueue_wait_delta_ms": 505.683886,
+    "runtime_delta_ms": 180.414193,
+    "throttled_delta_ms": 0.0
+  },
+  {
+    "case": "puzzle-main",
+    "run": "run-20261113T030417.190468Z-puzzle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-13T03:04:36.135623+00:00",
+      "start_elapsed_s": 18.18383560096845,
+      "end_elapsed_s": 18.751130860997364,
+      "wall_ms": 567.2952600289136,
+      "thread_cpu_ms": 160.7122150000002,
+      "process_cpu_ms": 161.20718200000005,
+      "non_cpu_wall_ms": 406.5830450289134,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 108800679138,
+          "user_usec": 100528085858,
+          "system_usec": 8272593279,
+          "nice_usec": 96914909000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 2654083,
+          "nr_throttled": 610803,
+          "throttled_usec": 10737976833,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2048547.531757355,
+        "read_ended_perf_s": 2048547.532167848
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 12739073130,
+        "runqueue_wait_ns": 5234725316,
+        "timeslices": 1143,
+        "read_started_perf_s": 2048547.532171069,
+        "read_ended_perf_s": 2048547.532246303
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "nominal_window_ms": 1262.6619171351194,
+    "sched_counter_window_min_ms": 1262.439550831914,
+    "sched_counter_window_max_ms": 1262.605627067387,
+    "sched_read_after_update_ms": 0.5352259613573551,
+    "runqueue_wait_delta_ms": 912.272053,
+    "runtime_delta_ms": 343.327825,
+    "throttled_delta_ms": 21.189
+  },
+  {
+    "case": "puzzle-main",
+    "run": "run-20261113T030417.190468Z-puzzle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-13T03:04:43.932325+00:00",
+      "start_elapsed_s": 25.97585972980596,
+      "end_elapsed_s": 26.547830644994974,
+      "wall_ms": 571.9709151890129,
+      "thread_cpu_ms": 137.31250000000017,
+      "process_cpu_ms": 137.80555900000024,
+      "non_cpu_wall_ms": 434.6584151890127,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 108806083627,
+          "user_usec": 100533479727,
+          "system_usec": 8272603900,
+          "nice_usec": 96920297000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 2654161,
+          "nr_throttled": 610874,
+          "throttled_usec": 10739432347,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2048555.328462175,
+        "read_ended_perf_s": 2048555.328959073
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 18112484331,
+        "runqueue_wait_ns": 7323351529,
+        "timeslices": 1557,
+        "read_started_perf_s": 2048555.328962837,
+        "read_ended_perf_s": 2048555.340158254
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "nominal_window_ms": 1505.6320331059396,
+    "sched_counter_window_min_ms": 1505.717023042962,
+    "sched_counter_window_max_ms": 1516.9701809063554,
+    "sched_read_after_update_ms": 11.747392825782299,
+    "runqueue_wait_delta_ms": 630.232086,
+    "runtime_delta_ms": 842.098759,
+    "throttled_delta_ms": 235.766
+  },
+  {
+    "case": "puzzle-main",
+    "run": "run-20261113T030417.190468Z-puzzle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-13T03:04:44.845088+00:00",
+      "start_elapsed_s": 26.5685692129191,
+      "end_elapsed_s": 27.460597906960174,
+      "wall_ms": 892.0286940410733,
+      "thread_cpu_ms": 166.51205100000155,
+      "process_cpu_ms": 167.22701100000137,
+      "non_cpu_wall_ms": 725.5166430410718,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 108806254312,
+          "user_usec": 100533649447,
+          "system_usec": 8272604865,
+          "nice_usec": 96920468000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 2654170,
+          "nr_throttled": 610874,
+          "throttled_usec": 10739432347,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2048556.241221793,
+        "read_ended_perf_s": 2048556.241599557
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 18280220861,
+        "runqueue_wait_ns": 8056666069,
+        "timeslices": 1627,
+        "read_started_perf_s": 2048556.241602671,
+        "read_ended_perf_s": 2048556.24167614
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "nominal_window_ms": 912.7672619652003,
+    "sched_counter_window_min_ms": 900.6145240273327,
+    "sched_counter_window_max_ms": 900.7889342028648,
+    "sched_read_after_update_ms": 0.49801706336438656,
+    "runqueue_wait_delta_ms": 733.31454,
+    "runtime_delta_ms": 167.408464,
+    "throttled_delta_ms": 0.0
+  },
+  {
+    "case": "puzzle-main",
+    "run": "run-20261113T030417.190468Z-puzzle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-13T03:05:04.962923+00:00",
+      "start_elapsed_s": 46.969529003836215,
+      "end_elapsed_s": 47.57843050197698,
+      "wall_ms": 608.9014981407672,
+      "thread_cpu_ms": 162.17400499999712,
+      "process_cpu_ms": 162.71438900000135,
+      "non_cpu_wall_ms": 446.7274931407701,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 108820707851,
+          "user_usec": 100548041321,
+          "system_usec": 8272666530,
+          "nice_usec": 96934837000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 2654371,
+          "nr_throttled": 611063,
+          "throttled_usec": 10743030683,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2048576.359058684,
+        "read_ended_perf_s": 2048576.359532708
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 32644677766,
+        "runqueue_wait_ns": 12648334026,
+        "timeslices": 2852,
+        "read_started_perf_s": 2048576.359536282,
+        "read_ended_perf_s": 2048576.359630084
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "nominal_window_ms": 621.2570630013943,
+    "sched_counter_window_min_ms": 621.0642880760133,
+    "sched_counter_window_max_ms": 621.2496180087328,
+    "sched_read_after_update_ms": 0.6193658336997032,
+    "runqueue_wait_delta_ms": 448.042681,
+    "runtime_delta_ms": 163.902247,
+    "throttled_delta_ms": 15.185
+  },
+  {
+    "case": "puzzle-main",
+    "run": "run-20261113T030417.190468Z-puzzle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-13T03:05:12.509848+00:00",
+      "start_elapsed_s": 54.33560529490933,
+      "end_elapsed_s": 55.12535533984192,
+      "wall_ms": 789.7500449325889,
+      "thread_cpu_ms": 168.72595899999965,
+      "process_cpu_ms": 169.45159200000148,
+      "non_cpu_wall_ms": 621.0240859325893,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 108825697046,
+          "user_usec": 100553011552,
+          "system_usec": 8272685494,
+          "nice_usec": 96939801000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 2654447,
+          "nr_throttled": 611124,
+          "throttled_usec": 10744179397,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2048583.905983411,
+        "read_ended_perf_s": 2048583.917518855
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 37600907903,
+        "runqueue_wait_ns": 14854195378,
+        "timeslices": 3347,
+        "read_started_perf_s": 2048583.917523361,
+        "read_ended_perf_s": 2048583.917620252
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "nominal_window_ms": 1279.3223238550127,
+    "sched_counter_window_min_ms": 1290.2808031067252,
+    "sched_counter_window_max_ms": 1290.4578519519418,
+    "sched_read_after_update_ms": 11.684695957228541,
+    "runqueue_wait_delta_ms": 779.483967,
+    "runtime_delta_ms": 492.537955,
+    "throttled_delta_ms": 64.725
+  },
+  {
+    "case": "puzzle-main",
+    "run": "run-20261113T030417.190468Z-puzzle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-13T03:05:26.234956+00:00",
+      "start_elapsed_s": 68.24166591698304,
+      "end_elapsed_s": 68.85046128882095,
+      "wall_ms": 608.795371837914,
+      "thread_cpu_ms": 116.1274359999993,
+      "process_cpu_ms": 116.68901600000225,
+      "non_cpu_wall_ms": 492.6679358379147,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 108835312329,
+          "user_usec": 100562580530,
+          "system_usec": 8272731798,
+          "nice_usec": 96949361000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 2654584,
+          "nr_throttled": 611250,
+          "throttled_usec": 10746580767,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2048597.631092834,
+        "read_ended_perf_s": 2048597.631606914
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 47158348470,
+        "runqueue_wait_ns": 18202529435,
+        "timeslices": 4173,
+        "read_started_perf_s": 2048597.631610979,
+        "read_ended_perf_s": 2048597.6317165
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "nominal_window_ms": 1082.3896159417927,
+    "sched_counter_window_min_ms": 1082.495995098725,
+    "sched_counter_window_max_ms": 1082.65925408341,
+    "sched_read_after_update_ms": 0.6749951280653477,
+    "runqueue_wait_delta_ms": 601.862003,
+    "runtime_delta_ms": 462.623827,
+    "throttled_delta_ms": 136.278
+  },
+  {
+    "case": "puzzle-main",
+    "run": "run-20261113T030417.190468Z-puzzle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-13T03:05:27.130315+00:00",
+      "start_elapsed_s": 68.86156476801261,
+      "end_elapsed_s": 69.74582459498197,
+      "wall_ms": 884.2598269693553,
+      "thread_cpu_ms": 146.85799499999774,
+      "process_cpu_ms": 147.5878120000047,
+      "non_cpu_wall_ms": 737.4018319693575,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 108835463068,
+          "user_usec": 100562730817,
+          "system_usec": 8272732251,
+          "nice_usec": 96949513000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 2654593,
+          "nr_throttled": 611250,
+          "throttled_usec": 10746580767,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2048598.526449072,
+        "read_ended_perf_s": 2048598.52684029
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 47306846556,
+        "runqueue_wait_ns": 18949237894,
+        "timeslices": 4208,
+        "read_started_perf_s": 2048598.526843582,
+        "read_ended_perf_s": 2048598.526919455
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "nominal_window_ms": 895.3633061610162,
+    "sched_counter_window_min_ms": 894.3810099735856,
+    "sched_counter_window_max_ms": 894.5528650656343,
+    "sched_read_after_update_ms": 0.5146439652889967,
+    "runqueue_wait_delta_ms": 746.708459,
+    "runtime_delta_ms": 147.543086,
+    "throttled_delta_ms": 0.0
+  },
+  {
+    "case": "puzzle-main",
+    "run": "run-20261113T030417.190468Z-puzzle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-13T03:05:33.481970+00:00",
+      "start_elapsed_s": 75.44352129497565,
+      "end_elapsed_s": 76.09747500880621,
+      "wall_ms": 653.9537138305604,
+      "thread_cpu_ms": 177.89401299999952,
+      "process_cpu_ms": 178.63128799999828,
+      "non_cpu_wall_ms": 476.0597008305609,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 108839619313,
+          "user_usec": 100566880348,
+          "system_usec": 8272738964,
+          "nice_usec": 96953660000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 2654656,
+          "nr_throttled": 611301,
+          "throttled_usec": 10747460679,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2048604.878107567,
+        "read_ended_perf_s": 2048604.878585067
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 51440432233,
+        "runqueue_wait_ns": 20899447550,
+        "timeslices": 4555,
+        "read_started_perf_s": 2048604.878588974,
+        "read_ended_perf_s": 2048604.878687201
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "nominal_window_ms": 1656.710741808638,
+    "sched_counter_window_min_ms": 1656.7876900080591,
+    "sched_counter_window_max_ms": 1656.9429491646588,
+    "sched_read_after_update_ms": 0.6319761741906404,
+    "runqueue_wait_delta_ms": 862.262402,
+    "runtime_delta_ms": 769.653237,
+    "throttled_delta_ms": 123.453
+  },
+  {
+    "case": "puzzle-main",
+    "run": "run-20261113T030417.190468Z-puzzle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-13T03:05:47.970737+00:00",
+      "start_elapsed_s": 90.00056077679619,
+      "end_elapsed_s": 90.58624211885035,
+      "wall_ms": 585.6813420541584,
+      "thread_cpu_ms": 156.79775399999585,
+      "process_cpu_ms": 157.21953500000296,
+      "non_cpu_wall_ms": 428.8835880541626,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 108849650584,
+          "user_usec": 100576887671,
+          "system_usec": 8272762913,
+          "nice_usec": 96963674000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 2654801,
+          "nr_throttled": 611398,
+          "throttled_usec": 10748405597,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2048619.36687261,
+        "read_ended_perf_s": 2048619.367365234
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 61411967058,
+        "runqueue_wait_ns": 24737139625,
+        "timeslices": 5594,
+        "read_started_perf_s": 2048619.367369314,
+        "read_ended_perf_s": 2048619.367462032
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "nominal_window_ms": 1479.5166100375354,
+    "sched_counter_window_min_ms": 1479.6192250214517,
+    "sched_counter_window_max_ms": 1479.7691348940134,
+    "sched_read_after_update_ms": 0.6396970711648464,
+    "runqueue_wait_delta_ms": 625.550398,
+    "runtime_delta_ms": 803.114236,
+    "throttled_delta_ms": 21.472
+  },
+  {
+    "case": "puzzle-main",
+    "run": "run-20261113T030417.190468Z-puzzle-main",
+    "slow_update": {
+      "ended_at_utc": "2026-11-13T03:05:49.224741+00:00",
+      "start_elapsed_s": 90.60854463488795,
+      "end_elapsed_s": 91.84024489484727,
+      "wall_ms": 1231.7002599593252,
+      "thread_cpu_ms": 169.08815899999752,
+      "process_cpu_ms": 170.45470499999738,
+      "non_cpu_wall_ms": 1062.6121009593276,
+      "line": 660,
+      "cgroup_cpu_end": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-monitor.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 108849825455,
+          "user_usec": 100577061907,
+          "system_usec": 8272763548,
+          "nice_usec": 96963846000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 2654814,
+          "nr_throttled": 611398,
+          "throttled_usec": 10748405597,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2048620.620880112,
+        "read_ended_perf_s": 2048620.659472339
+      },
+      "thread_schedstat_end": {
+        "runtime_ns": 61583753710,
+        "runqueue_wait_ns": 25846541744,
+        "timeslices": 5664,
+        "read_started_perf_s": 2048620.659477438,
+        "read_ended_perf_s": 2048620.659576662
+      },
+      "note": "Non-CPU wall time includes blocking/preemption; not a cause attribution."
+    },
+    "nominal_window_ms": 1254.0027759969234,
+    "sched_counter_window_min_ms": 1291.3663811050355,
+    "sched_counter_window_max_ms": 1291.5565359871835,
+    "sched_read_after_update_ms": 38.75155095010996,
+    "runqueue_wait_delta_ms": 1109.402119,
+    "runtime_delta_ms": 170.786534,
+    "throttled_delta_ms": 0.0
+  }
+]

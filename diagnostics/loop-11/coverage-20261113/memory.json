@@ -1,0 +1,3983 @@
+{
+  "schema_version": 5,
+  "python": "3.12.3",
+  "sample_storage": "memory",
+  "in_run_retained_samples": 80,
+  "sample_materialization_s": 3.3150427043437958e-06,
+  "rss_after_sample_materialization_bytes": 106745856,
+  "started_perf_counter_s": 2052288.290768273,
+  "timing_capacity": 64,
+  "slow_update_ms": 500,
+  "slow_update_count": 0,
+  "slow_updates_tail": [],
+  "started_at_utc": "2026-11-13T04:06:56.894678+00:00",
+  "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+  "pyxel": "2.9.5",
+  "app_args": [],
+  "requested_seconds": 80.0,
+  "capture_sec_override": 0,
+  "elapsed_s": 80.00058711715974,
+  "cpu_s": 17.075439963,
+  "update": {
+    "count": 4784,
+    "p50_ms": 0.59786147903651,
+    "p95_ms": 0.6787681486457586,
+    "p99_ms": 0.7096328772604465,
+    "max_ms": 2.1187029778957367,
+    "retained_count": 64,
+    "quantile_scope": "last-retained-values"
+  },
+  "draw": {
+    "count": 4782,
+    "p50_ms": 2.22756655421108,
+    "p95_ms": 2.345107961446047,
+    "p99_ms": 2.5522320065647364,
+    "max_ms": 14.202689053490758,
+    "retained_count": 64,
+    "quantile_scope": "last-retained-values"
+  },
+  "frame_interval": {
+    "count": 4784,
+    "p50_ms": 16.870331950485706,
+    "p95_ms": 17.495499923825264,
+    "p99_ms": 17.937827156856656,
+    "max_ms": 277.23799902014434,
+    "retained_count": 64,
+    "quantile_scope": "last-retained-values"
+  },
+  "samples": [
+    {
+      "at_utc": "2026-11-13T04:06:56.895273+00:00",
+      "elapsed_s": 0.000589453149586916,
+      "cpu_s": 0.0007560209999999956,
+      "rss_bytes": 100913152,
+      "mode": "EDIT",
+      "update_count": 1,
+      "draw_count": 0,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 309352,
+          "user_usec": 262900,
+          "system_usec": 46452,
+          "nice_usec": 264000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 5,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052288.291731475,
+        "read_ended_perf_s": 2052288.292312725
+      },
+      "thread_schedstat": {
+        "runtime_ns": 310008578,
+        "runqueue_wait_ns": 86942078,
+        "timeslices": 74,
+        "read_started_perf_s": 2052288.292317026,
+        "read_ended_perf_s": 2052288.292635705
+      },
+      "timing_retained": {
+        "update": 1,
+        "draw": 0,
+        "frame_interval": 1
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 0.20360201597213745,
+      "max_draw_ms": 0.0,
+      "max_frame_ms": 0.3858511336147785
+    },
+    {
+      "at_utc": "2026-11-13T04:06:57.896324+00:00",
+      "elapsed_s": 1.0016302240546793,
+      "cpu_s": 0.140484047,
+      "rss_bytes": 101376000,
+      "mode": "EDIT",
+      "update_count": 61,
+      "draw_count": 60,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 449723,
+          "user_usec": 369704,
+          "system_usec": 80018,
+          "nice_usec": 363000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 15,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052289.292744565,
+        "read_ended_perf_s": 2052289.293587228
+      },
+      "thread_schedstat": {
+        "runtime_ns": 435029331,
+        "runqueue_wait_ns": 87753151,
+        "timeslices": 483,
+        "read_started_perf_s": 2052289.293595357,
+        "read_ended_perf_s": 2052289.293817316
+      },
+      "timing_retained": {
+        "update": 61,
+        "draw": 60,
+        "frame_interval": 61
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 0.6539830937981606,
+      "max_draw_ms": 2.4712979793548584,
+      "max_frame_ms": 18.886390840634704
+    },
+    {
+      "at_utc": "2026-11-13T04:06:58.913343+00:00",
+      "elapsed_s": 2.0186526090838015,
+      "cpu_s": 0.345788478,
+      "rss_bytes": 101388288,
+      "mode": "EDIT",
+      "update_count": 122,
+      "draw_count": 121,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 656946,
+          "user_usec": 542470,
+          "system_usec": 114475,
+          "nice_usec": 523000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 25,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052290.309889485,
+        "read_ended_perf_s": 2052290.312117702
+      },
+      "thread_schedstat": {
+        "runtime_ns": 619535064,
+        "runqueue_wait_ns": 89778059,
+        "timeslices": 889,
+        "read_started_perf_s": 2052290.312137186,
+        "read_ended_perf_s": 2052290.312638297
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 0.9804060682654381,
+      "max_draw_ms": 3.030715975910425,
+      "max_frame_ms": 18.886390840634704
+    },
+    {
+      "at_utc": "2026-11-13T04:06:59.913399+00:00",
+      "elapsed_s": 3.018703451147303,
+      "cpu_s": 0.580793664,
+      "rss_bytes": 101388288,
+      "mode": "EDIT",
+      "update_count": 182,
+      "draw_count": 181,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 892931,
+          "user_usec": 741867,
+          "system_usec": 151063,
+          "nice_usec": 714000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 35,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052291.310320003,
+        "read_ended_perf_s": 2052291.312265114
+      },
+      "thread_schedstat": {
+        "runtime_ns": 829501702,
+        "runqueue_wait_ns": 90374200,
+        "timeslices": 1282,
+        "read_started_perf_s": 2052291.312281967,
+        "read_ended_perf_s": 2052291.312787012
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 0.9878778364509344,
+      "max_draw_ms": 3.3328731078654528,
+      "max_frame_ms": 18.886390840634704
+    },
+    {
+      "at_utc": "2026-11-13T04:07:00.930592+00:00",
+      "elapsed_s": 4.035905748140067,
+      "cpu_s": 0.7919288109999999,
+      "rss_bytes": 101388288,
+      "mode": "EDIT",
+      "update_count": 243,
+      "draw_count": 242,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 1104834,
+          "user_usec": 922422,
+          "system_usec": 182411,
+          "nice_usec": 886000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 45,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052292.327110097,
+        "read_ended_perf_s": 2052292.329322276
+      },
+      "thread_schedstat": {
+        "runtime_ns": 1018617566,
+        "runqueue_wait_ns": 92598182,
+        "timeslices": 1692,
+        "read_started_perf_s": 2052292.329351991,
+        "read_ended_perf_s": 2052292.329871353
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 0.9878778364509344,
+      "max_draw_ms": 3.640546929091215,
+      "max_frame_ms": 18.886390840634704
+    },
+    {
+      "at_utc": "2026-11-13T04:07:01.945981+00:00",
+      "elapsed_s": 5.051300317980349,
+      "cpu_s": 0.9365245429999999,
+      "rss_bytes": 101404672,
+      "mode": "EDIT",
+      "update_count": 304,
+      "draw_count": 303,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 1249095,
+          "user_usec": 1042642,
+          "system_usec": 206453,
+          "nice_usec": 1001000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 55,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052293.342336623,
+        "read_ended_perf_s": 2052293.342853684
+      },
+      "thread_schedstat": {
+        "runtime_ns": 1144721367,
+        "runqueue_wait_ns": 94023943,
+        "timeslices": 2103,
+        "read_started_perf_s": 2052293.342859062,
+        "read_ended_perf_s": 2052293.342985795
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 0.9878778364509344,
+      "max_draw_ms": 3.640546929091215,
+      "max_frame_ms": 18.886390840634704
+    },
+    {
+      "at_utc": "2026-11-13T04:07:02.962828+00:00",
+      "elapsed_s": 6.06809600116685,
+      "cpu_s": 1.1078429509999999,
+      "rss_bytes": 101404672,
+      "mode": "EDIT",
+      "update_count": 365,
+      "draw_count": 364,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 1423369,
+          "user_usec": 1187182,
+          "system_usec": 236187,
+          "nice_usec": 1137000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 65,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052294.359797603,
+        "read_ended_perf_s": 2052294.362516151
+      },
+      "thread_schedstat": {
+        "runtime_ns": 1300977881,
+        "runqueue_wait_ns": 98867868,
+        "timeslices": 2531,
+        "read_started_perf_s": 2052294.362545673,
+        "read_ended_perf_s": 2052294.363216007
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 0.9878778364509344,
+      "max_draw_ms": 3.640546929091215,
+      "max_frame_ms": 18.886390840634704
+    },
+    {
+      "at_utc": "2026-11-13T04:07:03.963096+00:00",
+      "elapsed_s": 7.0683668630663306,
+      "cpu_s": 1.35726698,
+      "rss_bytes": 101404672,
+      "mode": "EDIT",
+      "update_count": 425,
+      "draw_count": 424,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 1674464,
+          "user_usec": 1409855,
+          "system_usec": 264609,
+          "nice_usec": 1343000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 75,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052295.360045032,
+        "read_ended_perf_s": 2052295.362891966
+      },
+      "thread_schedstat": {
+        "runtime_ns": 1524459588,
+        "runqueue_wait_ns": 99688817,
+        "timeslices": 2927,
+        "read_started_perf_s": 2052295.362920962,
+        "read_ended_perf_s": 2052295.363457863
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 0.9878778364509344,
+      "max_draw_ms": 3.640546929091215,
+      "max_frame_ms": 18.886390840634704
+    },
+    {
+      "at_utc": "2026-11-13T04:07:04.980511+00:00",
+      "elapsed_s": 8.085781106958166,
+      "cpu_s": 1.5983772489999999,
+      "rss_bytes": 101412864,
+      "mode": "EDIT",
+      "update_count": 486,
+      "draw_count": 485,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 1916125,
+          "user_usec": 1617875,
+          "system_usec": 298250,
+          "nice_usec": 1541000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 85,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052296.377414304,
+        "read_ended_perf_s": 2052296.379441647
+      },
+      "thread_schedstat": {
+        "runtime_ns": 1738836179,
+        "runqueue_wait_ns": 100175193,
+        "timeslices": 3328,
+        "read_started_perf_s": 2052296.379461301,
+        "read_ended_perf_s": 2052296.379933611
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 0.9878778364509344,
+      "max_draw_ms": 3.640546929091215,
+      "max_frame_ms": 18.886390840634704
+    },
+    {
+      "at_utc": "2026-11-13T04:07:05.996613+00:00",
+      "elapsed_s": 9.101886286167428,
+      "cpu_s": 1.852048676,
+      "rss_bytes": 101412864,
+      "mode": "EDIT",
+      "update_count": 547,
+      "draw_count": 546,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 2170800,
+          "user_usec": 1832956,
+          "system_usec": 337843,
+          "nice_usec": 1742000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 96,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052297.393622232,
+        "read_ended_perf_s": 2052297.395816414
+      },
+      "thread_schedstat": {
+        "runtime_ns": 1967071816,
+        "runqueue_wait_ns": 100518071,
+        "timeslices": 3731,
+        "read_started_perf_s": 2052297.395827905,
+        "read_ended_perf_s": 2052297.396438577
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 1.0684649460017681,
+      "max_draw_ms": 3.640546929091215,
+      "max_frame_ms": 18.886390840634704
+    },
+    {
+      "at_utc": "2026-11-13T04:07:06.997163+00:00",
+      "elapsed_s": 10.10246486007236,
+      "cpu_s": 2.099583166,
+      "rss_bytes": 101412864,
+      "mode": "EDIT",
+      "update_count": 607,
+      "draw_count": 606,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 2417711,
+          "user_usec": 2051103,
+          "system_usec": 366607,
+          "nice_usec": 1940000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 106,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052298.393706914,
+        "read_ended_perf_s": 2052298.394789051
+      },
+      "thread_schedstat": {
+        "runtime_ns": 2185561884,
+        "runqueue_wait_ns": 100818185,
+        "timeslices": 4128,
+        "read_started_perf_s": 2052298.394798322,
+        "read_ended_perf_s": 2052298.395092139
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 1.1311010457575321,
+      "max_draw_ms": 3.640546929091215,
+      "max_frame_ms": 18.886390840634704
+    },
+    {
+      "at_utc": "2026-11-13T04:07:08.012528+00:00",
+      "elapsed_s": 11.11783683206886,
+      "cpu_s": 2.332377802,
+      "rss_bytes": 101416960,
+      "mode": "EDIT",
+      "update_count": 668,
+      "draw_count": 667,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 2651163,
+          "user_usec": 2246212,
+          "system_usec": 404951,
+          "nice_usec": 2122000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 116,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052299.408997881,
+        "read_ended_perf_s": 2052299.409926172
+      },
+      "thread_schedstat": {
+        "runtime_ns": 2393344951,
+        "runqueue_wait_ns": 101411600,
+        "timeslices": 4534,
+        "read_started_perf_s": 2052299.409934561,
+        "read_ended_perf_s": 2052299.410173617
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 1.1311010457575321,
+      "max_draw_ms": 3.640546929091215,
+      "max_frame_ms": 18.886390840634704
+    },
+    {
+      "at_utc": "2026-11-13T04:07:09.014326+00:00",
+      "elapsed_s": 12.119640377117321,
+      "cpu_s": 2.478495761,
+      "rss_bytes": 101421056,
+      "mode": "EDIT",
+      "update_count": 728,
+      "draw_count": 727,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 2798377,
+          "user_usec": 2372399,
+          "system_usec": 425977,
+          "nice_usec": 2242000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 126,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052300.410763964,
+        "read_ended_perf_s": 2052300.411560839
+      },
+      "thread_schedstat": {
+        "runtime_ns": 2521785166,
+        "runqueue_wait_ns": 115938718,
+        "timeslices": 4942,
+        "read_started_perf_s": 2052300.411568744,
+        "read_ended_perf_s": 2052300.411767923
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 1.1311010457575321,
+      "max_draw_ms": 3.640546929091215,
+      "max_frame_ms": 18.886390840634704
+    },
+    {
+      "at_utc": "2026-11-13T04:07:10.030872+00:00",
+      "elapsed_s": 13.13617665716447,
+      "cpu_s": 2.5979418,
+      "rss_bytes": 101421056,
+      "mode": "EDIT",
+      "update_count": 789,
+      "draw_count": 788,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 2919154,
+          "user_usec": 2485197,
+          "system_usec": 433956,
+          "nice_usec": 2340000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 136,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052301.427364594,
+        "read_ended_perf_s": 2052301.428214742
+      },
+      "thread_schedstat": {
+        "runtime_ns": 2629475944,
+        "runqueue_wait_ns": 147272475,
+        "timeslices": 5422,
+        "read_started_perf_s": 2052301.428223888,
+        "read_ended_perf_s": 2052301.428451819
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 1.1311010457575321,
+      "max_draw_ms": 3.640546929091215,
+      "max_frame_ms": 18.968731863424182
+    },
+    {
+      "at_utc": "2026-11-13T04:07:11.047732+00:00",
+      "elapsed_s": 14.153003941988572,
+      "cpu_s": 2.791477488,
+      "rss_bytes": 101421056,
+      "mode": "EDIT",
+      "update_count": 850,
+      "draw_count": 849,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 3115529,
+          "user_usec": 2640852,
+          "system_usec": 474676,
+          "nice_usec": 2490000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 146,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052302.444724187,
+        "read_ended_perf_s": 2052302.447535135
+      },
+      "thread_schedstat": {
+        "runtime_ns": 2803371833,
+        "runqueue_wait_ns": 153229408,
+        "timeslices": 5835,
+        "read_started_perf_s": 2052302.447554784,
+        "read_ended_perf_s": 2052302.448109365
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 1.1311010457575321,
+      "max_draw_ms": 3.640546929091215,
+      "max_frame_ms": 26.063825003802776
+    },
+    {
+      "at_utc": "2026-11-13T04:07:12.063755+00:00",
+      "elapsed_s": 15.169020896079019,
+      "cpu_s": 3.02549957,
+      "rss_bytes": 101433344,
+      "mode": "EDIT",
+      "update_count": 911,
+      "draw_count": 910,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 3349406,
+          "user_usec": 2835823,
+          "system_usec": 513582,
+          "nice_usec": 2669000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 156,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052303.460788397,
+        "read_ended_perf_s": 2052303.463428383
+      },
+      "thread_schedstat": {
+        "runtime_ns": 3011840452,
+        "runqueue_wait_ns": 153733981,
+        "timeslices": 6241,
+        "read_started_perf_s": 2052303.463461042,
+        "read_ended_perf_s": 2052303.464279401
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 1.1311010457575321,
+      "max_draw_ms": 3.640546929091215,
+      "max_frame_ms": 26.063825003802776
+    },
+    {
+      "at_utc": "2026-11-13T04:07:13.080507+00:00",
+      "elapsed_s": 16.185799548169598,
+      "cpu_s": 3.233505012,
+      "rss_bytes": 101433344,
+      "mode": "EDIT",
+      "update_count": 972,
+      "draw_count": 971,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 3557548,
+          "user_usec": 3008197,
+          "system_usec": 549350,
+          "nice_usec": 2832000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 166,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052304.477248752,
+        "read_ended_perf_s": 2052304.478906472
+      },
+      "thread_schedstat": {
+        "runtime_ns": 3192639248,
+        "runqueue_wait_ns": 154242932,
+        "timeslices": 6645,
+        "read_started_perf_s": 2052304.478922043,
+        "read_ended_perf_s": 2052304.479403014
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 1.1311010457575321,
+      "max_draw_ms": 3.640546929091215,
+      "max_frame_ms": 26.063825003802776
+    },
+    {
+      "at_utc": "2026-11-13T04:07:14.096857+00:00",
+      "elapsed_s": 17.20216357614845,
+      "cpu_s": 3.478968415,
+      "rss_bytes": 101224448,
+      "mode": "EDIT",
+      "update_count": 1033,
+      "draw_count": 1032,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 3803759,
+          "user_usec": 3215057,
+          "system_usec": 588702,
+          "nice_usec": 3021000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 177,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052305.493424362,
+        "read_ended_perf_s": 2052305.494480287
+      },
+      "thread_schedstat": {
+        "runtime_ns": 3408933354,
+        "runqueue_wait_ns": 154870787,
+        "timeslices": 7049,
+        "read_started_perf_s": 2052305.494490515,
+        "read_ended_perf_s": 2052305.494741324
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 3.640546929091215,
+      "max_frame_ms": 26.063825003802776
+    },
+    {
+      "at_utc": "2026-11-13T04:07:15.111804+00:00",
+      "elapsed_s": 18.217075277119875,
+      "cpu_s": 3.70028269,
+      "rss_bytes": 101232640,
+      "mode": "EDIT",
+      "update_count": 1094,
+      "draw_count": 1093,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 4027017,
+          "user_usec": 3403233,
+          "system_usec": 623784,
+          "nice_usec": 3198000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 187,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052306.508740472,
+        "read_ended_perf_s": 2052306.510881813
+      },
+      "thread_schedstat": {
+        "runtime_ns": 3605705704,
+        "runqueue_wait_ns": 155475904,
+        "timeslices": 7451,
+        "read_started_perf_s": 2052306.510901152,
+        "read_ended_perf_s": 2052306.511454445
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 3.640546929091215,
+      "max_frame_ms": 26.063825003802776
+    },
+    {
+      "at_utc": "2026-11-13T04:07:16.112125+00:00",
+      "elapsed_s": 19.217398449080065,
+      "cpu_s": 3.9526215220000003,
+      "rss_bytes": 101232640,
+      "mode": "EDIT",
+      "update_count": 1154,
+      "draw_count": 1153,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 4279963,
+          "user_usec": 3619953,
+          "system_usec": 660009,
+          "nice_usec": 3396000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 197,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052307.509038191,
+        "read_ended_perf_s": 2052307.511281187
+      },
+      "thread_schedstat": {
+        "runtime_ns": 3831435815,
+        "runqueue_wait_ns": 155820010,
+        "timeslices": 7845,
+        "read_started_perf_s": 2052307.511300366,
+        "read_ended_perf_s": 2052307.511850527
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 3.640546929091215,
+      "max_frame_ms": 26.063825003802776
+    },
+    {
+      "at_utc": "2026-11-13T04:07:17.129416+00:00",
+      "elapsed_s": 20.23468638304621,
+      "cpu_s": 4.222122207,
+      "rss_bytes": 103563264,
+      "mode": "EDIT",
+      "update_count": 1214,
+      "draw_count": 1212,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 4551053,
+          "user_usec": 3852361,
+          "system_usec": 698691,
+          "nice_usec": 3616000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 207,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052308.526375132,
+        "read_ended_perf_s": 2052308.528597451
+      },
+      "thread_schedstat": {
+        "runtime_ns": 4075278331,
+        "runqueue_wait_ns": 156308060,
+        "timeslices": 8232,
+        "read_started_perf_s": 2052308.528616158,
+        "read_ended_perf_s": 2052308.529249308
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 3.640546929091215,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:07:18.146489+00:00",
+      "elapsed_s": 21.251793541945517,
+      "cpu_s": 4.46059102,
+      "rss_bytes": 103567360,
+      "mode": "EDIT",
+      "update_count": 1275,
+      "draw_count": 1273,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 4788612,
+          "user_usec": 4055585,
+          "system_usec": 733026,
+          "nice_usec": 3800000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 217,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052309.542934172,
+        "read_ended_perf_s": 2052309.543694176
+      },
+      "thread_schedstat": {
+        "runtime_ns": 4284782998,
+        "runqueue_wait_ns": 156777890,
+        "timeslices": 8637,
+        "read_started_perf_s": 2052309.543699562,
+        "read_ended_perf_s": 2052309.543847603
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 3.640546929091215,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:07:19.162211+00:00",
+      "elapsed_s": 22.267482239054516,
+      "cpu_s": 4.712499966,
+      "rss_bytes": 103567360,
+      "mode": "EDIT",
+      "update_count": 1336,
+      "draw_count": 1334,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 5042644,
+          "user_usec": 4265134,
+          "system_usec": 777509,
+          "nice_usec": 3998000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 227,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052310.559200585,
+        "read_ended_perf_s": 2052310.561164117
+      },
+      "thread_schedstat": {
+        "runtime_ns": 4510745555,
+        "runqueue_wait_ns": 157374300,
+        "timeslices": 9036,
+        "read_started_perf_s": 2052310.561183707,
+        "read_ended_perf_s": 2052310.561695336
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 3.640546929091215,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:07:20.179477+00:00",
+      "elapsed_s": 23.28474736609496,
+      "cpu_s": 4.94581095,
+      "rss_bytes": 103567360,
+      "mode": "EDIT",
+      "update_count": 1397,
+      "draw_count": 1395,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 5277591,
+          "user_usec": 4457389,
+          "system_usec": 820202,
+          "nice_usec": 4177000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 237,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052311.57628624,
+        "read_ended_perf_s": 2052311.578507697
+      },
+      "thread_schedstat": {
+        "runtime_ns": 4716818805,
+        "runqueue_wait_ns": 158030109,
+        "timeslices": 9441,
+        "read_started_perf_s": 2052311.578527497,
+        "read_ended_perf_s": 2052311.579145612
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 3.640546929091215,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:07:21.194265+00:00",
+      "elapsed_s": 24.299574092030525,
+      "cpu_s": 5.181369396,
+      "rss_bytes": 103571456,
+      "mode": "EDIT",
+      "update_count": 1458,
+      "draw_count": 1456,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 5512125,
+          "user_usec": 4660019,
+          "system_usec": 852105,
+          "nice_usec": 4372000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 248,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052312.590776393,
+        "read_ended_perf_s": 2052312.591815684
+      },
+      "thread_schedstat": {
+        "runtime_ns": 4925801536,
+        "runqueue_wait_ns": 158401067,
+        "timeslices": 9841,
+        "read_started_perf_s": 2052312.591825154,
+        "read_ended_perf_s": 2052312.592084894
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 3.8127319421619177,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:07:22.195458+00:00",
+      "elapsed_s": 25.30073709296994,
+      "cpu_s": 5.383673037,
+      "rss_bytes": 103579648,
+      "mode": "EDIT",
+      "update_count": 1518,
+      "draw_count": 1516,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 5717220,
+          "user_usec": 4822942,
+          "system_usec": 894278,
+          "nice_usec": 4526000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 258,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052313.592422364,
+        "read_ended_perf_s": 2052313.594505012
+      },
+      "thread_schedstat": {
+        "runtime_ns": 5102007711,
+        "runqueue_wait_ns": 158825508,
+        "timeslices": 10238,
+        "read_started_perf_s": 2052313.594523458,
+        "read_ended_perf_s": 2052313.595075965
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 3.8127319421619177,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:07:23.211190+00:00",
+      "elapsed_s": 26.316497977124527,
+      "cpu_s": 5.578804805,
+      "rss_bytes": 103583744,
+      "mode": "EDIT",
+      "update_count": 1579,
+      "draw_count": 1577,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 5911558,
+          "user_usec": 4989202,
+          "system_usec": 922355,
+          "nice_usec": 4690000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 268,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052314.60768464,
+        "read_ended_perf_s": 2052314.608648238
+      },
+      "thread_schedstat": {
+        "runtime_ns": 5270720906,
+        "runqueue_wait_ns": 159279242,
+        "timeslices": 10634,
+        "read_started_perf_s": 2052314.608657245,
+        "read_ended_perf_s": 2052314.608885861
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 3.8127319421619177,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:07:24.212314+00:00",
+      "elapsed_s": 27.31758489413187,
+      "cpu_s": 5.775267799,
+      "rss_bytes": 103583744,
+      "mode": "EDIT",
+      "update_count": 1639,
+      "draw_count": 1637,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 6110853,
+          "user_usec": 5157424,
+          "system_usec": 953428,
+          "nice_usec": 4847000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 278,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052315.609264256,
+        "read_ended_perf_s": 2052315.611476613
+      },
+      "thread_schedstat": {
+        "runtime_ns": 5444479176,
+        "runqueue_wait_ns": 159953871,
+        "timeslices": 11027,
+        "read_started_perf_s": 2052315.611495215,
+        "read_ended_perf_s": 2052315.612035103
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 3.8127319421619177,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:07:25.229057+00:00",
+      "elapsed_s": 28.33429421414621,
+      "cpu_s": 5.978082324,
+      "rss_bytes": 103587840,
+      "mode": "EDIT",
+      "update_count": 1700,
+      "draw_count": 1698,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 6313684,
+          "user_usec": 5323656,
+          "system_usec": 990028,
+          "nice_usec": 5001000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 288,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052316.626245001,
+        "read_ended_perf_s": 2052316.627700879
+      },
+      "thread_schedstat": {
+        "runtime_ns": 5622402516,
+        "runqueue_wait_ns": 160558565,
+        "timeslices": 11432,
+        "read_started_perf_s": 2052316.627729654,
+        "read_ended_perf_s": 2052316.628631126
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 3.8127319421619177,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:07:26.244528+00:00",
+      "elapsed_s": 29.349829058162868,
+      "cpu_s": 6.162906118,
+      "rss_bytes": 103591936,
+      "mode": "EDIT",
+      "update_count": 1761,
+      "draw_count": 1759,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 6499048,
+          "user_usec": 5460131,
+          "system_usec": 1038916,
+          "nice_usec": 5144000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 298,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052317.641114318,
+        "read_ended_perf_s": 2052317.642259733
+      },
+      "thread_schedstat": {
+        "runtime_ns": 5781028297,
+        "runqueue_wait_ns": 160903530,
+        "timeslices": 11832,
+        "read_started_perf_s": 2052317.642269989,
+        "read_ended_perf_s": 2052317.642547151
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 3.8127319421619177,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:07:27.245026+00:00",
+      "elapsed_s": 30.35029720910825,
+      "cpu_s": 6.3784473,
+      "rss_bytes": 103591936,
+      "mode": "EDIT",
+      "update_count": 1821,
+      "draw_count": 1819,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 6716211,
+          "user_usec": 5646737,
+          "system_usec": 1069473,
+          "nice_usec": 5321000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 308,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052318.641936345,
+        "read_ended_perf_s": 2052318.644156841
+      },
+      "thread_schedstat": {
+        "runtime_ns": 5970984892,
+        "runqueue_wait_ns": 161438553,
+        "timeslices": 12232,
+        "read_started_perf_s": 2052318.644176275,
+        "read_ended_perf_s": 2052318.644699139
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 3.8127319421619177,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:07:28.261830+00:00",
+      "elapsed_s": 31.36710008000955,
+      "cpu_s": 6.61596163,
+      "rss_bytes": 103596032,
+      "mode": "EDIT",
+      "update_count": 1882,
+      "draw_count": 1880,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 6955007,
+          "user_usec": 5848384,
+          "system_usec": 1106622,
+          "nice_usec": 5511000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 318,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052319.65877405,
+        "read_ended_perf_s": 2052319.660921384
+      },
+      "thread_schedstat": {
+        "runtime_ns": 6179937952,
+        "runqueue_wait_ns": 161941273,
+        "timeslices": 12630,
+        "read_started_perf_s": 2052319.660939806,
+        "read_ended_perf_s": 2052319.661495735
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 3.8127319421619177,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:07:29.278091+00:00",
+      "elapsed_s": 32.383362918160856,
+      "cpu_s": 6.8241921240000005,
+      "rss_bytes": 103596032,
+      "mode": "EDIT",
+      "update_count": 1943,
+      "draw_count": 1941,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 7163976,
+          "user_usec": 6015286,
+          "system_usec": 1148690,
+          "nice_usec": 5670000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 328,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052320.674981623,
+        "read_ended_perf_s": 2052320.677219087
+      },
+      "thread_schedstat": {
+        "runtime_ns": 6360888350,
+        "runqueue_wait_ns": 162488177,
+        "timeslices": 13031,
+        "read_started_perf_s": 2052320.67723828,
+        "read_ended_perf_s": 2052320.677752891
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 3.8127319421619177,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:07:30.278234+00:00",
+      "elapsed_s": 33.38350505405106,
+      "cpu_s": 6.980738124,
+      "rss_bytes": 103600128,
+      "mode": "EDIT",
+      "update_count": 2003,
+      "draw_count": 2001,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 7322242,
+          "user_usec": 6143586,
+          "system_usec": 1178656,
+          "nice_usec": 5800000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 338,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052321.675163955,
+        "read_ended_perf_s": 2052321.677396602
+      },
+      "thread_schedstat": {
+        "runtime_ns": 6496997869,
+        "runqueue_wait_ns": 163047310,
+        "timeslices": 13427,
+        "read_started_perf_s": 2052321.677415991,
+        "read_ended_perf_s": 2052321.677931464
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 3.8127319421619177,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:07:31.278511+00:00",
+      "elapsed_s": 34.38377865799703,
+      "cpu_s": 7.183985445,
+      "rss_bytes": 103608320,
+      "mode": "EDIT",
+      "update_count": 2063,
+      "draw_count": 2061,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 7526006,
+          "user_usec": 6304518,
+          "system_usec": 1221487,
+          "nice_usec": 5964000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 348,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052322.675434161,
+        "read_ended_perf_s": 2052322.677662996
+      },
+      "thread_schedstat": {
+        "runtime_ns": 6676927634,
+        "runqueue_wait_ns": 163325905,
+        "timeslices": 13822,
+        "read_started_perf_s": 2052322.677682314,
+        "read_ended_perf_s": 2052322.678281532
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 3.8127319421619177,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:07:32.279157+00:00",
+      "elapsed_s": 35.384462506044656,
+      "cpu_s": 7.404571123,
+      "rss_bytes": 103616512,
+      "mode": "EDIT",
+      "update_count": 2123,
+      "draw_count": 2121,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 7746022,
+          "user_usec": 6493501,
+          "system_usec": 1252521,
+          "nice_usec": 6140000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 358,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052323.675676329,
+        "read_ended_perf_s": 2052323.676710775
+      },
+      "thread_schedstat": {
+        "runtime_ns": 6869715919,
+        "runqueue_wait_ns": 163859685,
+        "timeslices": 14217,
+        "read_started_perf_s": 2052323.676720464,
+        "read_ended_perf_s": 2052323.676972726
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 3.8127319421619177,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:07:33.294916+00:00",
+      "elapsed_s": 36.400209695100784,
+      "cpu_s": 7.580775831,
+      "rss_bytes": 103616512,
+      "mode": "EDIT",
+      "update_count": 2184,
+      "draw_count": 2182,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 7923354,
+          "user_usec": 6640595,
+          "system_usec": 1282758,
+          "nice_usec": 6276000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 369,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052324.691407018,
+        "read_ended_perf_s": 2052324.692757584
+      },
+      "thread_schedstat": {
+        "runtime_ns": 7023572614,
+        "runqueue_wait_ns": 164232377,
+        "timeslices": 14615,
+        "read_started_perf_s": 2052324.692776046,
+        "read_ended_perf_s": 2052324.693328277
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 3.8127319421619177,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:07:34.295159+00:00",
+      "elapsed_s": 37.40043428703211,
+      "cpu_s": 7.810067875,
+      "rss_bytes": 103620608,
+      "mode": "EDIT",
+      "update_count": 2244,
+      "draw_count": 2242,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 8154431,
+          "user_usec": 6831948,
+          "system_usec": 1322482,
+          "nice_usec": 6454000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 379,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052325.692152327,
+        "read_ended_perf_s": 2052325.694288155
+      },
+      "thread_schedstat": {
+        "runtime_ns": 7226200497,
+        "runqueue_wait_ns": 164685326,
+        "timeslices": 15012,
+        "read_started_perf_s": 2052325.694306898,
+        "read_ended_perf_s": 2052325.694818116
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 3.8127319421619177,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:07:35.312547+00:00",
+      "elapsed_s": 38.41781719611026,
+      "cpu_s": 8.055473614,
+      "rss_bytes": 103620608,
+      "mode": "EDIT",
+      "update_count": 2305,
+      "draw_count": 2303,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 8401578,
+          "user_usec": 7035939,
+          "system_usec": 1365638,
+          "nice_usec": 6653000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 389,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052326.70952195,
+        "read_ended_perf_s": 2052326.711678561
+      },
+      "thread_schedstat": {
+        "runtime_ns": 7443794904,
+        "runqueue_wait_ns": 165234707,
+        "timeslices": 15412,
+        "read_started_perf_s": 2052326.711696862,
+        "read_ended_perf_s": 2052326.712229654
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 3.8127319421619177,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:07:36.329095+00:00",
+      "elapsed_s": 39.4343631551601,
+      "cpu_s": 8.241422899,
+      "rss_bytes": 103628800,
+      "mode": "EDIT",
+      "update_count": 2366,
+      "draw_count": 2364,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 8587859,
+          "user_usec": 7184490,
+          "system_usec": 1403368,
+          "nice_usec": 6794000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 399,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052327.726056288,
+        "read_ended_perf_s": 2052327.728267126
+      },
+      "thread_schedstat": {
+        "runtime_ns": 7603755317,
+        "runqueue_wait_ns": 165776046,
+        "timeslices": 15813,
+        "read_started_perf_s": 2052327.728286981,
+        "read_ended_perf_s": 2052327.728808217
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 3.8127319421619177,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:07:37.345960+00:00",
+      "elapsed_s": 40.45127432816662,
+      "cpu_s": 8.445242582,
+      "rss_bytes": 103628800,
+      "mode": "EDIT",
+      "update_count": 2427,
+      "draw_count": 2425,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 8791903,
+          "user_usec": 7347685,
+          "system_usec": 1444218,
+          "nice_usec": 6944000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 409,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052328.742389893,
+        "read_ended_perf_s": 2052328.743166061
+      },
+      "thread_schedstat": {
+        "runtime_ns": 7780293744,
+        "runqueue_wait_ns": 166274717,
+        "timeslices": 16212,
+        "read_started_perf_s": 2052328.743173498,
+        "read_ended_perf_s": 2052328.743362639
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 3.8127319421619177,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:07:38.362037+00:00",
+      "elapsed_s": 41.467341874027625,
+      "cpu_s": 8.643242081,
+      "rss_bytes": 103632896,
+      "mode": "EDIT",
+      "update_count": 2488,
+      "draw_count": 2486,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 8990764,
+          "user_usec": 7512166,
+          "system_usec": 1478598,
+          "nice_usec": 7101000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 419,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052329.758558755,
+        "read_ended_perf_s": 2052329.759610185
+      },
+      "thread_schedstat": {
+        "runtime_ns": 7952934854,
+        "runqueue_wait_ns": 166640059,
+        "timeslices": 16617,
+        "read_started_perf_s": 2052329.759619862,
+        "read_ended_perf_s": 2052329.759872281
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 3.8127319421619177,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:07:39.378130+00:00",
+      "elapsed_s": 42.48344385204837,
+      "cpu_s": 8.862331817,
+      "rss_bytes": 103632896,
+      "mode": "EDIT",
+      "update_count": 2549,
+      "draw_count": 2547,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 9210431,
+          "user_usec": 7687305,
+          "system_usec": 1523125,
+          "nice_usec": 7271000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 429,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052330.77456498,
+        "read_ended_perf_s": 2052330.775340459
+      },
+      "thread_schedstat": {
+        "runtime_ns": 8144917033,
+        "runqueue_wait_ns": 167406948,
+        "timeslices": 17018,
+        "read_started_perf_s": 2052330.775347926,
+        "read_ended_perf_s": 2052330.775534491
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 3.8127319421619177,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:07:40.378979+00:00",
+      "elapsed_s": 43.48428280511871,
+      "cpu_s": 9.063946496,
+      "rss_bytes": 103632896,
+      "mode": "EDIT",
+      "update_count": 2609,
+      "draw_count": 2607,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 9413064,
+          "user_usec": 7858100,
+          "system_usec": 1554963,
+          "nice_usec": 7431000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 439,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052331.775488064,
+        "read_ended_perf_s": 2052331.776518854
+      },
+      "thread_schedstat": {
+        "runtime_ns": 8321045476,
+        "runqueue_wait_ns": 169396023,
+        "timeslices": 17417,
+        "read_started_perf_s": 2052331.77652816,
+        "read_ended_perf_s": 2052331.776769796
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 3.8127319421619177,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:07:41.396312+00:00",
+      "elapsed_s": 44.501582694007084,
+      "cpu_s": 9.254177971,
+      "rss_bytes": 103632896,
+      "mode": "EDIT",
+      "update_count": 2670,
+      "draw_count": 2668,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 9605682,
+          "user_usec": 8025134,
+          "system_usec": 1580548,
+          "nice_usec": 7581000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 450,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052332.79323741,
+        "read_ended_perf_s": 2052332.795372998
+      },
+      "thread_schedstat": {
+        "runtime_ns": 8488930272,
+        "runqueue_wait_ns": 169946076,
+        "timeslices": 17827,
+        "read_started_perf_s": 2052332.795392412,
+        "read_ended_perf_s": 2052332.795745932
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 3.8127319421619177,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:07:42.413119+00:00",
+      "elapsed_s": 45.51838798914105,
+      "cpu_s": 9.482347427,
+      "rss_bytes": 103645184,
+      "mode": "EDIT",
+      "update_count": 2731,
+      "draw_count": 2729,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 9833804,
+          "user_usec": 8215757,
+          "system_usec": 1618047,
+          "nice_usec": 7763000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 460,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052333.810046182,
+        "read_ended_perf_s": 2052333.812043949
+      },
+      "thread_schedstat": {
+        "runtime_ns": 8689123665,
+        "runqueue_wait_ns": 170551344,
+        "timeslices": 18230,
+        "read_started_perf_s": 2052333.812051713,
+        "read_ended_perf_s": 2052333.812567123
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 3.8127319421619177,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:07:43.429264+00:00",
+      "elapsed_s": 46.534535710001364,
+      "cpu_s": 9.672563528,
+      "rss_bytes": 103645184,
+      "mode": "EDIT",
+      "update_count": 2792,
+      "draw_count": 2790,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 10024863,
+          "user_usec": 8377273,
+          "system_usec": 1647590,
+          "nice_usec": 7911000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 470,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052334.826221341,
+        "read_ended_perf_s": 2052334.828378949
+      },
+      "thread_schedstat": {
+        "runtime_ns": 8854769734,
+        "runqueue_wait_ns": 174676210,
+        "timeslices": 18633,
+        "read_started_perf_s": 2052334.828391251,
+        "read_ended_perf_s": 2052334.828706906
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 3.8127319421619177,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:07:44.446283+00:00",
+      "elapsed_s": 47.55156314000487,
+      "cpu_s": 9.903024179,
+      "rss_bytes": 103645184,
+      "mode": "EDIT",
+      "update_count": 2853,
+      "draw_count": 2851,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 10256245,
+          "user_usec": 8564123,
+          "system_usec": 1692122,
+          "nice_usec": 8082000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 480,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052335.84313788,
+        "read_ended_perf_s": 2052335.84526562
+      },
+      "thread_schedstat": {
+        "runtime_ns": 9059960006,
+        "runqueue_wait_ns": 175102896,
+        "timeslices": 19037,
+        "read_started_perf_s": 2052335.845284247,
+        "read_ended_perf_s": 2052335.845795992
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 14.202689053490758,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:07:45.462958+00:00",
+      "elapsed_s": 48.56818607007153,
+      "cpu_s": 10.1068125,
+      "rss_bytes": 103645184,
+      "mode": "EDIT",
+      "update_count": 2914,
+      "draw_count": 2912,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 10461047,
+          "user_usec": 8726868,
+          "system_usec": 1734178,
+          "nice_usec": 8237000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 490,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052336.859893921,
+        "read_ended_perf_s": 2052336.862216102
+      },
+      "thread_schedstat": {
+        "runtime_ns": 9240379662,
+        "runqueue_wait_ns": 175490410,
+        "timeslices": 19439,
+        "read_started_perf_s": 2052336.862234626,
+        "read_ended_perf_s": 2052336.86270738
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 14.202689053490758,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:07:46.480205+00:00",
+      "elapsed_s": 49.585477109998465,
+      "cpu_s": 10.337079997,
+      "rss_bytes": 103649280,
+      "mode": "EDIT",
+      "update_count": 2975,
+      "draw_count": 2973,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 10691991,
+          "user_usec": 8915972,
+          "system_usec": 1776018,
+          "nice_usec": 8423000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 500,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052337.877109025,
+        "read_ended_perf_s": 2052337.879219907
+      },
+      "thread_schedstat": {
+        "runtime_ns": 9445469612,
+        "runqueue_wait_ns": 175893151,
+        "timeslices": 19838,
+        "read_started_perf_s": 2052337.879239707,
+        "read_ended_perf_s": 2052337.87979289
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 14.202689053490758,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:07:47.496240+00:00",
+      "elapsed_s": 50.601512492168695,
+      "cpu_s": 10.569853165,
+      "rss_bytes": 103657472,
+      "mode": "EDIT",
+      "update_count": 3036,
+      "draw_count": 3034,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 10926702,
+          "user_usec": 9111737,
+          "system_usec": 1814965,
+          "nice_usec": 8613000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 511,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052338.893205004,
+        "read_ended_perf_s": 2052338.89556471
+      },
+      "thread_schedstat": {
+        "runtime_ns": 9652636663,
+        "runqueue_wait_ns": 176368215,
+        "timeslices": 20241,
+        "read_started_perf_s": 2052338.895584359,
+        "read_ended_perf_s": 2052338.896123811
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 14.202689053490758,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:07:48.513816+00:00",
+      "elapsed_s": 51.61908443598077,
+      "cpu_s": 10.78293091,
+      "rss_bytes": 103661568,
+      "mode": "EDIT",
+      "update_count": 3097,
+      "draw_count": 3095,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 11140173,
+          "user_usec": 9290154,
+          "system_usec": 1850019,
+          "nice_usec": 8785000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 521,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052339.910776788,
+        "read_ended_perf_s": 2052339.912950868
+      },
+      "thread_schedstat": {
+        "runtime_ns": 9842247364,
+        "runqueue_wait_ns": 179332084,
+        "timeslices": 20641,
+        "read_started_perf_s": 2052339.912970237,
+        "read_ended_perf_s": 2052339.913514399
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 14.202689053490758,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:07:49.529483+00:00",
+      "elapsed_s": 52.634753140155226,
+      "cpu_s": 11.003425774,
+      "rss_bytes": 103665664,
+      "mode": "EDIT",
+      "update_count": 3158,
+      "draw_count": 3156,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 11361800,
+          "user_usec": 9478000,
+          "system_usec": 1883799,
+          "nice_usec": 8967000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 531,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052340.926441958,
+        "read_ended_perf_s": 2052340.928594825
+      },
+      "thread_schedstat": {
+        "runtime_ns": 10036869675,
+        "runqueue_wait_ns": 179740791,
+        "timeslices": 21044,
+        "read_started_perf_s": 2052340.928614044,
+        "read_ended_perf_s": 2052340.929161083
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 14.202689053490758,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:07:50.530329+00:00",
+      "elapsed_s": 53.635597947984934,
+      "cpu_s": 11.17680605,
+      "rss_bytes": 103665664,
+      "mode": "EDIT",
+      "update_count": 3218,
+      "draw_count": 3216,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 11536243,
+          "user_usec": 9627065,
+          "system_usec": 1909178,
+          "nice_usec": 9102000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 541,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052341.927265453,
+        "read_ended_perf_s": 2052341.929417834
+      },
+      "thread_schedstat": {
+        "runtime_ns": 10189514095,
+        "runqueue_wait_ns": 180465398,
+        "timeslices": 21441,
+        "read_started_perf_s": 2052341.929437018,
+        "read_ended_perf_s": 2052341.929950015
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 14.202689053490758,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:07:51.532372+00:00",
+      "elapsed_s": 54.63763824105263,
+      "cpu_s": 11.422447819,
+      "rss_bytes": 103669760,
+      "mode": "EDIT",
+      "update_count": 3278,
+      "draw_count": 3276,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 11782718,
+          "user_usec": 9831930,
+          "system_usec": 1950788,
+          "nice_usec": 9299000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 551,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052342.929358751,
+        "read_ended_perf_s": 2052342.931566968
+      },
+      "thread_schedstat": {
+        "runtime_ns": 10409305270,
+        "runqueue_wait_ns": 181090246,
+        "timeslices": 21834,
+        "read_started_perf_s": 2052342.931586157,
+        "read_ended_perf_s": 2052342.932122953
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 14.202689053490758,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:07:52.546322+00:00",
+      "elapsed_s": 55.65162878204137,
+      "cpu_s": 11.663963323,
+      "rss_bytes": 103673856,
+      "mode": "EDIT",
+      "update_count": 3339,
+      "draw_count": 3337,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 12025177,
+          "user_usec": 10029930,
+          "system_usec": 1995246,
+          "nice_usec": 9495000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 561,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052343.943230924,
+        "read_ended_perf_s": 2052343.945359125
+      },
+      "thread_schedstat": {
+        "runtime_ns": 10626424919,
+        "runqueue_wait_ns": 181630673,
+        "timeslices": 22233,
+        "read_started_perf_s": 2052343.945378278,
+        "read_ended_perf_s": 2052343.945886931
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 14.202689053490758,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:07:53.547538+00:00",
+      "elapsed_s": 56.65277679497376,
+      "cpu_s": 11.872234443,
+      "rss_bytes": 103677952,
+      "mode": "EDIT",
+      "update_count": 3399,
+      "draw_count": 3397,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 12234062,
+          "user_usec": 10197157,
+          "system_usec": 2036905,
+          "nice_usec": 9655000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 571,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052344.944728159,
+        "read_ended_perf_s": 2052344.946906779
+      },
+      "thread_schedstat": {
+        "runtime_ns": 10812045639,
+        "runqueue_wait_ns": 182055243,
+        "timeslices": 22630,
+        "read_started_perf_s": 2052344.946925767,
+        "read_ended_perf_s": 2052344.947526107
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 14.202689053490758,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:07:54.563179+00:00",
+      "elapsed_s": 57.66848556906916,
+      "cpu_s": 12.088448214,
+      "rss_bytes": 103682048,
+      "mode": "EDIT",
+      "update_count": 3460,
+      "draw_count": 3458,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 12449671,
+          "user_usec": 10378760,
+          "system_usec": 2070911,
+          "nice_usec": 9830000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 581,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052345.959648844,
+        "read_ended_perf_s": 2052345.960615371
+      },
+      "thread_schedstat": {
+        "runtime_ns": 11003861322,
+        "runqueue_wait_ns": 187621126,
+        "timeslices": 23032,
+        "read_started_perf_s": 2052345.960624887,
+        "read_ended_perf_s": 2052345.960848835
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 14.202689053490758,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:07:55.563813+00:00",
+      "elapsed_s": 58.669126973021775,
+      "cpu_s": 12.197382546,
+      "rss_bytes": 103682048,
+      "mode": "EDIT",
+      "update_count": 3520,
+      "draw_count": 3518,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 12558681,
+          "user_usec": 10475383,
+          "system_usec": 2083298,
+          "nice_usec": 9928000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 591,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052346.960253506,
+        "read_ended_perf_s": 2052346.961031387
+      },
+      "thread_schedstat": {
+        "runtime_ns": 11102309440,
+        "runqueue_wait_ns": 189841462,
+        "timeslices": 23438,
+        "read_started_perf_s": 2052346.961039552,
+        "read_ended_perf_s": 2052346.961233124
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 14.202689053490758,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:07:56.579367+00:00",
+      "elapsed_s": 59.68468677904457,
+      "cpu_s": 12.297858148,
+      "rss_bytes": 103686144,
+      "mode": "EDIT",
+      "update_count": 3581,
+      "draw_count": 3579,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 12660229,
+          "user_usec": 10555975,
+          "system_usec": 2104254,
+          "nice_usec": 10005000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 601,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052347.975721068,
+        "read_ended_perf_s": 2052347.976325667
+      },
+      "thread_schedstat": {
+        "runtime_ns": 11191922818,
+        "runqueue_wait_ns": 193679035,
+        "timeslices": 23853,
+        "read_started_perf_s": 2052347.976331011,
+        "read_ended_perf_s": 2052347.976461359
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 14.202689053490758,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:07:57.580757+00:00",
+      "elapsed_s": 60.68606641003862,
+      "cpu_s": 12.387273245,
+      "rss_bytes": 103690240,
+      "mode": "EDIT",
+      "update_count": 3641,
+      "draw_count": 3639,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 12749891,
+          "user_usec": 10629115,
+          "system_usec": 2120776,
+          "nice_usec": 10074000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 611,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052348.977247258,
+        "read_ended_perf_s": 2052348.978138068
+      },
+      "thread_schedstat": {
+        "runtime_ns": 11271935509,
+        "runqueue_wait_ns": 194801780,
+        "timeslices": 24259,
+        "read_started_perf_s": 2052348.978147166,
+        "read_ended_perf_s": 2052348.97837993
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 14.202689053490758,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:07:58.581437+00:00",
+      "elapsed_s": 61.68670828314498,
+      "cpu_s": 12.607790723,
+      "rss_bytes": 103690240,
+      "mode": "EDIT",
+      "update_count": 3701,
+      "draw_count": 3699,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 12973598,
+          "user_usec": 10818344,
+          "system_usec": 2155254,
+          "nice_usec": 10250000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 621,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052349.978555771,
+        "read_ended_perf_s": 2052349.981148604
+      },
+      "thread_schedstat": {
+        "runtime_ns": 11469962728,
+        "runqueue_wait_ns": 198435650,
+        "timeslices": 24655,
+        "read_started_perf_s": 2052349.981175761,
+        "read_ended_perf_s": 2052349.981742315
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 14.202689053490758,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:07:59.596664+00:00",
+      "elapsed_s": 62.70198266301304,
+      "cpu_s": 12.864085125,
+      "rss_bytes": 103694336,
+      "mode": "EDIT",
+      "update_count": 3762,
+      "draw_count": 3760,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 13228805,
+          "user_usec": 11038383,
+          "system_usec": 2190422,
+          "nice_usec": 10457000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 632,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052350.99304259,
+        "read_ended_perf_s": 2052350.993601491
+      },
+      "thread_schedstat": {
+        "runtime_ns": 11697678490,
+        "runqueue_wait_ns": 199256671,
+        "timeslices": 25066,
+        "read_started_perf_s": 2052350.993606943,
+        "read_ended_perf_s": 2052350.993745161
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 14.202689053490758,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:08:00.596862+00:00",
+      "elapsed_s": 63.70213163015433,
+      "cpu_s": 13.09960429,
+      "rss_bytes": 103702528,
+      "mode": "EDIT",
+      "update_count": 3822,
+      "draw_count": 3820,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 13468131,
+          "user_usec": 11236949,
+          "system_usec": 2231182,
+          "nice_usec": 10640000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 642,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052351.993815472,
+        "read_ended_perf_s": 2052351.996791224
+      },
+      "thread_schedstat": {
+        "runtime_ns": 11910733937,
+        "runqueue_wait_ns": 200914301,
+        "timeslices": 25474,
+        "read_started_perf_s": 2052351.996811124,
+        "read_ended_perf_s": 2052351.997439447
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 14.202689053490758,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:08:01.597380+00:00",
+      "elapsed_s": 64.70264683500864,
+      "cpu_s": 13.350649311,
+      "rss_bytes": 103702528,
+      "mode": "EDIT",
+      "update_count": 3882,
+      "draw_count": 3880,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 13719632,
+          "user_usec": 11450045,
+          "system_usec": 2269587,
+          "nice_usec": 10840000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 652,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052352.994591027,
+        "read_ended_perf_s": 2052352.997326691
+      },
+      "thread_schedstat": {
+        "runtime_ns": 12134748175,
+        "runqueue_wait_ns": 201412336,
+        "timeslices": 25875,
+        "read_started_perf_s": 2052352.997341084,
+        "read_ended_perf_s": 2052352.99786087
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 14.202689053490758,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:08:02.613811+00:00",
+      "elapsed_s": 65.71908138995059,
+      "cpu_s": 13.645220961,
+      "rss_bytes": 103706624,
+      "mode": "EDIT",
+      "update_count": 3943,
+      "draw_count": 3941,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 14014724,
+          "user_usec": 11712636,
+          "system_usec": 2302088,
+          "nice_usec": 11085000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 662,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052354.010787984,
+        "read_ended_perf_s": 2052354.013521762
+      },
+      "thread_schedstat": {
+        "runtime_ns": 12400604791,
+        "runqueue_wait_ns": 201995177,
+        "timeslices": 26279,
+        "read_started_perf_s": 2052354.013552472,
+        "read_ended_perf_s": 2052354.01440387
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 14.202689053490758,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:08:03.613944+00:00",
+      "elapsed_s": 66.7191841090098,
+      "cpu_s": 13.898564615,
+      "rss_bytes": 103710720,
+      "mode": "EDIT",
+      "update_count": 4003,
+      "draw_count": 4001,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 14269009,
+          "user_usec": 11928912,
+          "system_usec": 2340096,
+          "nice_usec": 11295000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 672,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052355.010896931,
+        "read_ended_perf_s": 2052355.012837575
+      },
+      "thread_schedstat": {
+        "runtime_ns": 12626338596,
+        "runqueue_wait_ns": 202661230,
+        "timeslices": 26678,
+        "read_started_perf_s": 2052355.012845908,
+        "read_ended_perf_s": 2052355.013102792
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 14.202689053490758,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:08:04.630554+00:00",
+      "elapsed_s": 67.73586713895202,
+      "cpu_s": 14.158056303,
+      "rss_bytes": 103710720,
+      "mode": "EDIT",
+      "update_count": 4064,
+      "draw_count": 4062,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 14528167,
+          "user_usec": 12145931,
+          "system_usec": 2382236,
+          "nice_usec": 11501000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 682,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052356.026982245,
+        "read_ended_perf_s": 2052356.027783579
+      },
+      "thread_schedstat": {
+        "runtime_ns": 12856771789,
+        "runqueue_wait_ns": 204360716,
+        "timeslices": 27079,
+        "read_started_perf_s": 2052356.02779107,
+        "read_ended_perf_s": 2052356.02797914
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 14.202689053490758,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:08:05.647322+00:00",
+      "elapsed_s": 68.75259116408415,
+      "cpu_s": 14.374349034,
+      "rss_bytes": 103710720,
+      "mode": "EDIT",
+      "update_count": 4125,
+      "draw_count": 4123,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 14747609,
+          "user_usec": 12332316,
+          "system_usec": 2415293,
+          "nice_usec": 11676000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 692,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052357.044262307,
+        "read_ended_perf_s": 2052357.046442887
+      },
+      "thread_schedstat": {
+        "runtime_ns": 13051395265,
+        "runqueue_wait_ns": 204863280,
+        "timeslices": 27481,
+        "read_started_perf_s": 2052357.046462131,
+        "read_ended_perf_s": 2052357.047085693
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 14.202689053490758,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:08:06.647535+00:00",
+      "elapsed_s": 69.75280674104579,
+      "cpu_s": 14.598580302,
+      "rss_bytes": 103714816,
+      "mode": "EDIT",
+      "update_count": 4185,
+      "draw_count": 4183,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 14972540,
+          "user_usec": 12527872,
+          "system_usec": 2444668,
+          "nice_usec": 11852000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 702,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052358.044495951,
+        "read_ended_perf_s": 2052358.046776933
+      },
+      "thread_schedstat": {
+        "runtime_ns": 13251973952,
+        "runqueue_wait_ns": 208305388,
+        "timeslices": 27881,
+        "read_started_perf_s": 2052358.046795886,
+        "read_ended_perf_s": 2052358.047399754
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 14.202689053490758,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:08:07.662711+00:00",
+      "elapsed_s": 70.76801443495788,
+      "cpu_s": 14.820608439,
+      "rss_bytes": 103718912,
+      "mode": "EDIT",
+      "update_count": 4246,
+      "draw_count": 4244,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 15194658,
+          "user_usec": 12713510,
+          "system_usec": 2481147,
+          "nice_usec": 12023000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 712,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052359.059293145,
+        "read_ended_perf_s": 2052359.060441105
+      },
+      "thread_schedstat": {
+        "runtime_ns": 13445835756,
+        "runqueue_wait_ns": 213464156,
+        "timeslices": 28281,
+        "read_started_perf_s": 2052359.060451647,
+        "read_ended_perf_s": 2052359.060725028
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 14.202689053490758,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:08:08.679847+00:00",
+      "elapsed_s": 71.78515575011261,
+      "cpu_s": 15.007134845,
+      "rss_bytes": 103723008,
+      "mode": "EDIT",
+      "update_count": 4307,
+      "draw_count": 4305,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 15382000,
+          "user_usec": 12875968,
+          "system_usec": 2506032,
+          "nice_usec": 12174000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 722,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052360.076358597,
+        "read_ended_perf_s": 2052360.077301622
+      },
+      "thread_schedstat": {
+        "runtime_ns": 13608089404,
+        "runqueue_wait_ns": 214553309,
+        "timeslices": 28692,
+        "read_started_perf_s": 2052360.077312654,
+        "read_ended_perf_s": 2052360.077583619
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 14.202689053490758,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:08:09.680595+00:00",
+      "elapsed_s": 72.78586356295273,
+      "cpu_s": 15.254438074,
+      "rss_bytes": 103723008,
+      "mode": "EDIT",
+      "update_count": 4367,
+      "draw_count": 4365,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 15631378,
+          "user_usec": 13094138,
+          "system_usec": 2537239,
+          "nice_usec": 12383000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 732,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052361.077536356,
+        "read_ended_perf_s": 2052361.079731974
+      },
+      "thread_schedstat": {
+        "runtime_ns": 13830739869,
+        "runqueue_wait_ns": 214953514,
+        "timeslices": 29082,
+        "read_started_perf_s": 2052361.079750592,
+        "read_ended_perf_s": 2052361.080392602
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 14.202689053490758,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:08:10.696205+00:00",
+      "elapsed_s": 73.80147417704575,
+      "cpu_s": 15.466803379,
+      "rss_bytes": 103723008,
+      "mode": "EDIT",
+      "update_count": 4428,
+      "draw_count": 4426,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 15844010,
+          "user_usec": 13272745,
+          "system_usec": 2571264,
+          "nice_usec": 12551000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 743,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052362.093126162,
+        "read_ended_perf_s": 2052362.095361827
+      },
+      "thread_schedstat": {
+        "runtime_ns": 14020128399,
+        "runqueue_wait_ns": 216350920,
+        "timeslices": 29489,
+        "read_started_perf_s": 2052362.095387124,
+        "read_ended_perf_s": 2052362.095723561
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 14.202689053490758,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:08:11.713122+00:00",
+      "elapsed_s": 74.81839036894962,
+      "cpu_s": 15.714752911000001,
+      "rss_bytes": 103731200,
+      "mode": "EDIT",
+      "update_count": 4489,
+      "draw_count": 4487,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 16093122,
+          "user_usec": 13485279,
+          "system_usec": 2607842,
+          "nice_usec": 12748000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 753,
+          "nr_throttled": 4,
+          "throttled_usec": 110845,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052363.110054066,
+        "read_ended_perf_s": 2052363.112191563
+      },
+      "thread_schedstat": {
+        "runtime_ns": 14240913466,
+        "runqueue_wait_ns": 216848675,
+        "timeslices": 29895,
+        "read_started_perf_s": 2052363.112210551,
+        "read_ended_perf_s": 2052363.112753135
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 14.202689053490758,
+      "max_frame_ms": 47.24454018287361
+    },
+    {
+      "at_utc": "2026-11-13T04:08:12.728589+00:00",
+      "elapsed_s": 75.83386158407666,
+      "cpu_s": 16.106169021,
+      "rss_bytes": 106676224,
+      "mode": "EDIT",
+      "update_count": 4534,
+      "draw_count": 4532,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 16485797,
+          "user_usec": 13842505,
+          "system_usec": 2643292,
+          "nice_usec": 13094000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 763,
+          "nr_throttled": 6,
+          "throttled_usec": 157235,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052364.125501903,
+        "read_ended_perf_s": 2052364.127385996
+      },
+      "thread_schedstat": {
+        "runtime_ns": 14612026146,
+        "runqueue_wait_ns": 263676114,
+        "timeslices": 30194,
+        "read_started_perf_s": 2052364.127404774,
+        "read_ended_perf_s": 2052364.127901665
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 14.202689053490758,
+      "max_frame_ms": 277.23799902014434
+    },
+    {
+      "at_utc": "2026-11-13T04:08:13.746289+00:00",
+      "elapsed_s": 76.85159624717198,
+      "cpu_s": 16.34787315,
+      "rss_bytes": 106676224,
+      "mode": "EDIT",
+      "update_count": 4595,
+      "draw_count": 4593,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 16726759,
+          "user_usec": 14046094,
+          "system_usec": 2680665,
+          "nice_usec": 13289000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 773,
+          "nr_throttled": 6,
+          "throttled_usec": 157235,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052365.142793518,
+        "read_ended_perf_s": 2052365.1437773
+      },
+      "thread_schedstat": {
+        "runtime_ns": 14823953129,
+        "runqueue_wait_ns": 264338369,
+        "timeslices": 30599,
+        "read_started_perf_s": 2052365.143786804,
+        "read_ended_perf_s": 2052365.144062771
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 14.202689053490758,
+      "max_frame_ms": 277.23799902014434
+    },
+    {
+      "at_utc": "2026-11-13T04:08:14.746718+00:00",
+      "elapsed_s": 77.85199235496111,
+      "cpu_s": 16.566152856,
+      "rss_bytes": 106676224,
+      "mode": "EDIT",
+      "update_count": 4655,
+      "draw_count": 4653,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 16947488,
+          "user_usec": 14227755,
+          "system_usec": 2719733,
+          "nice_usec": 13461000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 783,
+          "nr_throttled": 6,
+          "throttled_usec": 157235,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052366.143657595,
+        "read_ended_perf_s": 2052366.145792391
+      },
+      "thread_schedstat": {
+        "runtime_ns": 15019325151,
+        "runqueue_wait_ns": 264765788,
+        "timeslices": 30993,
+        "read_started_perf_s": 2052366.145811334,
+        "read_ended_perf_s": 2052366.146370345
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 14.202689053490758,
+      "max_frame_ms": 277.23799902014434
+    },
+    {
+      "at_utc": "2026-11-13T04:08:15.763612+00:00",
+      "elapsed_s": 78.86888416716829,
+      "cpu_s": 16.799648368,
+      "rss_bytes": 106676224,
+      "mode": "EDIT",
+      "update_count": 4716,
+      "draw_count": 4714,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 17182125,
+          "user_usec": 14430160,
+          "system_usec": 2751964,
+          "nice_usec": 13650000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 793,
+          "nr_throttled": 6,
+          "throttled_usec": 157235,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052367.160552263,
+        "read_ended_perf_s": 2052367.162677874
+      },
+      "thread_schedstat": {
+        "runtime_ns": 15226393243,
+        "runqueue_wait_ns": 265478042,
+        "timeslices": 31396,
+        "read_started_perf_s": 2052367.162696786,
+        "read_ended_perf_s": 2052367.163254179
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 14.202689053490758,
+      "max_frame_ms": 277.23799902014434
+    },
+    {
+      "at_utc": "2026-11-13T04:08:16.779499+00:00",
+      "elapsed_s": 79.88477192097344,
+      "cpu_s": 17.024077011,
+      "rss_bytes": 106676224,
+      "mode": "EDIT",
+      "update_count": 4777,
+      "draw_count": 4775,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 17407640,
+          "user_usec": 14616853,
+          "system_usec": 2790787,
+          "nice_usec": 13828000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 803,
+          "nr_throttled": 6,
+          "throttled_usec": 157235,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052368.176396228,
+        "read_ended_perf_s": 2052368.178435603
+      },
+      "thread_schedstat": {
+        "runtime_ns": 15424173522,
+        "runqueue_wait_ns": 265918157,
+        "timeslices": 31796,
+        "read_started_perf_s": 2052368.178455087,
+        "read_ended_perf_s": 2052368.178945022
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 14.202689053490758,
+      "max_frame_ms": 277.23799902014434
+    },
+    {
+      "at_utc": "2026-11-13T04:08:16.895257+00:00",
+      "elapsed_s": 80.00058711715974,
+      "cpu_s": 17.057521283,
+      "rss_bytes": 106741760,
+      "mode": "EDIT",
+      "update_count": 4784,
+      "draw_count": 4782,
+      "cgroup_cpu": {
+        "path": "/user.slice/user-1000.slice/user@1000.service/app.slice/crow-pyxelbasic-storage-memory.service",
+        "cpu_max": "75000 100000",
+        "cpu_stat": {
+          "usage_usec": 17439517,
+          "user_usec": 14644810,
+          "system_usec": 2794706,
+          "nice_usec": 13856000,
+          "core_sched.force_idle_usec": 0,
+          "nr_periods": 805,
+          "nr_throttled": 6,
+          "throttled_usec": 157235,
+          "nr_bursts": 0,
+          "burst_usec": 0
+        },
+        "read_started_perf_s": 2052368.291686789,
+        "read_ended_perf_s": 2052368.292445639
+      },
+      "thread_schedstat": {
+        "runtime_ns": 15452567341,
+        "runqueue_wait_ns": 265972726,
+        "timeslices": 31843,
+        "read_started_perf_s": 2052368.292453341,
+        "read_ended_perf_s": 2052368.292635568
+      },
+      "timing_retained": {
+        "update": 64,
+        "draw": 64,
+        "frame_interval": 64
+      },
+      "vm_state": "EDIT",
+      "line": 0,
+      "gfx_queue": 0,
+      "audio_queue": 0,
+      "gosub_depth": 0,
+      "for_depth": 0,
+      "max_update_ms": 2.1187029778957367,
+      "max_draw_ms": 14.202689053490758,
+      "max_frame_ms": 277.23799902014434
+    }
+  ],
+  "session_thread_alive": false,
+  "screen": [
+    "PyxelBasic v0.2.1                                               ",
+    "(c) 2025-2026 Takeshi Maeda (SPSoft)                            ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                ",
+    "                                                                "
+  ]
+}

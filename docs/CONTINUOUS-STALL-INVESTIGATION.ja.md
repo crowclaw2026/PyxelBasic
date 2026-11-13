@@ -87,6 +87,17 @@ cgroup/schedstatはupdate後に順次読み取るため、update終了と境界�
 schema4は読取り開始/終了perf時刻と結果基点を保存し、観測遅延を区別する。
 64MiB判定・ケース・監視親は維持。新しい子から反映される。
 
+## 毎秒sample保持の分離（2026-11-13）
+
+`diagnostics/loop-11/coverage-20261113/REPORT.ja.md`に充填後の比較とmemory/stream対照を保存。
+schema5は既定で毎秒sampleをJSONLへだけ逐次flushし、計測中の全件list保持を避ける。
+停止・最終RSS採取後に結果JSON用の全samplesへ読み戻すため、監視親の既存判定は維持。
+最終化時のRSS・所要時間・CPU時間は別metadataで記録し、計測中RSSと混同しない。
+比較用`--sample-storage memory`を残す。JSONLへ最終sampleも保存する。
+結果samplesとJSONL全行の一致・カウンタ件数等を実子テストで確認する。
+この最終化にも有限のメモリと時間がかかり、診断器全体が無負荷になるという変更ではない。
+製品・監視service・timer・常駐8ケースは変更しない。次の子から適用。
+
 ## 検証
 
 `python -m unittest discover -s tests -p test_stall_monitor.py -v`:

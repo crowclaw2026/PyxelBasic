@@ -1,0 +1,15 @@
+test_failure_retains_evidence_and_cools_down (test_stall_judge.JudgeTests.test_failure_retains_evidence_and_cools_down) ... ok
+test_idle_makes_no_model_call (test_stall_judge.JudgeTests.test_idle_makes_no_model_call) ... ok
+test_success_acknowledges_only_after_terminal_ok (test_stall_judge.JudgeTests.test_success_acknowledges_only_after_terminal_ok) ... ok
+test_events_deduplicate_and_remain_pending (test_stall_monitor.MonitorTests.test_events_deduplicate_and_remain_pending) ... ok
+test_live_child_trial (test_stall_monitor.MonitorTests.test_live_child_trial) ... ok
+test_normal_capture_growth_not_leak (test_stall_monitor.MonitorTests.test_normal_capture_growth_not_leak) ... ok
+test_real_stall_and_post_warmup_growth (test_stall_monitor.MonitorTests.test_real_stall_and_post_warmup_growth) ... ok
+test_retention_preserves_evidence_and_unowned_dirs (test_stall_monitor.MonitorTests.test_retention_preserves_evidence_and_unowned_dirs) ... ok
+test_evicted_stall_remains_in_whole_run_max (test_stall_timings.TimingTests.test_evicted_stall_remains_in_whole_run_max) ... ok
+test_full_comparison_preserves_all_values (test_stall_timings.TimingTests.test_full_comparison_preserves_all_values) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 3.025s
+
+OK

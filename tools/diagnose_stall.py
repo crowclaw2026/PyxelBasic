@@ -112,6 +112,8 @@ def main():
                         help='フレーム時間保持上限。0は旧方式同等の全件保持（比較専用）')
     parser.add_argument('--slow-update-ms', type=float, default=500,
                         help='壁時計/スレッドCPU時間を詳細記録するupdate閾値（既定500ms）')
+    parser.add_argument('--sample-storage', choices=('stream', 'memory'), default='stream',
+                        help='毎秒サンプルは既定でJSONLのみ保持。memoryは旧方式比較専用')
     parser.add_argument('--capture-sec', type=int, default=None,
                         help='診断限定でPyxel録画秒数を上書き（比較用、既定は変更なし）')
     parser.add_argument('app_args', nargs=argparse.REMAINDER)
@@ -133,7 +135,7 @@ def main():
     if options.workdir:
         options.workdir = str(Path(options.workdir).resolve())
     # 結果の上書きを避け、出力不能はウィンドウ起動前に検出する。
-    with args.output.open('x', encoding='utf-8') as out, args.output.with_suffix('.samples.jsonl').open('x', encoding='utf-8') as sample_out, args.output.with_suffix('.slow.jsonl').open('x', encoding='utf-8') as slow_out:
+    with args.output.open('x', encoding='utf-8') as out, args.output.with_suffix('.samples.jsonl').open('x+', encoding='utf-8') as sample_out, args.output.with_suffix('.slow.jsonl').open('x', encoding='utf-8') as slow_out:
         import pyxel
         from pyxelbasic.app import App
         if args.capture_sec is not None:
@@ -210,7 +212,8 @@ def main():
                 slow_out.flush()
             if ended >= next_sample:
                 item = sample(ended)
-                samples.append(item)
+                if args.sample_storage == 'memory':
+                    samples.append(item)
                 sample_out.write(json.dumps(item, ensure_ascii=False) + '\n')
                 sample_out.flush()  # 強制終了・ネイティブ終了でも直前までの証拠を残す。
                 next_sample = ended + 1
@@ -240,8 +243,26 @@ def main():
             if app.session_thread:
                 app.session_thread.join(timeout=1)
             ended = time.perf_counter()
-            samples.append(sample(ended))
-            result = {"schema_version": 4, "python": platform.python_version(),
+            active_cpu_s = time.process_time() - cpu_started
+            final_sample = sample(ended)  # RSS before result-only sample materialization.
+            in_run_retained = len(samples)
+            sample_out.write(json.dumps(final_sample, ensure_ascii=False) + '\n')
+            sample_out.flush()
+            materialize_started = time.perf_counter()
+            materialize_cpu_started = time.process_time()
+            if args.sample_storage == 'memory':
+                samples.append(final_sample)
+                result_samples = samples
+            else:
+                sample_out.seek(0)
+                result_samples = [json.loads(line) for line in sample_out]
+            materialize_seconds = time.perf_counter() - materialize_started
+            result = {"schema_version": 5, "python": platform.python_version(),
+                      "sample_storage": args.sample_storage,
+                      "in_run_retained_samples": in_run_retained,
+                      "sample_materialization_s": materialize_seconds,
+                      "sample_materialization_cpu_s": time.process_time() - materialize_cpu_started,
+                      "rss_after_sample_materialization_bytes": rss_bytes(),
                       "started_perf_counter_s": started,
                       "timing_capacity": args.timing_capacity,
                       "slow_update_ms": args.slow_update_ms, "slow_update_count": slow_update_count,
@@ -250,9 +271,9 @@ def main():
                       "platform": platform.platform(), "pyxel": pyxel.VERSION,
                       "app_args": app_args, "requested_seconds": args.seconds,
                       "capture_sec_override": args.capture_sec,
-                      "elapsed_s": ended - started, "cpu_s": time.process_time() - cpu_started,
+                      "elapsed_s": ended - started, "cpu_s": active_cpu_s,
                       "update": update_times.summary(), "draw": draw_times.summary(),
-                      "frame_interval": intervals.summary(), "samples": samples,
+                      "frame_interval": intervals.summary(), "samples": result_samples,
                       "session_thread_alive": bool(app.session_thread and app.session_thread.is_alive()),
                       "screen": [''.join(row) for row in app.session.screen.chars]}
             json.dump(result, out, ensure_ascii=False, indent=2)
