@@ -1,6 +1,8 @@
 import importlib.util
 from pathlib import Path
 import unittest
+import tempfile
+import time
 
 spec = importlib.util.spec_from_file_location('diagnose', Path(__file__).resolve().parents[1] / 'tools/diagnose_stall.py')
 d = importlib.util.module_from_spec(spec)
@@ -8,6 +10,22 @@ spec.loader.exec_module(d)
 
 
 class TimingTests(unittest.TestCase):
+    def test_python_watchdog_dumps_and_stops(self):
+        with tempfile.TemporaryFile(mode='w+') as log:
+            watchdog = d.ProgressWatchdog(timeout=.02, poll=.005, file=log)
+            watchdog.start()
+            deadline = time.monotonic() + 2
+            try:
+                while time.monotonic() < deadline and log.tell() == 0:
+                    time.sleep(.01)
+            finally:
+                watchdog.close()
+            self.assertFalse(watchdog.thread.is_alive())
+            log.seek(0)
+            text = log.read()
+            self.assertIn('Python watchdog timeout', text)
+            self.assertIn('test_python_watchdog_dumps_and_stops', text)
+
     def test_evicted_stall_remains_in_whole_run_max(self):
         series = d.TimingSeries(8)
         series.append(3.0)

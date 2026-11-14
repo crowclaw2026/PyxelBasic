@@ -1,0 +1,25 @@
+{
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "package": "3.12.3-1ubuntu0.17",
+  "baseline_sha": "26b43ff7355cb0cf50712c3822fe781470fd8e00",
+  "source_positions": {
+    "parse_add": {
+      "firstlineno": 327,
+      "min_line": 327,
+      "max_line": 340
+    },
+    "parse_compare": {
+      "firstlineno": 318,
+      "min_line": 318,
+      "max_line": 325
+    },
+    "peek": {
+      "firstlineno": 275,
+      "min_line": 275,
+      "max_line": 278
+    }
+  },
+  "original_log_observation": "line 277 in parse_add is outside live code line range; not a reliable crash location",
+  "core_artifacts_found": false,
+  "kernel_fault_query_result": "No entries for python.*segfault in 09:33:10..09:33:30 JST"
+}

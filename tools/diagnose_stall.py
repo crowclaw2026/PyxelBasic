@@ -10,10 +10,44 @@ from pathlib import Path
 import platform
 import statistics
 import sys
+import threading
 import time
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
+
+
+class ProgressWatchdog:
+    """Dump from an attached Python thread, not the GIL-less native timer.
+
+    A native extension holding the GIL can prevent this thread from running;
+    the independent monitor's process/sample deadlines remain the fallback.
+    """
+    def __init__(self, timeout=2, poll=.25, file=None):
+        self.timeout, self.poll = timeout, poll
+        self.file = file if file is not None else sys.stderr
+        self.last_progress = time.monotonic()
+        self.stopped = threading.Event()
+        self.thread = threading.Thread(target=self._run, name='diagnostic-watchdog', daemon=True)
+
+    def start(self):
+        self.thread.start()
+
+    def touch(self):
+        self.last_progress = time.monotonic()
+
+    def close(self):
+        self.stopped.set()
+        self.thread.join(timeout=1)
+
+    def _run(self):
+        last_dump = 0
+        while not self.stopped.wait(self.poll):
+            now = time.monotonic()
+            if now - self.last_progress >= self.timeout and now - last_dump >= self.timeout:
+                print('Python watchdog timeout (requires GIL)', file=self.file, flush=True)
+                faulthandler.dump_traceback(file=self.file, all_threads=True)
+                last_dump = now
 
 
 def rss_bytes():
@@ -114,6 +148,8 @@ def main():
                         help='壁時計/スレッドCPU時間を詳細記録するupdate閾値（既定500ms）')
     parser.add_argument('--sample-storage', choices=('stream', 'memory'), default='stream',
                         help='毎秒サンプルは既定でJSONLのみ保持。memoryは旧方式比較専用')
+    parser.add_argument('--watchdog', choices=('python', 'native', 'off'), default='python',
+                        help='既定はPython threadから同期stack採取。nativeは旧方式の比較専用')
     parser.add_argument('--capture-sec', type=int, default=None,
                         help='診断限定でPyxel録画秒数を上書き（比較用、既定は変更なし）')
     parser.add_argument('app_args', nargs=argparse.REMAINDER)
@@ -164,6 +200,7 @@ def main():
         started_at = datetime.now(timezone.utc).isoformat()
         last_frame, next_sample = started, started
         peak_update = peak_draw = peak_frame = 0.0
+        watchdog = None
 
         def sample(now):
             return {"at_utc": datetime.now(timezone.utc).isoformat(),
@@ -186,7 +223,10 @@ def main():
 
         def update():
             nonlocal last_frame, next_sample, peak_update, peak_frame, slow_update_count
-            faulthandler.dump_traceback_later(2, repeat=True)
+            if watchdog is not None:
+                watchdog.touch()
+            elif args.watchdog == 'native':
+                faulthandler.dump_traceback_later(2, repeat=True)
             thread_started, process_started = time.thread_time(), time.process_time()
             now = time.perf_counter()
             intervals.append(now - last_frame)
@@ -236,7 +276,10 @@ def main():
             if finished:
                 return
             finished = True
-            faulthandler.cancel_dump_traceback_later()
+            if watchdog is not None:
+                watchdog.close()
+            elif args.watchdog == 'native':
+                faulthandler.cancel_dump_traceback_later()
             app.session.request_stop()
             app.gfx_queue.stop()
             app.audio_queue.stop()
@@ -257,7 +300,9 @@ def main():
                 sample_out.seek(0)
                 result_samples = [json.loads(line) for line in sample_out]
             materialize_seconds = time.perf_counter() - materialize_started
-            result = {"schema_version": 5, "python": platform.python_version(),
+            result = {"schema_version": 6, "python": platform.python_version(),
+                      "watchdog_backend": args.watchdog,
+                      "watchdog_thread_alive": bool(watchdog and watchdog.thread.is_alive()),
                       "sample_storage": args.sample_storage,
                       "in_run_retained_samples": in_run_retained,
                       "sample_materialization_s": materialize_seconds,
@@ -283,7 +328,11 @@ def main():
 
         app.update, app.draw = update, draw
         # 2秒以上戻らない場合のPythonスタックをstderrへ。ネイティブ原因は別途OS計測が必要。
-        faulthandler.dump_traceback_later(2, repeat=True)
+        if args.watchdog == 'python':
+            watchdog = ProgressWatchdog()
+            watchdog.start()
+        elif args.watchdog == 'native':
+            faulthandler.dump_traceback_later(2, repeat=True)
         try:
             app.run()
         finally:

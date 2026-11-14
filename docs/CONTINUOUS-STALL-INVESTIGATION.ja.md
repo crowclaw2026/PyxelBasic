@@ -98,6 +98,17 @@ schema5は既定で毎秒sampleをJSONLへだけ逐次flushし、計測中の全
 この最終化にも有限のメモリと時間がかかり、診断器全体が無負荷になるという変更ではない。
 製品・監視service・timer・常駐8ケースは変更しない。次の子から適用。
 
+## timeout stack採取の分離（2026-11-14）
+
+`diagnostics/loop-11/segfault-20261114/REPORT.ja.md`にpuzzle子のSIGSEGV証拠を保存。
+結果最終化前の約281秒で途絶え、native timeout dumpが途中で切れていた。
+診断器自身の競合も候補のため、schema6の既定`--watchdog python`はPythonスレッドから
+同期`faulthandler.dump_traceback()`を呼ぶ。旧GILなしnative timerは比較用`--watchdog native`に限定。
+`--watchdog off`は対照専用。実SIGSEGV等のfatal handlerは維持する。
+Python watchdogはGILを保持するnativeハング中には動けないため、外側監視の15秒sample期限・
+試験期限等を維持する。今回のSIGSEGV原因確定/Windows元現象の修正とは扱わない。
+親と稼働中の子は維持し、次の子から診断変更を適用する。
+
 ## 検証
 
 `python -m unittest discover -s tests -p test_stall_monitor.py -v`:
