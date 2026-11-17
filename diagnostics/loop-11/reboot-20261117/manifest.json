@@ -1,0 +1,25 @@
+{
+  "source_run": "/home/take/.local/state/crow-pyxelbasic/runs/run-20261117T072957.733776Z-particle-thread",
+  "files": {
+    "meta.json": {
+      "bytes": 632,
+      "sha256": "e2692bdae8acda6b4e407e2104243405aafabad07e1667f5b3db25980eb82365"
+    },
+    "process.log": {
+      "bytes": 119,
+      "sha256": "dcc9dc57c0a47a90298c3aac2e5d79ae2efc31646bab396cde279334f1435518"
+    },
+    "result.json": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "result.samples.jsonl": {
+      "bytes": 1094019,
+      "sha256": "644e5eaa6b5b7432666e7a507b8282918e0b02844889c115f761cabdfa302c1a"
+    },
+    "result.slow.jsonl": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

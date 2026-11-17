@@ -1,0 +1,23 @@
+{
+  "case": "particle-thread",
+  "command": [
+    "/home/take/projects/spsoft/PyxelBasic/.venv/bin/python",
+    "/home/take/projects/spsoft/PyxelBasic/tools/diagnose_stall.py",
+    "--seconds",
+    "1200",
+    "--output",
+    "/home/take/.local/state/crow-pyxelbasic/runs/run-20261117T072957.733776Z-particle-thread/result.json",
+    "--",
+    "--load",
+    "particle",
+    "--run",
+    "--exec-mode",
+    "thread"
+  ],
+  "seconds": 1200,
+  "started": 1794900597.7344253,
+  "headless": true,
+  "audio": "dummy",
+  "cpu_quota": "systemd 75% of one logical CPU",
+  "note": "Constrained Linux soak, not Windows hardware reproduction"
+}

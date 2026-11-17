@@ -1,0 +1,10 @@
+2026-11-17T16:46:00+09:00 take-Macmini5-2 systemd[1194]: Stopping crow-pyxelbasic-monitor.service - PyxelBasic continuous no-LLM soak investigation (Issue 11)...
+2026-11-17T16:46:00+09:00 take-Macmini5-2 systemd[1194]: Stopped crow-pyxelbasic-monitor.service - PyxelBasic continuous no-LLM soak investigation (Issue 11).
+2026-11-17T16:46:00+09:00 take-Macmini5-2 systemd[1194]: crow-pyxelbasic-monitor.service: Consumed 2d 23h 15min 48.272s CPU time, 283.5M memory peak, 18.6M memory swap peak.
+-- Boot d0f052403d90483590c4846f463885e6 --
+2026-11-17T16:46:25+09:00 take-Macmini5-2 systemd[1065]: Started crow-pyxelbasic-monitor.service - PyxelBasic continuous no-LLM soak investigation (Issue 11).
+
+2026-11-17T16:45:58+09:00 take-Macmini5-2 systemd-logind[965]: System is rebooting.
+2026-11-17T16:46:06+09:00 take-Macmini5-2 systemd[1]: systemd-reboot.service: Deactivated successfully.
+2026-11-17T16:46:06+09:00 take-Macmini5-2 systemd[1]: Finished systemd-reboot.service - System Reboot.
+-- Boot d0f052403d90483590c4846f463885e6 --

@@ -1,0 +1,13 @@
+{
+  "kernel": "7.0.0-43-generic",
+  "health": {
+    "monitor_pid": 1111,
+    "completed": 522,
+    "case": "audio-cycle-main",
+    "child_pid": 1156,
+    "run": "/home/take/.local/state/crow-pyxelbasic/runs/run-20261117T074625.914453Z-audio-cycle-main",
+    "heartbeat": 1794902114.9157898,
+    "elapsed_s": 528.5472950870001,
+    "child_rss_bytes": 175357952
+  }
+}
